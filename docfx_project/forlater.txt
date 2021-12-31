@@ -1,0 +1,1 @@
+https://www.cazzulino.com/customize-docfx.html#:~:text=Change%20default%20icons%20Most%20docfx%20sites%20I%20see,include%20it%20as%20a%20resource%20in%20your%20docfx.json%3A
