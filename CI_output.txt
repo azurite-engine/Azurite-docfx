@@ -1,5 +1,5 @@
 CI run log
-2022-01-11 21:32:22
+2022-01-11 21:34:48
 
 ---- Gradle clean ----
 
@@ -9,30 +9,30 @@ CI run log
 
 ---- Build docfx project  ----
 
-[22-01-11 09:32:23.495]Info:Config file docfx.json found, start generating metadata...
-[22-01-11 09:32:23.857]Info:[MetadataCommand.ExtractMetadata]Using mono /usr/lib/mono/msbuild/15.0/bin/MSBuild.dll as inner compiler.
-[22-01-11 09:32:23.963]Info:[MetadataCommand.ExtractMetadata]No files are found with glob pattern src/**.csproj, excluding <none>, under directory "/home/ubuntu/azuriteDocumentation/Azurite-docfx/docfx_project"
-[22-01-11 09:32:24.174]Warning:[MetadataCommand.ExtractMetadata]No project detected for extracting metadata.
-[22-01-11 09:32:24.182]Info:[MetadataCommand]Completed Scope:MetadataCommand in 411.4625 milliseconds.
-[22-01-11 09:32:24.658]Info:[BuildCommand]6 plug-in(s) loaded.
-[22-01-11 09:32:24.663]Info:[BuildCommand]Post processor ExtractSearchIndex loaded.
-[22-01-11 09:32:24.679]Info:[BuildCommand]No files are found with glob pattern images/**,logo.svg,favicon.ico, excluding <none>, under directory "/home/ubuntu/azuriteDocumentation/Azurite-docfx/docfx_project"
-[22-01-11 09:32:24.694]Info:[BuildCommand]Markdown engine is markdig
-[22-01-11 09:32:25.186]Info:[BuildCommand.BuildCore.Build Document]Max parallelism is 2.
-[22-01-11 09:32:26.855]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.TocDocumentProcessor]Building 3 file(s) in TocDocumentProcessor(BuildTocDocument)...
-[22-01-11 09:32:26.855]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.ConceptualDocumentProcessor]Building 0 file(s) in ConceptualDocumentProcessor(BuildConceptualDocument=>CountWord=>ValidateConceptualDocumentMetadata)...
-[22-01-11 09:32:26.856]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.ManagedReferenceDocumentProcessor]Building 0 file(s) in ManagedReferenceDocumentProcessor(BuildManagedReferenceDocument=>ValidateManagedReferenceDocumentMetadata=>ApplyOverwriteDocumentForMref=>FillReferenceInformation)...
-[22-01-11 09:32:27.886]Info:[BuildCommand.BuildCore.Build Document.LinkPhaseHandlerWithIncremental.Apply Templates]Applying templates to 3 model(s)...
-[22-01-11 09:32:29.577]Info:[BuildCommand.BuildCore.Build Document]XRef map exported.
-[22-01-11 09:32:32.158]Info:[BuildCommand.Postprocess.HandlePostProcessorsWithIncremental.HandlePostProcessors.Processing ExtractSearchIndex]Extracting index data from 156 html files
-[22-01-11 09:32:33.766]Info:[BuildCommand.Postprocess]Manifest file saved to manifest.json.
-[22-01-11 09:32:33.961]Info:[BuildCommand]Completed building documents in 9297.2479 milliseconds.
-[22-01-11 09:32:33.962]Info:[BuildCommand]Completed Scope:BuildCommand in 9779.4078 milliseconds.
-[22-01-11 09:32:33.962]Info:Completed in 10194.8637 milliseconds
+[22-01-11 09:34:50.153]Info:Config file docfx.json found, start generating metadata...
+[22-01-11 09:34:50.469]Info:[MetadataCommand.ExtractMetadata]Using mono /usr/lib/mono/msbuild/15.0/bin/MSBuild.dll as inner compiler.
+[22-01-11 09:34:50.577]Info:[MetadataCommand.ExtractMetadata]No files are found with glob pattern src/**.csproj, excluding <none>, under directory "/home/ubuntu/azuriteDocumentation/Azurite-docfx/docfx_project"
+[22-01-11 09:34:50.785]Warning:[MetadataCommand.ExtractMetadata]No project detected for extracting metadata.
+[22-01-11 09:34:50.789]Info:[MetadataCommand]Completed Scope:MetadataCommand in 406.2285 milliseconds.
+[22-01-11 09:34:51.272]Info:[BuildCommand]6 plug-in(s) loaded.
+[22-01-11 09:34:51.278]Info:[BuildCommand]Post processor ExtractSearchIndex loaded.
+[22-01-11 09:34:51.294]Info:[BuildCommand]No files are found with glob pattern images/**,logo.svg,favicon.ico, excluding <none>, under directory "/home/ubuntu/azuriteDocumentation/Azurite-docfx/docfx_project"
+[22-01-11 09:34:51.361]Info:[BuildCommand]Markdown engine is markdig
+[22-01-11 09:34:51.856]Info:[BuildCommand.BuildCore.Build Document]Max parallelism is 2.
+[22-01-11 09:34:53.576]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.ManagedReferenceDocumentProcessor]Building 0 file(s) in ManagedReferenceDocumentProcessor(BuildManagedReferenceDocument=>ValidateManagedReferenceDocumentMetadata=>ApplyOverwriteDocumentForMref=>FillReferenceInformation)...
+[22-01-11 09:34:53.576]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.TocDocumentProcessor]Building 3 file(s) in TocDocumentProcessor(BuildTocDocument)...
+[22-01-11 09:34:53.577]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.ConceptualDocumentProcessor]Building 0 file(s) in ConceptualDocumentProcessor(BuildConceptualDocument=>CountWord=>ValidateConceptualDocumentMetadata)...
+[22-01-11 09:34:54.571]Info:[BuildCommand.BuildCore.Build Document.LinkPhaseHandlerWithIncremental.Apply Templates]Applying templates to 3 model(s)...
+[22-01-11 09:34:56.257]Info:[BuildCommand.BuildCore.Build Document]XRef map exported.
+[22-01-11 09:34:58.666]Info:[BuildCommand.Postprocess.HandlePostProcessorsWithIncremental.HandlePostProcessors.Processing ExtractSearchIndex]Extracting index data from 156 html files
+[22-01-11 09:35:00.163]Info:[BuildCommand.Postprocess]Manifest file saved to manifest.json.
+[22-01-11 09:35:00.365]Info:[BuildCommand]Completed building documents in 9087.2187 milliseconds.
+[22-01-11 09:35:00.366]Info:[BuildCommand]Completed Scope:BuildCommand in 9513.0906 milliseconds.
+[22-01-11 09:35:00.366]Info:Completed in 9987.1044 milliseconds
 
 
 Build succeeded with warning.
-[22-01-11 09:32:33.965]Warning:[MetadataCommand.ExtractMetadata]No project detected for extracting metadata.
+[22-01-11 09:35:00.369]Warning:[MetadataCommand.ExtractMetadata]No project detected for extracting metadata.
 	1 Warning(s)
 	0 Error(s)
 
