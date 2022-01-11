@@ -1,230 +1,38 @@
 CI run log
-2022-01-11 21:21:28
+2022-01-11 21:28:55
 
 ---- Gradle clean ----
 
-> Task :clean
-
-BUILD SUCCESSFUL in 5s
-1 actionable task: 1 executed
 
 ---- Gradle generate docfx YAML files ----
 
 
-> Task :compileJava
-
-> Task :processResources NO-SOURCE
-> Task :classes
-> Task :jar
-> Task :startScripts
-> Task :distTar
-> Task :distZip
-> Task :shadowJar
-> Task :startShadowScripts
-> Task :shadowDistTar
-> Task :shadowDistZip
-> Task :assemble
-> Task :compileTestJava
-> Task :processTestResources NO-SOURCE
-> Task :testClasses
-
-> Task :test
-
-ai.path.PathfindingTest > astar1 PASSED
-
-ai.path.PathfindingTest > dijkstra1 PASSED
-
-ai.path.PathfindingTest > preconditions PASSED
-
-ai.statemachine.StateMachineTest > addTransition PASSED
-
-ai.statemachine.StateMachineTest > doTransition PASSED
-
-ai.statemachine.StateMachineTest > validate PASSED
-
-ai.statemachine.StateMachineTest > addState PASSED
-
-ai.statemachine.StateMachineTest > hasTransition PASSED
-
-ai.statemachine.StateMachineTest > update PASSED
-
-ai.statemachine.StateMachineTest > hasState PASSED
-
-ai.statemachine.StateMachineTest > canTransitionTo PASSED
-
-ai.statemachine.StateMachineTest > startMachine PASSED
-
-graphics.HSLColorTest > toHSLAVector PASSED
-
-graphics.HSLColorTest > toHSLA PASSED
-
-graphics.HSLColorTest > toRGBA PASSED
-
-graphics.HSLColorTest > setAndGet PASSED
-
-graphics.HSLColorTest > toHSLVector PASSED
-
-graphics.HSLColorTest > getHSLColor PASSED
-
-io.xml.XMLParserTest > transformValue PASSED
-
-io.xml.XMLParserTest > parse PASSED
-
-io.xml.XMLTokenizerTest > detectCharset PASSED
-
-physics.collision.ColliderTest > isOnLayer PASSED
-
-physics.collision.ColliderTest > canCollideWith PASSED
-
-physics.collision.ColliderTest > layers PASSED
-
-physics.collision.ColliderTest > getCollisionShape PASSED
-
-physics.collision.ColliderTest > mask PASSED
-
-physics.collision.ColliderTest > hasMask PASSED
-
-physics.collision.ColliderTest > setLayer PASSED
-
-physics.collision.ColliderTest > setMask PASSED
-
-physics.collision.shape.CircleTest > supportPoint PASSED
-
-physics.collision.shape.CircleTest > intersection PASSED
-
-physics.collision.shape.CircleTest > rayCast PASSED
-
-physics.collision.shape.LineTest > supportPoint PASSED
-
-physics.collision.shape.LineTest > generalizedTest PASSED
-
-physics.collision.shape.PointTest > supportPoint PASSED
-
-physics.collision.shape.PointTest > generalizedTest PASSED
-
-physics.collision.shape.PrimitiveShapeTest > vertices PASSED
-
-physics.collision.shape.PrimitiveShapeTest > supportPoint PASSED
-
-physics.collision.shape.PrimitiveShapeTest > setPosition PASSED
-
-physics.collision.shape.PrimitiveShapeTest > rotationError2 PASSED
-
-physics.collision.shape.PrimitiveShapeTest > centroid PASSED
-
-physics.collision.shape.PrimitiveShapeTest > rotation PASSED
-
-physics.collision.shape.PrimitiveShapeTest > type PASSED
-
-physics.collision.shape.PrimitiveShapeTest > faces PASSED
-
-physics.collision.shape.PrimitiveShapeTest > rotationError PASSED
-
-physics.collision.shape.PrimitiveShapeTest > boundingSphere PASSED
-
-physics.collision.shape.PrimitiveShapeTest > position PASSED
-
-util.OrderPreservingListTest > testList PASSED
-
-util.PairTest > extend PASSED
-
-util.PairTest > getterSetter PASSED
-
-util.UtilsTest > rayCastToLineIntersectionPoint PASSED
-
-util.UtilsTest > rayCastIntersectionPoint PASSED
-
-util.UtilsTest > gjksmCollision PASSED
-
-util.UtilsTest > encode PASSED
-
-util.UtilsTest > centroidAndSphere PASSED
-
-util.UtilsTest > inRect PASSED
-
-util.UtilsTest > maxDotPoint PASSED
-
-util.UtilsTest > radian PASSED
-
-util.UtilsTest > random PASSED
-
-util.UtilsTest > inCircle PASSED
-
-util.UtilsTest > shiftOverwrite PASSED
-
-util.UtilsTest > maxDotPointMinkDiff PASSED
-
-util.UtilsTest > rayCastIntersection PASSED
-
-util.UtilsTest > constrain PASSED
-
-util.UtilsTest > rotateAroundPoint PASSED
-
-util.UtilsTest > rectInRect PASSED
-
-util.UtilsTest > map PASSED
-
-util.UtilsTest > copy PASSED
-
-util.UtilsTest > dist PASSED
-
-util.UtilsTest > lerp PASSED
-
-util.UtilsTest > rotateAroundOrigin PASSED
-
-util.UtilsTest > round PASSED
-
-util.UtilsTest > expandingPolytopeAlgorithm PASSED
-
-util.UtilsTest > solveSimultaneousEquations PASSED
-
-util.safety.PreconditionsTest > isNull PASSED
-
-util.safety.PreconditionsTest > isNull2 PASSED
-
-util.safety.PreconditionsTest > nonNull PASSED
-
-> Task :check
-> Task :build
-
-> Task :generateApiDocs
-Doclet using locale: en
-Output path: /home/ubuntu/azuriteDocumentation/Azurite/build/generated-files
-Excluded packages: []
-Excluded classes: []
-
-BUILD SUCCESSFUL in 36s
-12 actionable tasks: 12 executed
-
----- Copy docfx YAML files to docfx project  ----
-
-
 ---- Build docfx project  ----
 
-[22-01-11 09:22:12.873]Info:Config file docfx.json found, start generating metadata...
-[22-01-11 09:22:13.202]Info:[MetadataCommand.ExtractMetadata]Using mono /usr/lib/mono/msbuild/15.0/bin/MSBuild.dll as inner compiler.
-[22-01-11 09:22:13.354]Info:[MetadataCommand.ExtractMetadata]No files are found with glob pattern src/**.csproj, excluding <none>, under directory "/home/ubuntu/azuriteDocumentation/Azurite-docfx/docfx_project"
-[22-01-11 09:22:13.585]Warning:[MetadataCommand.ExtractMetadata]No project detected for extracting metadata.
-[22-01-11 09:22:13.652]Info:[MetadataCommand]Completed Scope:MetadataCommand in 436.7013 milliseconds.
-[22-01-11 09:22:14.106]Info:[BuildCommand]6 plug-in(s) loaded.
-[22-01-11 09:22:14.158]Info:[BuildCommand]Post processor ExtractSearchIndex loaded.
-[22-01-11 09:22:14.174]Info:[BuildCommand]No files are found with glob pattern images/**,logo.svg,favicon.ico, excluding <none>, under directory "/home/ubuntu/azuriteDocumentation/Azurite-docfx/docfx_project"
-[22-01-11 09:22:14.189]Info:[BuildCommand]Markdown engine is markdig
-[22-01-11 09:22:14.694]Info:[BuildCommand.BuildCore.Build Document]Max parallelism is 2.
-[22-01-11 09:22:16.398]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.ManagedReferenceDocumentProcessor]Building 0 file(s) in ManagedReferenceDocumentProcessor(BuildManagedReferenceDocument=>ValidateManagedReferenceDocumentMetadata=>ApplyOverwriteDocumentForMref=>FillReferenceInformation)...
-[22-01-11 09:22:16.452]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.TocDocumentProcessor]Building 3 file(s) in TocDocumentProcessor(BuildTocDocument)...
-[22-01-11 09:22:16.452]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.ConceptualDocumentProcessor]Building 0 file(s) in ConceptualDocumentProcessor(BuildConceptualDocument=>CountWord=>ValidateConceptualDocumentMetadata)...
-[22-01-11 09:22:17.383]Info:[BuildCommand.BuildCore.Build Document.LinkPhaseHandlerWithIncremental.Apply Templates]Applying templates to 3 model(s)...
-[22-01-11 09:22:19.074]Info:[BuildCommand.BuildCore.Build Document]XRef map exported.
-[22-01-11 09:22:21.598]Info:[BuildCommand.Postprocess.HandlePostProcessorsWithIncremental.HandlePostProcessors.Processing ExtractSearchIndex]Extracting index data from 156 html files
-[22-01-11 09:22:23.163]Info:[BuildCommand.Postprocess]Manifest file saved to manifest.json.
-[22-01-11 09:22:23.359]Info:[BuildCommand]Completed building documents in 9201.0388 milliseconds.
-[22-01-11 09:22:23.359]Info:[BuildCommand]Completed Scope:BuildCommand in 9706.7924 milliseconds.
-[22-01-11 09:22:23.360]Info:Completed in 10265.3325 milliseconds
+[22-01-11 09:28:56.360]Info:Config file docfx.json found, start generating metadata...
+[22-01-11 09:28:56.668]Info:[MetadataCommand.ExtractMetadata]Using mono /usr/lib/mono/msbuild/15.0/bin/MSBuild.dll as inner compiler.
+[22-01-11 09:28:56.773]Info:[MetadataCommand.ExtractMetadata]No files are found with glob pattern src/**.csproj, excluding <none>, under directory "/home/ubuntu/azuriteDocumentation/Azurite-docfx/docfx_project"
+[22-01-11 09:28:56.977]Warning:[MetadataCommand.ExtractMetadata]No project detected for extracting metadata.
+[22-01-11 09:28:56.982]Info:[MetadataCommand]Completed Scope:MetadataCommand in 400.0085 milliseconds.
+[22-01-11 09:28:57.462]Info:[BuildCommand]6 plug-in(s) loaded.
+[22-01-11 09:28:57.468]Info:[BuildCommand]Post processor ExtractSearchIndex loaded.
+[22-01-11 09:28:57.484]Info:[BuildCommand]No files are found with glob pattern images/**,logo.svg,favicon.ico, excluding <none>, under directory "/home/ubuntu/azuriteDocumentation/Azurite-docfx/docfx_project"
+[22-01-11 09:28:57.552]Info:[BuildCommand]Markdown engine is markdig
+[22-01-11 09:28:57.992]Info:[BuildCommand.BuildCore.Build Document]Max parallelism is 2.
+[22-01-11 09:28:59.766]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.ManagedReferenceDocumentProcessor]Building 0 file(s) in ManagedReferenceDocumentProcessor(BuildManagedReferenceDocument=>ValidateManagedReferenceDocumentMetadata=>ApplyOverwriteDocumentForMref=>FillReferenceInformation)...
+[22-01-11 09:28:59.767]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.TocDocumentProcessor]Building 3 file(s) in TocDocumentProcessor(BuildTocDocument)...
+[22-01-11 09:28:59.768]Info:[BuildCommand.BuildCore.Build Document.CompilePhaseHandlerWithIncremental.ConceptualDocumentProcessor]Building 0 file(s) in ConceptualDocumentProcessor(BuildConceptualDocument=>CountWord=>ValidateConceptualDocumentMetadata)...
+[22-01-11 09:29:00.776]Info:[BuildCommand.BuildCore.Build Document.LinkPhaseHandlerWithIncremental.Apply Templates]Applying templates to 3 model(s)...
+[22-01-11 09:29:02.398]Info:[BuildCommand.BuildCore.Build Document]XRef map exported.
+[22-01-11 09:29:04.852]Info:[BuildCommand.Postprocess.HandlePostProcessorsWithIncremental.HandlePostProcessors.Processing ExtractSearchIndex]Extracting index data from 156 html files
+[22-01-11 09:29:06.365]Info:[BuildCommand.Postprocess]Manifest file saved to manifest.json.
+[22-01-11 09:29:06.560]Info:[BuildCommand]Completed building documents in 9091.9288 milliseconds.
+[22-01-11 09:29:06.560]Info:[BuildCommand]Completed Scope:BuildCommand in 9578.7287 milliseconds.
+[22-01-11 09:29:06.561]Info:Completed in 9982.673 milliseconds
 
 
 Build succeeded with warning.
-[22-01-11 09:22:23.363]Warning:[MetadataCommand.ExtractMetadata]No project detected for extracting metadata.
+[22-01-11 09:29:06.564]Warning:[MetadataCommand.ExtractMetadata]No project detected for extracting metadata.
 	1 Warning(s)
 	0 Error(s)
 
