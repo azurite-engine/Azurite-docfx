@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: "scene"
+  id: "scene"
+  children:
+  - "scene.Scene"
+  - "scene.SceneManager"
+  langs:
+  - "java"
+  name: "scene"
+  nameWithType: "scene"
+  fullName: "scene"
+  type: "Namespace"
+  syntax:
+    content: "package scene"
+references:
+- uid: "scene.Scene"
+  name: "Scene"
+  nameWithType: "Scene"
+  fullName: "scene.Scene"
+- uid: "scene.SceneManager"
+  name: "SceneManager"
+  nameWithType: "SceneManager"
+  fullName: "scene.SceneManager"

@@ -1,0 +1,19 @@
+### YamlMime:ManagedReference
+items:
+- uid: "util.safety"
+  id: "safety"
+  children:
+  - "util.safety.Preconditions"
+  langs:
+  - "java"
+  name: "util.safety"
+  nameWithType: "util.safety"
+  fullName: "util.safety"
+  type: "Namespace"
+  syntax:
+    content: "package util.safety"
+references:
+- uid: "util.safety.Preconditions"
+  name: "Preconditions"
+  nameWithType: "Preconditions"
+  fullName: "util.safety.Preconditions"

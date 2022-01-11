@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: "event.EventListener"
+  id: "EventListener"
+  parent: "event"
+  children:
+  - "event.EventListener.onEvent(T)"
+  langs:
+  - "java"
+  name: "EventListener<T>"
+  nameWithType: "EventListener<T>"
+  fullName: "event.EventListener<T>"
+  type: "Interface"
+  package: "event"
+  summary: "A Simple listener interface"
+  syntax:
+    content: "public interface EventListener<T>"
+    typeParameters:
+    - id: "T"
+- uid: "event.EventListener.onEvent(T)"
+  id: "onEvent(T)"
+  parent: "event.EventListener"
+  langs:
+  - "java"
+  name: "onEvent(T t)"
+  nameWithType: "EventListener<T>.onEvent(T t)"
+  fullName: "event.EventListener<T>.onEvent(T t)"
+  overload: "event.EventListener.onEvent*"
+  type: "Method"
+  package: "event"
+  summary: "Called when the respective event occurs"
+  syntax:
+    content: "public abstract void onEvent(T t)"
+    parameters:
+    - id: "t"
+      type: "T"
+      description: "Data for that event"
+references:
+- uid: "T"
+  spec.java:
+  - uid: "T"
+    name: "T"
+    fullName: "T"
+- uid: "event.EventListener.onEvent*"
+  name: "onEvent"
+  nameWithType: "EventListener<T>.onEvent"
+  fullName: "event.EventListener<T>.onEvent"
+  package: "event"

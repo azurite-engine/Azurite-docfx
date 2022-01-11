@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: "io.xml"
+  id: "xml"
+  children:
+  - "io.xml.XMLElement"
+  - "io.xml.XMLParser"
+  - "io.xml.XMLSyntaxException"
+  - "io.xml.XMLTokenizer"
+  langs:
+  - "java"
+  name: "io.xml"
+  nameWithType: "io.xml"
+  fullName: "io.xml"
+  type: "Namespace"
+  syntax:
+    content: "package io.xml"
+references:
+- uid: "io.xml.XMLElement"
+  name: "XMLElement"
+  nameWithType: "XMLElement"
+  fullName: "io.xml.XMLElement"
+- uid: "io.xml.XMLParser"
+  name: "XMLParser"
+  nameWithType: "XMLParser"
+  fullName: "io.xml.XMLParser"
+- uid: "io.xml.XMLSyntaxException"
+  name: "XMLSyntaxException"
+  nameWithType: "XMLSyntaxException"
+  fullName: "io.xml.XMLSyntaxException"
+- uid: "io.xml.XMLTokenizer"
+  name: "XMLTokenizer"
+  nameWithType: "XMLTokenizer"
+  fullName: "io.xml.XMLTokenizer"

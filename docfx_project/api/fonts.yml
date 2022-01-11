@@ -1,0 +1,29 @@
+### YamlMime:ManagedReference
+items:
+- uid: "fonts"
+  id: "fonts"
+  children:
+  - "fonts.Font"
+  - "fonts.Glyph"
+  - "fonts.GlyphRenderer"
+  langs:
+  - "java"
+  name: "fonts"
+  nameWithType: "fonts"
+  fullName: "fonts"
+  type: "Namespace"
+  syntax:
+    content: "package fonts"
+references:
+- uid: "fonts.Font"
+  name: "Font"
+  nameWithType: "Font"
+  fullName: "fonts.Font"
+- uid: "fonts.Glyph"
+  name: "Glyph"
+  nameWithType: "Glyph"
+  fullName: "fonts.Glyph"
+- uid: "fonts.GlyphRenderer"
+  name: "GlyphRenderer"
+  nameWithType: "GlyphRenderer"
+  fullName: "fonts.GlyphRenderer"

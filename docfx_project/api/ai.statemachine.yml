@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: "ai.statemachine"
+  id: "statemachine"
+  children:
+  - "ai.statemachine.State"
+  - "ai.statemachine.StateMachine"
+  langs:
+  - "java"
+  name: "ai.statemachine"
+  nameWithType: "ai.statemachine"
+  fullName: "ai.statemachine"
+  type: "Namespace"
+  syntax:
+    content: "package ai.statemachine"
+references:
+- uid: "ai.statemachine.State"
+  name: "State"
+  nameWithType: "State"
+  fullName: "ai.statemachine.State"
+- uid: "ai.statemachine.StateMachine"
+  name: "StateMachine"
+  nameWithType: "StateMachine"
+  fullName: "ai.statemachine.StateMachine"

@@ -1,0 +1,29 @@
+### YamlMime:ManagedReference
+items:
+- uid: "scenes"
+  id: "scenes"
+  children:
+  - "scenes.DemoPlatformer"
+  - "scenes.DemoTopDown"
+  - "scenes.TextRenderingDemo"
+  langs:
+  - "java"
+  name: "scenes"
+  nameWithType: "scenes"
+  fullName: "scenes"
+  type: "Namespace"
+  syntax:
+    content: "package scenes"
+references:
+- uid: "scenes.DemoPlatformer"
+  name: "DemoPlatformer"
+  nameWithType: "DemoPlatformer"
+  fullName: "scenes.DemoPlatformer"
+- uid: "scenes.DemoTopDown"
+  name: "DemoTopDown"
+  nameWithType: "DemoTopDown"
+  fullName: "scenes.DemoTopDown"
+- uid: "scenes.TextRenderingDemo"
+  name: "TextRenderingDemo"
+  nameWithType: "TextRenderingDemo"
+  fullName: "scenes.TextRenderingDemo"

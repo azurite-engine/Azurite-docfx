@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: "physics.collision"
+  id: "collision"
+  children:
+  - "physics.collision.Collider"
+  - "physics.collision.CollisionInformation"
+  - "physics.collision.RayCastResult"
+  - "physics.collision.Shapes"
+  langs:
+  - "java"
+  name: "physics.collision"
+  nameWithType: "physics.collision"
+  fullName: "physics.collision"
+  type: "Namespace"
+  syntax:
+    content: "package physics.collision"
+references:
+- uid: "physics.collision.Collider"
+  name: "Collider"
+  nameWithType: "Collider"
+  fullName: "physics.collision.Collider"
+- uid: "physics.collision.CollisionInformation"
+  name: "CollisionInformation"
+  nameWithType: "CollisionInformation"
+  fullName: "physics.collision.CollisionInformation"
+- uid: "physics.collision.RayCastResult"
+  name: "RayCastResult"
+  nameWithType: "RayCastResult"
+  fullName: "physics.collision.RayCastResult"
+- uid: "physics.collision.Shapes"
+  name: "Shapes"
+  nameWithType: "Shapes"
+  fullName: "physics.collision.Shapes"

@@ -1,0 +1,29 @@
+### YamlMime:ManagedReference
+items:
+- uid: "util.debug"
+  id: "debug"
+  children:
+  - "util.debug.DebugLine"
+  - "util.debug.DebugPrimitive"
+  - "util.debug.DebugRect"
+  langs:
+  - "java"
+  name: "util.debug"
+  nameWithType: "util.debug"
+  fullName: "util.debug"
+  type: "Namespace"
+  syntax:
+    content: "package util.debug"
+references:
+- uid: "util.debug.DebugLine"
+  name: "DebugLine"
+  nameWithType: "DebugLine"
+  fullName: "util.debug.DebugLine"
+- uid: "util.debug.DebugPrimitive"
+  name: "DebugPrimitive"
+  nameWithType: "DebugPrimitive"
+  fullName: "util.debug.DebugPrimitive"
+- uid: "util.debug.DebugRect"
+  name: "DebugRect"
+  nameWithType: "DebugRect"
+  fullName: "util.debug.DebugRect"

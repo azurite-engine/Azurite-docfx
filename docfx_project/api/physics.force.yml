@@ -1,0 +1,29 @@
+### YamlMime:ManagedReference
+items:
+- uid: "physics.force"
+  id: "force"
+  children:
+  - "physics.force.ConstantForce"
+  - "physics.force.Force"
+  - "physics.force.IncrementalForce"
+  langs:
+  - "java"
+  name: "physics.force"
+  nameWithType: "physics.force"
+  fullName: "physics.force"
+  type: "Namespace"
+  syntax:
+    content: "package physics.force"
+references:
+- uid: "physics.force.ConstantForce"
+  name: "ConstantForce"
+  nameWithType: "ConstantForce"
+  fullName: "physics.force.ConstantForce"
+- uid: "physics.force.Force"
+  name: "Force"
+  nameWithType: "Force"
+  fullName: "physics.force.Force"
+- uid: "physics.force.IncrementalForce"
+  name: "IncrementalForce"
+  nameWithType: "IncrementalForce"
+  fullName: "physics.force.IncrementalForce"

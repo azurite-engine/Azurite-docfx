@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: "io.token"
+  id: "token"
+  children:
+  - "io.token.RepetitiveTokenReader"
+  - "io.token.Token"
+  - "io.token.TokenReader"
+  - "io.token.TokenStream"
+  langs:
+  - "java"
+  name: "io.token"
+  nameWithType: "io.token"
+  fullName: "io.token"
+  type: "Namespace"
+  syntax:
+    content: "package io.token"
+references:
+- uid: "io.token.RepetitiveTokenReader"
+  name: "RepetitiveTokenReader"
+  nameWithType: "RepetitiveTokenReader"
+  fullName: "io.token.RepetitiveTokenReader"
+- uid: "io.token.Token"
+  name: "Token"
+  nameWithType: "Token"
+  fullName: "io.token.Token"
+- uid: "io.token.TokenReader"
+  name: "TokenReader"
+  nameWithType: "TokenReader"
+  fullName: "io.token.TokenReader"
+- uid: "io.token.TokenStream"
+  name: "TokenStream"
+  nameWithType: "TokenStream"
+  fullName: "io.token.TokenStream"

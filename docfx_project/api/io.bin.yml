@@ -1,0 +1,19 @@
+### YamlMime:ManagedReference
+items:
+- uid: "io.bin"
+  id: "bin"
+  children:
+  - "io.bin.BinaryIO"
+  langs:
+  - "java"
+  name: "io.bin"
+  nameWithType: "io.bin"
+  fullName: "io.bin"
+  type: "Namespace"
+  syntax:
+    content: "package io.bin"
+references:
+- uid: "io.bin.BinaryIO"
+  name: "BinaryIO"
+  nameWithType: "BinaryIO"
+  fullName: "io.bin.BinaryIO"

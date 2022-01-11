@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: "io.json"
+  id: "json"
+  children:
+  - "io.json.JSONConstructor"
+  - "io.json.JSONObject"
+  langs:
+  - "java"
+  name: "io.json"
+  nameWithType: "io.json"
+  fullName: "io.json"
+  type: "Namespace"
+  syntax:
+    content: "package io.json"
+references:
+- uid: "io.json.JSONConstructor"
+  name: "JSONConstructor"
+  nameWithType: "JSONConstructor"
+  fullName: "io.json.JSONConstructor"
+- uid: "io.json.JSONObject"
+  name: "JSONObject"
+  nameWithType: "JSONObject"
+  fullName: "io.json.JSONObject"

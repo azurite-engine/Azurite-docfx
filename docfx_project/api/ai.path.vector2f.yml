@@ -1,0 +1,29 @@
+### YamlMime:ManagedReference
+items:
+- uid: "ai.path.vector2f"
+  id: "vector2f"
+  children:
+  - "ai.path.vector2f.Vector2fMap"
+  - "ai.path.vector2f.Vector2fNode"
+  - "ai.path.vector2f.Vector2fPath"
+  langs:
+  - "java"
+  name: "ai.path.vector2f"
+  nameWithType: "ai.path.vector2f"
+  fullName: "ai.path.vector2f"
+  type: "Namespace"
+  syntax:
+    content: "package ai.path.vector2f"
+references:
+- uid: "ai.path.vector2f.Vector2fMap"
+  name: "Vector2fMap"
+  nameWithType: "Vector2fMap"
+  fullName: "ai.path.vector2f.Vector2fMap"
+- uid: "ai.path.vector2f.Vector2fNode"
+  name: "Vector2fNode"
+  nameWithType: "Vector2fNode"
+  fullName: "ai.path.vector2f.Vector2fNode"
+- uid: "ai.path.vector2f.Vector2fPath"
+  name: "Vector2fPath"
+  nameWithType: "Vector2fPath"
+  fullName: "ai.path.vector2f.Vector2fPath"

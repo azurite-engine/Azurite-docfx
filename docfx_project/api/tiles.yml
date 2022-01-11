@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: "tiles"
+  id: "tiles"
+  children:
+  - "tiles.Spritesheet"
+  - "tiles.TMXParser"
+  - "tiles.Tilesystem"
+  - "tiles.TilesystemSideScroll"
+  langs:
+  - "java"
+  name: "tiles"
+  nameWithType: "tiles"
+  fullName: "tiles"
+  type: "Namespace"
+  syntax:
+    content: "package tiles"
+references:
+- uid: "tiles.Spritesheet"
+  name: "Spritesheet"
+  nameWithType: "Spritesheet"
+  fullName: "tiles.Spritesheet"
+- uid: "tiles.TMXParser"
+  name: "TMXParser"
+  nameWithType: "TMXParser"
+  fullName: "tiles.TMXParser"
+- uid: "tiles.Tilesystem"
+  name: "Tilesystem"
+  nameWithType: "Tilesystem"
+  fullName: "tiles.Tilesystem"
+- uid: "tiles.TilesystemSideScroll"
+  name: "TilesystemSideScroll"
+  nameWithType: "TilesystemSideScroll"
+  fullName: "tiles.TilesystemSideScroll"

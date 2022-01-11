@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: "io.FileFormat"
+  id: "FileFormat"
+  parent: "io"
+  children:
+  - "io.FileFormat.parse(byte[])"
+  - "io.FileFormat.parse(byte[],java.nio.charset.Charset)"
+  - "io.FileFormat.parse(java.lang.String)"
+  langs:
+  - "java"
+  name: "FileFormat<T>"
+  nameWithType: "FileFormat<T>"
+  fullName: "io.FileFormat<T>"
+  type: "Interface"
+  package: "io"
+  summary: "Can contain all tools for parsing a specific file format from text or byte input to an object."
+  syntax:
+    content: "public interface FileFormat<T>"
+    typeParameters:
+    - id: "T"
+- uid: "io.FileFormat.parse(byte[])"
+  id: "parse(byte[])"
+  parent: "io.FileFormat"
+  langs:
+  - "java"
+  name: "parse(byte[] input)"
+  nameWithType: "FileFormat<T>.parse(byte[] input)"
+  fullName: "io.FileFormat<T>.parse(byte[] input)"
+  overload: "io.FileFormat.parse*"
+  type: "Method"
+  package: "io"
+  summary: "Parse all data in the given input bytes by using an encoding that is either defined within the bytes or might be a default one according to the file format."
+  syntax:
+    content: "public abstract T parse(byte[] input)"
+    parameters:
+    - id: "input"
+      type: "byte[]"
+      description: "the input bytes"
+    return:
+      type: "T"
+      description: "the parsed object data"
+- uid: "io.FileFormat.parse(byte[],java.nio.charset.Charset)"
+  id: "parse(byte[],java.nio.charset.Charset)"
+  parent: "io.FileFormat"
+  langs:
+  - "java"
+  name: "parse(byte[] input, Charset charset)"
+  nameWithType: "FileFormat<T>.parse(byte[] input, Charset charset)"
+  fullName: "io.FileFormat<T>.parse(byte[] input, Charset charset)"
+  overload: "io.FileFormat.parse*"
+  type: "Method"
+  package: "io"
+  summary: "Parse all data in the given input bytes by using the defined encoding."
+  syntax:
+    content: "public abstract T parse(byte[] input, Charset charset)"
+    parameters:
+    - id: "input"
+      type: "byte[]"
+      description: "the input bytes"
+    - id: "charset"
+      type: "java.nio.charset.Charset"
+      description: "the charset to read the bytes"
+    return:
+      type: "T"
+      description: "the parsed object data"
+- uid: "io.FileFormat.parse(java.lang.String)"
+  id: "parse(java.lang.String)"
+  parent: "io.FileFormat"
+  langs:
+  - "java"
+  name: "parse(String input)"
+  nameWithType: "FileFormat<T>.parse(String input)"
+  fullName: "io.FileFormat<T>.parse(String input)"
+  overload: "io.FileFormat.parse*"
+  type: "Method"
+  package: "io"
+  summary: "Parse all data in the given string. Usually an <xref uid=\"\" data-throw-if-not-resolved=\"false\">java.nio.charset.StandardCharsets#UTF_8</xref> encoding is expected."
+  syntax:
+    content: "public abstract T parse(String input)"
+    parameters:
+    - id: "input"
+      type: "java.lang.String"
+      description: "the input string"
+    return:
+      type: "T"
+      description: "the parsed object data"
+references:
+- uid: "java.lang.String"
+  spec.java:
+  - uid: "java.lang.String"
+    name: "String"
+    fullName: "java.lang.String"
+- uid: "T"
+  spec.java:
+  - uid: "T"
+    name: "T"
+    fullName: "T"
+- uid: "io.FileFormat.parse*"
+  name: "parse"
+  nameWithType: "FileFormat<T>.parse"
+  fullName: "io.FileFormat<T>.parse"
+  package: "io"
+- uid: "byte[]"
+  spec.java:
+  - uid: "byte"
+    name: "byte"
+    fullName: "byte"
+  - name: "[]"
+    fullName: "[]"
+- uid: "java.nio.charset.Charset"
+  spec.java:
+  - uid: "java.nio.charset.Charset"
+    name: "Charset"
+    fullName: "java.nio.charset.Charset"

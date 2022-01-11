@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: "io"
+  id: "io"
+  children:
+  - "io.FileFormat"
+  - "io.FileFormats"
+  - "io.Parser"
+  - "io.Tokenizer"
+  langs:
+  - "java"
+  name: "io"
+  nameWithType: "io"
+  fullName: "io"
+  type: "Namespace"
+  syntax:
+    content: "package io"
+references:
+- uid: "io.FileFormat"
+  name: "FileFormat<T>"
+  nameWithType: "FileFormat<T>"
+  fullName: "io.FileFormat<T>"
+- uid: "io.FileFormats"
+  name: "FileFormats"
+  nameWithType: "FileFormats"
+  fullName: "io.FileFormats"
+- uid: "io.Parser"
+  name: "Parser<T>"
+  nameWithType: "Parser<T>"
+  fullName: "io.Parser<T>"
+- uid: "io.Tokenizer"
+  name: "Tokenizer"
+  nameWithType: "Tokenizer"
+  fullName: "io.Tokenizer"
