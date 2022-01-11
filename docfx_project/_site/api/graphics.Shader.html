@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Shader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Shader
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="graphics.Shader">
+  
+  
+  <h1 id="graphics_Shader" data-uid="graphics.Shader" class="text-break">Class Shader
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><span class="xref">Shader</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="graphics_Shader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Shader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="graphics_Shader_Shader_" data-uid="graphics.Shader.Shader*"></a>
+  <h4 id="graphics_Shader_Shader_java_lang_String_" data-uid="graphics.Shader.Shader(java.lang.String)">Shader(String filePath)</h4>
+  <div class="markdown level1 summary"><p>Loads the shader file at filepath. The shader file should have both shaders. Vertex Shader and fragment shader. #type should be used to separate them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Shader(String filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="graphics_Shader_fragmentID" data-uid="graphics.Shader.fragmentID">fragmentID</h4>
+  <div class="markdown level1 summary"><p>Fragment Shader ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int fragmentID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_Shader_vertexID" data-uid="graphics.Shader.vertexID">vertexID</h4>
+  <div class="markdown level1 summary"><p>Vertex Shader ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int vertexID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="graphics_Shader_attach_" data-uid="graphics.Shader.attach*"></a>
+  <h4 id="graphics_Shader_attach__" data-uid="graphics.Shader.attach()">attach()</h4>
+  <div class="markdown level1 summary"><p>Bind the shader program</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void attach()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_Shader_compile_" data-uid="graphics.Shader.compile*"></a>
+  <h4 id="graphics_Shader_compile__" data-uid="graphics.Shader.compile()">compile()</h4>
+  <div class="markdown level1 summary"><p>Creates vertex and fragment shader objects and compiles them. Also links them with the shader program</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void compile()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_Shader_detach_" data-uid="graphics.Shader.detach*"></a>
+  <h4 id="graphics_Shader_detach__" data-uid="graphics.Shader.detach()">detach()</h4>
+  <div class="markdown level1 summary"><p>Unbind the shader program</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void detach()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_Shader_uploadFloat_" data-uid="graphics.Shader.uploadFloat*"></a>
+  <h4 id="graphics_Shader_uploadFloat_java_lang_String_float_" data-uid="graphics.Shader.uploadFloat(java.lang.String,float)">uploadFloat(String varName, float val)</h4>
+  <div class="markdown level1 summary"><p>Upload a float to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadFloat(String varName, float val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>the float value to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadFloatArray_" data-uid="graphics.Shader.uploadFloatArray*"></a>
+  <h4 id="graphics_Shader_uploadFloatArray_java_lang_String_float___" data-uid="graphics.Shader.uploadFloatArray(java.lang.String,float[])">uploadFloatArray(String varName, float[] array)</h4>
+  <div class="markdown level1 summary"><p>Upload a float array to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadFloatArray(String varName, float[] array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>the array to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadInt_" data-uid="graphics.Shader.uploadInt*"></a>
+  <h4 id="graphics_Shader_uploadInt_java_lang_String_int_" data-uid="graphics.Shader.uploadInt(java.lang.String,int)">uploadInt(String varName, int val)</h4>
+  <div class="markdown level1 summary"><p>Upload an int to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadInt(String varName, int val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>the int value to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadIntArray_" data-uid="graphics.Shader.uploadIntArray*"></a>
+  <h4 id="graphics_Shader_uploadIntArray_java_lang_String_int___" data-uid="graphics.Shader.uploadIntArray(java.lang.String,int[])">uploadIntArray(String varName, int[] array)</h4>
+  <div class="markdown level1 summary"><p>Upload a int array to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadIntArray(String varName, int[] array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>the array to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadMat3f_" data-uid="graphics.Shader.uploadMat3f*"></a>
+  <h4 id="graphics_Shader_uploadMat3f_java_lang_String_org_joml_Matrix3f_" data-uid="graphics.Shader.uploadMat3f(java.lang.String,org.joml.Matrix3f)">uploadMat3f(String varName, Matrix3f mat3)</h4>
+  <div class="markdown level1 summary"><p>Upload a 3x3 Matrix to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadMat3f(String varName, Matrix3f mat3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">org.joml.Matrix3f</span></td>
+        <td><span class="parametername">mat3</span></td>
+        <td><p>the matrix to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadMat4f_" data-uid="graphics.Shader.uploadMat4f*"></a>
+  <h4 id="graphics_Shader_uploadMat4f_java_lang_String_org_joml_Matrix4f_" data-uid="graphics.Shader.uploadMat4f(java.lang.String,org.joml.Matrix4f)">uploadMat4f(String varName, Matrix4f mat4)</h4>
+  <div class="markdown level1 summary"><p>Upload a 4x4 Matrix to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadMat4f(String varName, Matrix4f mat4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">org.joml.Matrix4f</span></td>
+        <td><span class="parametername">mat4</span></td>
+        <td><p>the matrix to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadTexture_" data-uid="graphics.Shader.uploadTexture*"></a>
+  <h4 id="graphics_Shader_uploadTexture_java_lang_String_int_" data-uid="graphics.Shader.uploadTexture(java.lang.String,int)">uploadTexture(String varName, int slot)</h4>
+  <div class="markdown level1 summary"><p>Upload a integer texture sampler to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadTexture(String varName, int slot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">slot</span></td>
+        <td><p>the texture slot to which the texture is bound</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadVec2f_" data-uid="graphics.Shader.uploadVec2f*"></a>
+  <h4 id="graphics_Shader_uploadVec2f_java_lang_String_org_joml_Vector2f_" data-uid="graphics.Shader.uploadVec2f(java.lang.String,org.joml.Vector2f)">uploadVec2f(String varName, Vector2f vec)</h4>
+  <div class="markdown level1 summary"><p>Upload a 2-d Vector to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadVec2f(String varName, Vector2f vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">org.joml.Vector2f</span></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>the vector to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadVec2fArray_" data-uid="graphics.Shader.uploadVec2fArray*"></a>
+  <h4 id="graphics_Shader_uploadVec2fArray_java_lang_String_org_joml_Vector2f___" data-uid="graphics.Shader.uploadVec2fArray(java.lang.String,org.joml.Vector2f[])">uploadVec2fArray(String varName, Vector2f[] vec)</h4>
+  <div class="markdown level1 summary"><p>Upload a 2-d Vector array to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadVec2fArray(String varName, Vector2f[] vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">org.joml.Vector2f</span>[]</td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>the array to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadVec3fArray_" data-uid="graphics.Shader.uploadVec3fArray*"></a>
+  <h4 id="graphics_Shader_uploadVec3fArray_java_lang_String_org_joml_Vector3f___" data-uid="graphics.Shader.uploadVec3fArray(java.lang.String,org.joml.Vector3f[])">uploadVec3fArray(String varName, Vector3f[] vec)</h4>
+  <div class="markdown level1 summary"><p>Upload a 3-d Vector array to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadVec3fArray(String varName, Vector3f[] vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">org.joml.Vector3f</span>[]</td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>the array to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Shader_uploadVec4f_" data-uid="graphics.Shader.uploadVec4f*"></a>
+  <h4 id="graphics_Shader_uploadVec4f_java_lang_String_org_joml_Vector4f_" data-uid="graphics.Shader.uploadVec4f(java.lang.String,org.joml.Vector4f)">uploadVec4f(String varName, Vector4f vec)</h4>
+  <div class="markdown level1 summary"><p>Upload a 4-d Vector to the gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void uploadVec4f(String varName, Vector4f vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">varName</span></td>
+        <td><p>name of the uniform</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>the vector to be uploaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

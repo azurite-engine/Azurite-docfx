@@ -1,0 +1,1084 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RenderBatch
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RenderBatch
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="graphics.renderer.RenderBatch">
+  
+  
+  <h1 id="graphics_renderer_RenderBatch" data-uid="graphics.renderer.RenderBatch" class="text-break">Class RenderBatch
+  </h1>
+  <div class="markdown level0 summary"><h1 id="azurite">Azurite</h1>
+<p>A render batch is a collection of elements that are &quot;batched&quot; together into a single object. This objects conglomerates the vertex data associated with a specified primitive and prepares it to be rendered by it's associated renderer. The pipeline of a <code>RenderBatch</code> object is as follows:</p>
+<ol>
+<li>The <code>RenderBatch</code> class is extended by another class intended to be a batch of a certain primitive; for this example let's say it's a quadrilateral.</li>
+<li>The <code>Renderer</code> class is extended by a class intended to render the aforementioned quadrilateral render batch, where the type parameter is specified as our <code>RenderBatch</code>.</li>
+<li>Now that all classes are set up, a quadrilateral render batch is created, and several quadrilateral vertices are loaded into its <code>data</code> field via an overloaded <code>loadVertexProperties</code> function (which specifies if the quads will have color, what texture they would use, etc.) This is also when element indices are created, which specify in what order the GPU should process/render vertices.</li>
+<li>This data is then submitted to the GPU, any associated metadata about the vertices and the quads are rendered.</li>
+</ol>
+<p>Of course, one doesn't necessarily have to use quads for rendering; one could get as inventive as they'd like. The <code>graphics.renderer</code> API pre-specifies some useful renderers (hopefully so that most developers don't have to make their own renderers.)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><span class="xref">RenderBatch</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">java.lang.Comparable&lt;graphics.renderer.RenderBatch&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="graphics_renderer_RenderBatch_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RenderBatch implements Comparable&lt;RenderBatch&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="graphics_renderer_RenderBatch_RenderBatch_" data-uid="graphics.renderer.RenderBatch.RenderBatch*"></a>
+  <h4 id="graphics_renderer_RenderBatch_RenderBatch_int_int_graphics_Primitive_graphics_ShaderDatatype____" data-uid="graphics.renderer.RenderBatch.RenderBatch(int,int,graphics.Primitive,graphics.ShaderDatatype...)">RenderBatch(int maxBatchSize, int zIndex, Primitive primitive, ShaderDatatype[] attributes)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderBatch(int maxBatchSize, int zIndex, Primitive primitive, ShaderDatatype[] attributes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">maxBatchSize</span></td>
+        <td><p>the maximum number of primitives in a batch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">zIndex</span></td>
+        <td><p>the zIndex of the batch. Used to sort the batches in order of which sprites appear above others.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="graphics.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">primitive</span></td>
+        <td><p>the primitive</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="graphics.ShaderDatatype.html">ShaderDatatype</a>[]</td>
+        <td><span class="parametername">attributes</span></td>
+        <td><p>attributes for the Vertex array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_data" data-uid="graphics.renderer.RenderBatch.data">data</h4>
+  <div class="markdown level1 summary"><p>The data which is uploaded to the GPU</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float[] data</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_dataOffset" data-uid="graphics.renderer.RenderBatch.dataOffset">dataOffset</h4>
+  <div class="markdown level1 summary"><p>The internal data offset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int dataOffset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_isFull" data-uid="graphics.renderer.RenderBatch.isFull">isFull</h4>
+  <div class="markdown level1 summary"><p>Is this batch full due to filled up geometry</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean isFull</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_isFull_Textures" data-uid="graphics.renderer.RenderBatch.isFull_Textures">isFull_Textures</h4>
+  <div class="markdown level1 summary"><p>Is this batch full due to having 8 textures occupied already</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean isFull_Textures</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_maxBatchSize" data-uid="graphics.renderer.RenderBatch.maxBatchSize">maxBatchSize</h4>
+  <div class="markdown level1 summary"><p>Max number of primitives a batch can hold</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected final int maxBatchSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_primitive" data-uid="graphics.renderer.RenderBatch.primitive">primitive</h4>
+  <div class="markdown level1 summary"><p>The primitive that this batch draws</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public final Primitive primitive</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Primitive.html">Primitive</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_primitiveVertices" data-uid="graphics.renderer.RenderBatch.primitiveVertices">primitiveVertices</h4>
+  <div class="markdown level1 summary"><p>Vertices of one primitive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float[] primitiveVertices</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_textures" data-uid="graphics.renderer.RenderBatch.textures">textures</h4>
+  <div class="markdown level1 summary"><p>The List of submitted textures</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Texture&gt; textures</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="graphics.Texture.html">Texture</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_vao" data-uid="graphics.renderer.RenderBatch.vao">vao</h4>
+  <div class="markdown level1 summary"><p>Vertex Array id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int vao</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_vbo" data-uid="graphics.renderer.RenderBatch.vbo">vbo</h4>
+  <div class="markdown level1 summary"><p>Vertex Buffer id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int vbo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_vertexCount" data-uid="graphics.renderer.RenderBatch.vertexCount">vertexCount</h4>
+  <div class="markdown level1 summary"><p>How many floats/ints in a single vertex</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int vertexCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_RenderBatch_vertexSize" data-uid="graphics.renderer.RenderBatch.vertexSize">vertexSize</h4>
+  <div class="markdown level1 summary"><p>How many bytes for a single vertex</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int vertexSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="graphics_renderer_RenderBatch_addTexture_" data-uid="graphics.renderer.RenderBatch.addTexture*"></a>
+  <h4 id="graphics_renderer_RenderBatch_addTexture_graphics_Texture_" data-uid="graphics.renderer.RenderBatch.addTexture(graphics.Texture)">addTexture(Texture texture)</h4>
+  <div class="markdown level1 summary"><p>Add a texture to this batch</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int addTexture(Texture texture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td><p>the texture to be rendered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>the index at which texture is placed.
+The texture will be bound to this texture slot. Hence, set the texture attribute to this value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_bind_" data-uid="graphics.renderer.RenderBatch.bind*"></a>
+  <h4 id="graphics_renderer_RenderBatch_bind__" data-uid="graphics.renderer.RenderBatch.bind()">bind()</h4>
+  <div class="markdown level1 summary"><p>Binds the vertex array and all the textures to the required slots</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void bind()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_RenderBatch_compareTo_" data-uid="graphics.renderer.RenderBatch.compareTo*"></a>
+  <h4 id="graphics_renderer_RenderBatch_compareTo_graphics_renderer_RenderBatch_" data-uid="graphics.renderer.RenderBatch.compareTo(graphics.renderer.RenderBatch)">compareTo(RenderBatch a)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int compareTo(RenderBatch a)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_delete_" data-uid="graphics.renderer.RenderBatch.delete*"></a>
+  <h4 id="graphics_renderer_RenderBatch_delete__" data-uid="graphics.renderer.RenderBatch.delete()">delete()</h4>
+  <div class="markdown level1 summary"><p>Delete the vertex array, vertex buffer and index buffer (element buffer)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void delete()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_RenderBatch_finish_" data-uid="graphics.renderer.RenderBatch.finish*"></a>
+  <h4 id="graphics_renderer_RenderBatch_finish__" data-uid="graphics.renderer.RenderBatch.finish()">finish()</h4>
+  <div class="markdown level1 summary"><p>Finish setting batch data. upload to gpu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void finish()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_RenderBatch_getVertexCount_" data-uid="graphics.renderer.RenderBatch.getVertexCount*"></a>
+  <h4 id="graphics_renderer_RenderBatch_getVertexCount__" data-uid="graphics.renderer.RenderBatch.getVertexCount()">getVertexCount()</h4>
+  <div class="markdown level1 summary"><p>Get the number of vertices to be drawn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getVertexCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>the number of vertices to be drawn</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_hasTexture_" data-uid="graphics.renderer.RenderBatch.hasTexture*"></a>
+  <h4 id="graphics_renderer_RenderBatch_hasTexture_graphics_Texture_" data-uid="graphics.renderer.RenderBatch.hasTexture(graphics.Texture)">hasTexture(Texture tex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean hasTexture(Texture tex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_init_" data-uid="graphics.renderer.RenderBatch.init*"></a>
+  <h4 id="graphics_renderer_RenderBatch_init__" data-uid="graphics.renderer.RenderBatch.init()">init()</h4>
+  <div class="markdown level1 summary"><p>Create the GPU resources. Generates a vao, a dynamic vbo, and a static buffer of indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void init()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushColor_" data-uid="graphics.renderer.RenderBatch.pushColor*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushColor_graphics_Color_" data-uid="graphics.renderer.RenderBatch.pushColor(graphics.Color)">pushColor(Color c)</h4>
+  <div class="markdown level1 summary"><p>Push four floats to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushColor(Color c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Color.html">Color</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>the color</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushFloat_" data-uid="graphics.renderer.RenderBatch.pushFloat*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushFloat_float_" data-uid="graphics.renderer.RenderBatch.pushFloat(float)">pushFloat(float f)</h4>
+  <div class="markdown level1 summary"><p>Push a float to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushFloat(float f)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">f</span></td>
+        <td><p>the value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushInt_" data-uid="graphics.renderer.RenderBatch.pushInt*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushInt_int_" data-uid="graphics.renderer.RenderBatch.pushInt(int)">pushInt(int i)</h4>
+  <div class="markdown level1 summary"><p>Push an int to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushInt(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">i</span></td>
+        <td><p>the value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushVec2_" data-uid="graphics.renderer.RenderBatch.pushVec2*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushVec2_float_float_" data-uid="graphics.renderer.RenderBatch.pushVec2(float,float)">pushVec2(float x, float y)</h4>
+  <div class="markdown level1 summary"><p>Push two floats to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushVec2(float x, float y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>x value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>y value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushVec2_" data-uid="graphics.renderer.RenderBatch.pushVec2*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushVec2_org_joml_Vector2f_" data-uid="graphics.renderer.RenderBatch.pushVec2(org.joml.Vector2f)">pushVec2(Vector2f v)</h4>
+  <div class="markdown level1 summary"><p>Push two floats to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushVec2(Vector2f v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector2f</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>the 2d vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushVec3_" data-uid="graphics.renderer.RenderBatch.pushVec3*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushVec3_float_float_float_" data-uid="graphics.renderer.RenderBatch.pushVec3(float,float,float)">pushVec3(float x, float y, float z)</h4>
+  <div class="markdown level1 summary"><p>Push three floats to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushVec3(float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>x value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>z value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushVec3_" data-uid="graphics.renderer.RenderBatch.pushVec3*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushVec3_org_joml_Vector3f_" data-uid="graphics.renderer.RenderBatch.pushVec3(org.joml.Vector3f)">pushVec3(Vector3f v)</h4>
+  <div class="markdown level1 summary"><p>Push three floats to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushVec3(Vector3f v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector3f</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>the 3d vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushVec4_" data-uid="graphics.renderer.RenderBatch.pushVec4*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushVec4_float_float_float_float_" data-uid="graphics.renderer.RenderBatch.pushVec4(float,float,float,float)">pushVec4(float x, float y, float z, float w)</h4>
+  <div class="markdown level1 summary"><p>Push four floats to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushVec4(float x, float y, float z, float w)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>x value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>z value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>w value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_pushVec4_" data-uid="graphics.renderer.RenderBatch.pushVec4*"></a>
+  <h4 id="graphics_renderer_RenderBatch_pushVec4_org_joml_Vector4f_" data-uid="graphics.renderer.RenderBatch.pushVec4(org.joml.Vector4f)">pushVec4(Vector4f v)</h4>
+  <div class="markdown level1 summary"><p>Push four floats to the data array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushVec4(Vector4f v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>the 4d vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_RenderBatch_start_" data-uid="graphics.renderer.RenderBatch.start*"></a>
+  <h4 id="graphics_renderer_RenderBatch_start__" data-uid="graphics.renderer.RenderBatch.start()">start()</h4>
+  <div class="markdown level1 summary"><p>Get batch ready for submission of data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void start()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_RenderBatch_unbind_" data-uid="graphics.renderer.RenderBatch.unbind*"></a>
+  <h4 id="graphics_renderer_RenderBatch_unbind__" data-uid="graphics.renderer.RenderBatch.unbind()">unbind()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void unbind()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_RenderBatch_zIndex_" data-uid="graphics.renderer.RenderBatch.zIndex*"></a>
+  <h4 id="graphics_renderer_RenderBatch_zIndex__" data-uid="graphics.renderer.RenderBatch.zIndex()">zIndex()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int zIndex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">java.lang.Comparable&lt;graphics.renderer.RenderBatch&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
