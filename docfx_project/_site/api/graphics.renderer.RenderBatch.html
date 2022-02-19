@@ -83,8 +83,7 @@
   
   <h1 id="graphics_renderer_RenderBatch" data-uid="graphics.renderer.RenderBatch" class="text-break">Class RenderBatch
   </h1>
-  <div class="markdown level0 summary"><h1 id="azurite">Azurite</h1>
-<p>A render batch is a collection of elements that are &quot;batched&quot; together into a single object. This objects conglomerates the vertex data associated with a specified primitive and prepares it to be rendered by it's associated renderer. The pipeline of a <code>RenderBatch</code> object is as follows:</p>
+  <div class="markdown level0 summary"><p>A render batch is a collection of elements that are &quot;batched&quot; together into a single object. This objects conglomerates the vertex data associated with a specified primitive and prepares it to be rendered by it's associated renderer. The pipeline of a <code>RenderBatch</code> object is as follows:</p>
 <ol>
 <li>The <code>RenderBatch</code> class is extended by another class intended to be a batch of a certain primitive; for this example let's say it's a quadrilateral.</li>
 <li>The <code>Renderer</code> class is extended by a class intended to render the aforementioned quadrilateral render batch, where the type parameter is specified as our <code>RenderBatch</code>.</li>

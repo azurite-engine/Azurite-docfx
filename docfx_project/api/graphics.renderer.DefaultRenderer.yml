@@ -20,7 +20,7 @@ items:
   fullName: "graphics.renderer.DefaultRenderer"
   type: "Class"
   package: "graphics.renderer"
-  summary: "# Azurite #\n\nUsed to render sprites, which are rendered as `Primitive.QUAD`s with textures. This should be used to render any renderable `gameObject`."
+  summary: "Used to render sprites, which are rendered as `Primitive.QUAD`s with textures. This should be used to render any renderable `gameObject`."
   syntax:
     content: "public class DefaultRenderer extends Renderer"
   inheritance:

@@ -54,7 +54,7 @@ items:
   fullName: "graphics.Color"
   type: "Class"
   package: "graphics"
-  summary: "# Azurite #\n\nRepresents a 4-channel color of either RGBA or HSLA type, with some helper functions to convert an RGBA to HSLA, or vice versa. This Class also contains some predefined colors, a random color generator, and some OpenGL-related helper functions."
+  summary: "Represents a 4-channel color of either RGBA or HSLA type, with some helper functions to convert an RGBA to HSLA, or vice versa. This Class also contains some predefined colors, a random color generator, and some OpenGL-related helper functions."
   syntax:
     content: "public class Color"
   inheritance:

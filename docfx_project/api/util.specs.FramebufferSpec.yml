@@ -13,7 +13,7 @@ items:
   fullName: "util.specs.FramebufferSpec"
   type: "Class"
   package: "util.specs"
-  summary: "# Azurite #\n\nSpecification for a framebuffer"
+  summary: "Specification for a framebuffer"
   syntax:
     content: "public class FramebufferSpec"
   inheritance:

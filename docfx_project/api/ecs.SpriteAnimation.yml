@@ -21,7 +21,6 @@ items:
   fullName: "ecs.SpriteAnimation"
   type: "Class"
   package: "ecs"
-  summary: "# Azurite #"
   syntax:
     content: "public class SpriteAnimation extends Component"
   inheritance:

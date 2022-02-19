@@ -19,7 +19,7 @@ items:
   fullName: "graphics.Primitive"
   type: "Enum"
   package: "graphics"
-  summary: "# Azurite #\n\nA primitive is a simple shape that contains all the information necessary to prepare an element buffer of that primitive's type. The primitives available are:\n\n *  Quadrilateral\n *  Line"
+  summary: "A primitive is a simple shape that contains all the information necessary to prepare an element buffer of that primitive's type. The primitives available are:\n\n *  Quadrilateral\n *  Line"
   syntax:
     content: "public enum Primitive extends Enum<Primitive>"
   inheritance:

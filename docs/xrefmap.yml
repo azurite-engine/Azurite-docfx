@@ -5118,6 +5118,18 @@ references:
   fullName: graphics.Texture.getWidth
   nameWithType: Texture.getWidth
   package: graphics
+- uid: graphics.Texture.loadImageInByteBuffer(java.lang.String)
+  name: loadImageInByteBuffer(String path)
+  href: api/graphics.Texture.html#graphics_Texture_loadImageInByteBuffer_java_lang_String_
+  fullName: graphics.Texture.loadImageInByteBuffer(String path)
+  nameWithType: Texture.loadImageInByteBuffer(String path)
+- uid: graphics.Texture.loadImageInByteBuffer*
+  name: loadImageInByteBuffer
+  href: api/graphics.Texture.html#graphics_Texture_loadImageInByteBuffer_
+  isSpec: "True"
+  fullName: graphics.Texture.loadImageInByteBuffer
+  nameWithType: Texture.loadImageInByteBuffer
+  package: graphics
 - uid: graphics.Texture.setHeight(int)
   name: setHeight(int height)
   href: api/graphics.Texture.html#graphics_Texture_setHeight_int_
@@ -5334,6 +5346,18 @@ references:
   isSpec: "True"
   fullName: graphics.Window.glfwWindow
   nameWithType: Window.glfwWindow
+  package: graphics
+- uid: graphics.Window.setIcon(java.lang.String)
+  name: setIcon(String path)
+  href: api/graphics.Window.html#graphics_Window_setIcon_java_lang_String_
+  fullName: graphics.Window.setIcon(String path)
+  nameWithType: Window.setIcon(String path)
+- uid: graphics.Window.setIcon*
+  name: setIcon
+  href: api/graphics.Window.html#graphics_Window_setIcon_
+  isSpec: "True"
+  fullName: graphics.Window.setIcon
+  nameWithType: Window.setIcon
   package: graphics
 - uid: graphics.Window.setTitle(java.lang.String)
   name: setTitle(String title)

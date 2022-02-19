@@ -27,7 +27,7 @@ items:
   fullName: "graphics.HSLColor"
   type: "Class"
   package: "graphics"
-  summary: "# Azurite #\n\nRepresents a HSLA color."
+  summary: "Represents a HSLA color."
   syntax:
     content: "public class HSLColor"
   inheritance:

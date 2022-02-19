@@ -17,6 +17,7 @@ items:
   - "graphics.Window.getTitle()"
   - "graphics.Window.getWidth()"
   - "graphics.Window.glfwWindow()"
+  - "graphics.Window.setIcon(java.lang.String)"
   - "graphics.Window.setTitle(java.lang.String)"
   - "graphics.Window.showWindow()"
   langs:
@@ -273,6 +274,22 @@ items:
     content: "public static long glfwWindow()"
     return:
       type: "long"
+- uid: "graphics.Window.setIcon(java.lang.String)"
+  id: "setIcon(java.lang.String)"
+  parent: "graphics.Window"
+  langs:
+  - "java"
+  name: "setIcon(String path)"
+  nameWithType: "Window.setIcon(String path)"
+  fullName: "graphics.Window.setIcon(String path)"
+  overload: "graphics.Window.setIcon*"
+  type: "Method"
+  package: "graphics"
+  syntax:
+    content: "public void setIcon(String path)"
+    parameters:
+    - id: "path"
+      type: "java.lang.String"
 - uid: "graphics.Window.setTitle(java.lang.String)"
   id: "setTitle(java.lang.String)"
   parent: "graphics.Window"
@@ -385,6 +402,11 @@ references:
   name: "getSceneManager"
   nameWithType: "Window.getSceneManager"
   fullName: "graphics.Window.getSceneManager"
+  package: "graphics"
+- uid: "graphics.Window.setIcon*"
+  name: "setIcon"
+  nameWithType: "Window.setIcon"
+  fullName: "graphics.Window.setIcon"
   package: "graphics"
 - uid: "java.lang.Object.notify()"
   name: "Object.notify()"

@@ -20,7 +20,7 @@ items:
   fullName: "graphics.renderer.DebugRenderer"
   type: "Class"
   package: "graphics.renderer"
-  summary: "# Azurite #\n\nUsed to render debug materials, like collision hitboxes, raycasts, or test data in general. Only supports rendering lines."
+  summary: "Used to render debug materials, like collision hitboxes, raycasts, or test data in general. Only supports rendering lines."
   syntax:
     content: "public class DebugRenderer extends Renderer"
   inheritance:

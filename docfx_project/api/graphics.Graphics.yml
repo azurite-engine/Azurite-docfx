@@ -19,7 +19,7 @@ items:
   fullName: "graphics.Graphics"
   type: "Class"
   package: "graphics"
-  summary: "# Azurite #\n\nA utility class for changing background colors. More functionality will probably added to this class as the engine starts to grow."
+  summary: "A utility class for changing background colors. More functionality will probably added to this class as the engine starts to grow."
   syntax:
     content: "public class Graphics"
   inheritance:

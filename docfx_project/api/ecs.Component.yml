@@ -22,7 +22,7 @@ items:
   fullName: "ecs.Component"
   type: "Class"
   package: "ecs"
-  summary: "# Azurite #\n\nAbstract structure for ECS Components. It is highly recommended to use this when implementing any system that can/should be applied to a GameObject."
+  summary: "Abstract structure for ECS Components. It is highly recommended to use this when implementing any system that can/should be applied to a GameObject."
   syntax:
     content: "public abstract class Component implements Comparable<Component>"
   inheritance:

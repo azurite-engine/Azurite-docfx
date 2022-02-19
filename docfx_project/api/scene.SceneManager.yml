@@ -26,7 +26,7 @@ items:
   fullName: "scene.SceneManager"
   type: "Class"
   package: "scene"
-  summary: "# Azurite #\n\nThe SceneManager to handle all scenes of a window instance. It contains a scene pool and a currently active scene."
+  summary: "The SceneManager to handle all scenes of a window instance. It contains a scene pool and a currently active scene."
   syntax:
     content: "public class SceneManager"
   inheritance:

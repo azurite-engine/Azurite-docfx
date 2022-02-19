@@ -83,8 +83,7 @@
   
   <h1 id="graphics_renderer_Renderer" data-uid="graphics.renderer.Renderer" class="text-break">Class Renderer
   </h1>
-  <div class="markdown level0 summary"><h1 id="azurite">Azurite</h1>
-<p>A renderer is responsible for taking collected data of a specified type, formatting it for a selected shader, and rendering it. Every renderer has an associated <code>RenderBatch</code> to render. The pipeline for processing the metadata of a render batch and drawing batched data is as follows:</p>
+  <div class="markdown level0 summary"><p>A renderer is responsible for taking collected data of a specified type, formatting it for a selected shader, and rendering it. Every renderer has an associated <code>RenderBatch</code> to render. The pipeline for processing the metadata of a render batch and drawing batched data is as follows:</p>
 <ol>
 <li>The <code>Renderer</code> class is extended by another class specified to render a certain type of data batch; for the sake of example, let's use a quadrilateral render batch. A shader is also created with the same vertex properties specified in the render batch.</li>
 <li>A <code>Shader</code> object is then created, encapsulating the <code>uniform</code>s and <code>layout</code>s of the shader's source code. It is then attached to this renderer.</li>
