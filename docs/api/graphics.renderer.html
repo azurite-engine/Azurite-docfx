@@ -88,18 +88,15 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="graphics.renderer.DebugRenderer.html">DebugRenderer</a></h4>
-      <section><h1 id="azurite">Azurite</h1>
-<p>Used to render debug materials, like collision hitboxes, raycasts, or test data in general. Only supports rendering lines.</p>
+      <section><p>Used to render debug materials, like collision hitboxes, raycasts, or test data in general. Only supports rendering lines.</p>
 </section>
       <h4><a class="xref" href="graphics.renderer.DefaultRenderer.html">DefaultRenderer</a></h4>
-      <section><h1 id="azurite">Azurite</h1>
-<p>Used to render sprites, which are rendered as <code>Primitive.QUAD</code>s with textures. This should be used to render any renderable <code>gameObject</code>.</p>
+      <section><p>Used to render sprites, which are rendered as <code>Primitive.QUAD</code>s with textures. This should be used to render any renderable <code>gameObject</code>.</p>
 </section>
       <h4><a class="xref" href="graphics.renderer.LightmapRenderer.html">LightmapRenderer</a></h4>
       <section></section>
       <h4><a class="xref" href="graphics.renderer.RenderBatch.html">RenderBatch</a></h4>
-      <section><h1 id="azurite">Azurite</h1>
-<p>A render batch is a collection of elements that are &quot;batched&quot; together into a single object. This objects conglomerates the vertex data associated with a specified primitive and prepares it to be rendered by it's associated renderer. The pipeline of a <code>RenderBatch</code> object is as follows:</p>
+      <section><p>A render batch is a collection of elements that are &quot;batched&quot; together into a single object. This objects conglomerates the vertex data associated with a specified primitive and prepares it to be rendered by it's associated renderer. The pipeline of a <code>RenderBatch</code> object is as follows:</p>
 <ol>
 <li>The <code>RenderBatch</code> class is extended by another class intended to be a batch of a certain primitive; for this example let's say it's a quadrilateral.</li>
 <li>The <code>Renderer</code> class is extended by a class intended to render the aforementioned quadrilateral render batch, where the type parameter is specified as our <code>RenderBatch</code>.</li>
@@ -109,8 +106,7 @@
 <p>Of course, one doesn't necessarily have to use quads for rendering; one could get as inventive as they'd like. The <code>graphics.renderer</code> API pre-specifies some useful renderers (hopefully so that most developers don't have to make their own renderers.)</p>
 </section>
       <h4><a class="xref" href="graphics.renderer.Renderer.html">Renderer</a></h4>
-      <section><h1 id="azurite">Azurite</h1>
-<p>A renderer is responsible for taking collected data of a specified type, formatting it for a selected shader, and rendering it. Every renderer has an associated <code>RenderBatch</code> to render. The pipeline for processing the metadata of a render batch and drawing batched data is as follows:</p>
+      <section><p>A renderer is responsible for taking collected data of a specified type, formatting it for a selected shader, and rendering it. Every renderer has an associated <code>RenderBatch</code> to render. The pipeline for processing the metadata of a render batch and drawing batched data is as follows:</p>
 <ol>
 <li>The <code>Renderer</code> class is extended by another class specified to render a certain type of data batch; for the sake of example, let's use a quadrilateral render batch. A shader is also created with the same vertex properties specified in the render batch.</li>
 <li>A <code>Shader</code> object is then created, encapsulating the <code>uniform</code>s and <code>layout</code>s of the shader's source code. It is then attached to this renderer.</li>
