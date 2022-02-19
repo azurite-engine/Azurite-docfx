@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Renderer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Renderer
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="graphics.renderer.Renderer">
+  
+  
+  <h1 id="graphics_renderer_Renderer" data-uid="graphics.renderer.Renderer" class="text-break">Class Renderer
+  </h1>
+  <div class="markdown level0 summary"><h1 id="azurite">Azurite</h1>
+<p>A renderer is responsible for taking collected data of a specified type, formatting it for a selected shader, and rendering it. Every renderer has an associated <code>RenderBatch</code> to render. The pipeline for processing the metadata of a render batch and drawing batched data is as follows:</p>
+<ol>
+<li>The <code>Renderer</code> class is extended by another class specified to render a certain type of data batch; for the sake of example, let's use a quadrilateral render batch. A shader is also created with the same vertex properties specified in the render batch.</li>
+<li>A <code>Shader</code> object is then created, encapsulating the <code>uniform</code>s and <code>layout</code>s of the shader's source code. It is then attached to this renderer.</li>
+<li>Based on the <code>uniform</code>s of the shader, various bits of data is submitted to the GPU, like camera position, pointlight position, etc.</li>
+<li>After shader parsing and handling, the data is rendered.</li>
+</ol>
+<p>A renderer also specifies a <code>framebuffer</code>, which acts as, well, a buffer which GPU pixel data is stored in to be drawn all at once on the monitor.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><span class="xref">Renderer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="graphics_renderer_Renderer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Renderer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="graphics_renderer_Renderer_Renderer_" data-uid="graphics.renderer.Renderer.Renderer*"></a>
+  <h4 id="graphics_renderer_Renderer_Renderer__" data-uid="graphics.renderer.Renderer.Renderer()">Renderer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Renderer()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="graphics_renderer_Renderer_batches" data-uid="graphics.renderer.Renderer.batches">batches</h4>
+  <div class="markdown level1 summary"><p>A list of batches</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected final List&lt;RenderBatch&gt; batches</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="graphics.renderer.RenderBatch.html">RenderBatch</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_Renderer_framebuffer" data-uid="graphics.renderer.Renderer.framebuffer">framebuffer</h4>
+  <div class="markdown level1 summary"><p>Framebuffer to which this renderer will render</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Framebuffer framebuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Framebuffer.html">Framebuffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_Renderer_noRebuffer" data-uid="graphics.renderer.Renderer.noRebuffer">noRebuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected boolean noRebuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="graphics_renderer_Renderer_textureSlots" data-uid="graphics.renderer.Renderer.textureSlots">textureSlots</h4>
+  <div class="markdown level1 summary"><p>Texture slots to be uploaded to the shader. You don't have to upload them in your custom renderer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected final int[] textureSlots</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="graphics_renderer_Renderer_add_" data-uid="graphics.renderer.Renderer.add*"></a>
+  <h4 id="graphics_renderer_Renderer_add_ecs_GameObject_" data-uid="graphics.renderer.Renderer.add(ecs.GameObject)">add(GameObject gameObject)</h4>
+  <div class="markdown level1 summary"><p>Add a gameObject to the renderer, and if it contains a component that affects rendering, like a sprite or light, those are added to a batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add(GameObject gameObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ecs.GameObject.html">GameObject</a></td>
+        <td><span class="parametername">gameObject</span></td>
+        <td><p>the GameObject with renderable components</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_Renderer_clean_" data-uid="graphics.renderer.Renderer.clean*"></a>
+  <h4 id="graphics_renderer_Renderer_clean__" data-uid="graphics.renderer.Renderer.clean()">clean()</h4>
+  <div class="markdown level1 summary"><p>Delete all the Batches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void clean()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_Renderer_createBatch_" data-uid="graphics.renderer.Renderer.createBatch*"></a>
+  <h4 id="graphics_renderer_Renderer_createBatch_int_" data-uid="graphics.renderer.Renderer.createBatch(int)">createBatch(int zIndex)</h4>
+  <div class="markdown level1 summary"><p>Create a new Batch with appropriate parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract RenderBatch createBatch(int zIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">zIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.renderer.RenderBatch.html">RenderBatch</a></td>
+        <td><p>a new batch</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_Renderer_createFramebuffer_" data-uid="graphics.renderer.Renderer.createFramebuffer*"></a>
+  <h4 id="graphics_renderer_Renderer_createFramebuffer__" data-uid="graphics.renderer.Renderer.createFramebuffer()">createFramebuffer()</h4>
+  <div class="markdown level1 summary"><p>Create a framebuffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Framebuffer createFramebuffer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Framebuffer.html">Framebuffer</a></td>
+        <td><p>the created fbo</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_Renderer_createShader_" data-uid="graphics.renderer.Renderer.createShader*"></a>
+  <h4 id="graphics_renderer_Renderer_createShader__" data-uid="graphics.renderer.Renderer.createShader()">createShader()</h4>
+  <div class="markdown level1 summary"><p>Create a shader</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Shader createShader()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Shader.html">Shader</a></td>
+        <td><p>the created shader</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_Renderer_fetchColorAttachment_" data-uid="graphics.renderer.Renderer.fetchColorAttachment*"></a>
+  <h4 id="graphics_renderer_Renderer_fetchColorAttachment_int_" data-uid="graphics.renderer.Renderer.fetchColorAttachment(int)">fetchColorAttachment(int index)</h4>
+  <div class="markdown level1 summary"><p>Get a color attachment texture from the framebuffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture fetchColorAttachment(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>index of the required color attachment texture. Will return -1 if there is no attachment at that index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><p>the texture ID of the attachment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_Renderer_getAvailableBatch_" data-uid="graphics.renderer.Renderer.getAvailableBatch*"></a>
+  <h4 id="graphics_renderer_Renderer_getAvailableBatch_graphics_Texture_int_" data-uid="graphics.renderer.Renderer.getAvailableBatch(graphics.Texture,int)">getAvailableBatch(Texture texture, int reqdZ)</h4>
+  <div class="markdown level1 summary"><p>Get the batch in which the current data can be submitted Has to be called PER PRIMITIVE SUBMISSION</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderBatch getAvailableBatch(Texture texture, int reqdZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">reqdZ</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.renderer.RenderBatch.html">RenderBatch</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_Renderer_init_" data-uid="graphics.renderer.Renderer.init*"></a>
+  <h4 id="graphics_renderer_Renderer_init__" data-uid="graphics.renderer.Renderer.init()">init()</h4>
+  <div class="markdown level1 summary"><p>Creates the renderer's shader and framebuffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void init()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_Renderer_prepare_" data-uid="graphics.renderer.Renderer.prepare*"></a>
+  <h4 id="graphics_renderer_Renderer_prepare__" data-uid="graphics.renderer.Renderer.prepare()">prepare()</h4>
+  <div class="markdown level1 summary"><p>Prepare for rendering. Do anything like setting background here.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void prepare()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_Renderer_rebuffer_" data-uid="graphics.renderer.Renderer.rebuffer*"></a>
+  <h4 id="graphics_renderer_Renderer_rebuffer__" data-uid="graphics.renderer.Renderer.rebuffer()">rebuffer()</h4>
+  <div class="markdown level1 summary"><p>Rebuffer all the data into batches</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void rebuffer()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_Renderer_remove_" data-uid="graphics.renderer.Renderer.remove*"></a>
+  <h4 id="graphics_renderer_Renderer_remove_ecs_GameObject_" data-uid="graphics.renderer.Renderer.remove(ecs.GameObject)">remove(GameObject gameObject)</h4>
+  <div class="markdown level1 summary"><p>Remove a gameObject from the renderer if it contains the component that gets rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove(GameObject gameObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ecs.GameObject.html">GameObject</a></td>
+        <td><span class="parametername">gameObject</span></td>
+        <td><p>the GameObject with renderable componentsl</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_renderer_Renderer_render_" data-uid="graphics.renderer.Renderer.render*"></a>
+  <h4 id="graphics_renderer_Renderer_render__" data-uid="graphics.renderer.Renderer.render()">render()</h4>
+  <div class="markdown level1 summary"><p>Loop through all render batches and render them</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void render()</code></pre>
+  </div>
+  
+  
+  <a id="graphics_renderer_Renderer_uploadUniforms_" data-uid="graphics.renderer.Renderer.uploadUniforms*"></a>
+  <h4 id="graphics_renderer_Renderer_uploadUniforms_graphics_Shader_" data-uid="graphics.renderer.Renderer.uploadUniforms(graphics.Shader)">uploadUniforms(Shader shader)</h4>
+  <div class="markdown level1 summary"><p>Upload the required uniforms</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void uploadUniforms(Shader shader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Shader.html">Shader</a></td>
+        <td><span class="parametername">shader</span></td>
+        <td><p>the shader</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
