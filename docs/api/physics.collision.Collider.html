@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface Collider
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface Collider
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="physics.collision.Collider">
+  
+  
+  <h1 id="physics_collision_Collider" data-uid="physics.collision.Collider" class="text-break">Interface Collider
+  </h1>
+  <div class="markdown level0 summary"><p>Describes an object that can collide with others.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="physics_collision_Collider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface Collider</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="physics_collision_Collider_canCollideWith_" data-uid="physics.collision.Collider.canCollideWith*"></a>
+  <h4 id="physics_collision_Collider_canCollideWith_physics_collision_Collider_" data-uid="physics.collision.Collider.canCollideWith(physics.collision.Collider)">canCollideWith(Collider collider)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a collider could potentially intersect with another collider ONLY by their collision layers. This method can be considered part of the broad phase of collision detection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract boolean canCollideWith(Collider collider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><span class="parametername">collider</span></td>
+        <td><p>the other collider</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>true if and only if both objects could potentially collide</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_detectCollision_" data-uid="physics.collision.Collider.detectCollision*"></a>
+  <h4 id="physics_collision_Collider_detectCollision_physics_collision_Collider_" data-uid="physics.collision.Collider.detectCollision(physics.collision.Collider)">detectCollision(Collider collider)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a collider intersects with another collider IGNORING the collision layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract CollisionInformation detectCollision(Collider collider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><span class="parametername">collider</span></td>
+        <td><p>the other collider</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="physics.collision.CollisionInformation.html">CollisionInformation</a></td>
+        <td><p>an object containing the result of collision detection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_getShape_" data-uid="physics.collision.Collider.getShape*"></a>
+  <h4 id="physics_collision_Collider_getShape__" data-uid="physics.collision.Collider.getShape()">getShape()</h4>
+  <div class="markdown level1 summary"><p>The shape of the collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract PrimitiveShape getShape()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="physics.collision.shape.PrimitiveShape.html">PrimitiveShape</a></td>
+        <td><p>the shape of the collider</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_hasMask_" data-uid="physics.collision.Collider.hasMask*"></a>
+  <h4 id="physics_collision_Collider_hasMask_int_" data-uid="physics.collision.Collider.hasMask(int)">hasMask(int layer)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a collision mask for a specified layer is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract boolean hasMask(int layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">layer</span></td>
+        <td><p>the layer from 0 to TOTAL_LAYER-1, the behaviour for layers outside the range is undefined</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>true if and only if the mask for the specified layer is enabled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_isOnLayer_" data-uid="physics.collision.Collider.isOnLayer*"></a>
+  <h4 id="physics_collision_Collider_isOnLayer_int_" data-uid="physics.collision.Collider.isOnLayer(int)">isOnLayer(int layer)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the collider exists in a specified layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract boolean isOnLayer(int layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">layer</span></td>
+        <td><p>the layer from 0 to TOTAL_LAYER-1, the behaviour for layers outside the range is undefined</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>true if and only if the collider exists in the specified layer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_layers_" data-uid="physics.collision.Collider.layers*"></a>
+  <h4 id="physics_collision_Collider_layers__" data-uid="physics.collision.Collider.layers()">layers()</h4>
+  <div class="markdown level1 summary"><p>A short containing all enabled layers encoded as bit mask. Should be usable to compare different masks with each other to check for intersection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract short layers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><p>a short with all layer encoded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_mask_" data-uid="physics.collision.Collider.mask*"></a>
+  <h4 id="physics_collision_Collider_mask__" data-uid="physics.collision.Collider.mask()">mask()</h4>
+  <div class="markdown level1 summary"><p>A short containing all enabled masks encoded as bit mask. Should be usable to compare different masks with each other to check for intersection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract short mask()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><p>a short with all masks encoded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_passive_" data-uid="physics.collision.Collider.passive*"></a>
+  <h4 id="physics_collision_Collider_passive__" data-uid="physics.collision.Collider.passive()">passive()</h4>
+  <div class="markdown level1 summary"><p>Defines the behaviour of this collider. A passive collider will never get checked against others colliders, however any collider might get checked against it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract boolean passive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>whether this collider is passive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_setLayer_" data-uid="physics.collision.Collider.setLayer*"></a>
+  <h4 id="physics_collision_Collider_setLayer_int_boolean_" data-uid="physics.collision.Collider.setLayer(int,boolean)">setLayer(int layer, boolean active)</h4>
+  <div class="markdown level1 summary"><p>Change the colliders presence in a specified layer. Making a collider present in a specified layer will it enable to collide with all collider including the specified layer in their collision mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void setLayer(int layer, boolean active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">layer</span></td>
+        <td><p>the layer from 0 to TOTAL_LAYER-1, the behaviour for layers outside the range is undefined</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">active</span></td>
+        <td><p>whether the collider should be present (true) or not (false)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_setMask_" data-uid="physics.collision.Collider.setMask*"></a>
+  <h4 id="physics_collision_Collider_setMask_int_boolean_" data-uid="physics.collision.Collider.setMask(int,boolean)">setMask(int layer, boolean active)</h4>
+  <div class="markdown level1 summary"><p>Changes the collision mask entry for a specified layer. Enabling the mask for layer n will allow this collider to collide with any other collider set in the target layer n vise versa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void setMask(int layer, boolean active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">layer</span></td>
+        <td><p>the layer from 0 to TOTAL_LAYER-1, the behaviour for layers outside the range is undefined</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">active</span></td>
+        <td><p>whether the mask should enabled (true) or disabled (false)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
