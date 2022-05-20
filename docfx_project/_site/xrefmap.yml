@@ -587,6 +587,339 @@ references:
   fullName: ai.statemachine.StateMachine.validate
   nameWithType: StateMachine.validate
   package: ai.statemachine
+- uid: audio
+  name: audio
+  href: api/audio.html
+  fullName: audio
+  nameWithType: audio
+- uid: audio.AudioBuffer
+  name: AudioBuffer
+  href: api/audio.AudioBuffer.html
+  fullName: audio.AudioBuffer
+  nameWithType: AudioBuffer
+- uid: audio.AudioBuffer.AudioBuffer()
+  name: AudioBuffer()
+  href: api/audio.AudioBuffer.html
+  fullName: audio.AudioBuffer.AudioBuffer()
+  nameWithType: AudioBuffer.AudioBuffer()
+- uid: audio.AudioBuffer.AudioBuffer(java.lang.String)
+  name: AudioBuffer(String path)
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_AudioBuffer_java_lang_String_
+  fullName: audio.AudioBuffer.AudioBuffer(String path)
+  nameWithType: AudioBuffer.AudioBuffer(String path)
+- uid: audio.AudioBuffer.AudioBuffer*
+  name: AudioBuffer
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_AudioBuffer_
+  isSpec: "True"
+  fullName: audio.AudioBuffer.AudioBuffer
+  nameWithType: AudioBuffer.AudioBuffer
+  package: audio
+- uid: audio.AudioBuffer.getALBuffers()
+  name: getALBuffers()
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getALBuffers__
+  fullName: audio.AudioBuffer.getALBuffers()
+  nameWithType: AudioBuffer.getALBuffers()
+- uid: audio.AudioBuffer.getALBuffers*
+  name: getALBuffers
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getALBuffers_
+  isSpec: "True"
+  fullName: audio.AudioBuffer.getALBuffers
+  nameWithType: AudioBuffer.getALBuffers
+  package: audio
+- uid: audio.AudioBuffer.getAudioData()
+  name: getAudioData()
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getAudioData__
+  fullName: audio.AudioBuffer.getAudioData()
+  nameWithType: AudioBuffer.getAudioData()
+- uid: audio.AudioBuffer.getAudioData*
+  name: getAudioData
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getAudioData_
+  isSpec: "True"
+  fullName: audio.AudioBuffer.getAudioData
+  nameWithType: AudioBuffer.getAudioData
+  package: audio
+- uid: audio.AudioBuffer.getFormat()
+  name: getFormat()
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getFormat__
+  fullName: audio.AudioBuffer.getFormat()
+  nameWithType: AudioBuffer.getFormat()
+- uid: audio.AudioBuffer.getFormat*
+  name: getFormat
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getFormat_
+  isSpec: "True"
+  fullName: audio.AudioBuffer.getFormat
+  nameWithType: AudioBuffer.getFormat
+  package: audio
+- uid: audio.AudioBuffer.getSampleRate()
+  name: getSampleRate()
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getSampleRate__
+  fullName: audio.AudioBuffer.getSampleRate()
+  nameWithType: AudioBuffer.getSampleRate()
+- uid: audio.AudioBuffer.getSampleRate*
+  name: getSampleRate
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getSampleRate_
+  isSpec: "True"
+  fullName: audio.AudioBuffer.getSampleRate
+  nameWithType: AudioBuffer.getSampleRate
+  package: audio
+- uid: audio.AudioBuffer.getTime()
+  name: getTime()
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getTime__
+  fullName: audio.AudioBuffer.getTime()
+  nameWithType: AudioBuffer.getTime()
+- uid: audio.AudioBuffer.getTime*
+  name: getTime
+  href: api/audio.AudioBuffer.html#audio_AudioBuffer_getTime_
+  isSpec: "True"
+  fullName: audio.AudioBuffer.getTime
+  nameWithType: AudioBuffer.getTime
+  package: audio
+- uid: audio.AudioListener
+  name: AudioListener
+  href: api/audio.AudioListener.html
+  fullName: audio.AudioListener
+  nameWithType: AudioListener
+- uid: audio.AudioListener.AudioListener()
+  name: AudioListener()
+  href: api/audio.AudioListener.html
+  fullName: audio.AudioListener.AudioListener()
+  nameWithType: AudioListener.AudioListener()
+- uid: audio.AudioListener.AudioListener*
+  name: AudioListener
+  href: api/audio.AudioListener.html
+  isSpec: "True"
+  fullName: audio.AudioListener.AudioListener
+  nameWithType: AudioListener.AudioListener
+  package: audio
+- uid: audio.AudioListener.get()
+  name: get()
+  href: api/audio.AudioListener.html#audio_AudioListener_get__
+  fullName: audio.AudioListener.get()
+  nameWithType: AudioListener.get()
+- uid: audio.AudioListener.get*
+  name: get
+  href: api/audio.AudioListener.html#audio_AudioListener_get_
+  isSpec: "True"
+  fullName: audio.AudioListener.get
+  nameWithType: AudioListener.get
+  package: audio
+- uid: audio.AudioListener.start()
+  name: start()
+  href: api/audio.AudioListener.html#audio_AudioListener_start__
+  fullName: audio.AudioListener.start()
+  nameWithType: AudioListener.start()
+- uid: audio.AudioListener.start*
+  name: start
+  href: api/audio.AudioListener.html#audio_AudioListener_start_
+  isSpec: "True"
+  fullName: audio.AudioListener.start
+  nameWithType: AudioListener.start
+  package: audio
+- uid: audio.AudioListener.update(float)
+  name: update(float dt)
+  href: api/audio.AudioListener.html#audio_AudioListener_update_float_
+  fullName: audio.AudioListener.update(float dt)
+  nameWithType: AudioListener.update(float dt)
+- uid: audio.AudioListener.update*
+  name: update
+  href: api/audio.AudioListener.html#audio_AudioListener_update_
+  isSpec: "True"
+  fullName: audio.AudioListener.update
+  nameWithType: AudioListener.update
+  package: audio
+- uid: audio.AudioMaster
+  name: AudioMaster
+  href: api/audio.AudioMaster.html
+  fullName: audio.AudioMaster
+  nameWithType: AudioMaster
+- uid: audio.AudioMaster.addSource(audio.AudioSource)
+  name: addSource(AudioSource s)
+  href: api/audio.AudioMaster.html#audio_AudioMaster_addSource_audio_AudioSource_
+  fullName: audio.AudioMaster.addSource(AudioSource s)
+  nameWithType: AudioMaster.addSource(AudioSource s)
+- uid: audio.AudioMaster.addSource*
+  name: addSource
+  href: api/audio.AudioMaster.html#audio_AudioMaster_addSource_
+  isSpec: "True"
+  fullName: audio.AudioMaster.addSource
+  nameWithType: AudioMaster.addSource
+  package: audio
+- uid: audio.AudioMaster.alGetError()
+  name: alGetError()
+  href: api/audio.AudioMaster.html#audio_AudioMaster_alGetError__
+  fullName: audio.AudioMaster.alGetError()
+  nameWithType: AudioMaster.alGetError()
+- uid: audio.AudioMaster.alGetError*
+  name: alGetError
+  href: api/audio.AudioMaster.html#audio_AudioMaster_alGetError_
+  isSpec: "True"
+  fullName: audio.AudioMaster.alGetError
+  nameWithType: AudioMaster.alGetError
+  package: audio
+- uid: audio.AudioMaster.AudioMaster()
+  name: AudioMaster()
+  href: api/audio.AudioMaster.html
+  fullName: audio.AudioMaster.AudioMaster()
+  nameWithType: AudioMaster.AudioMaster()
+- uid: audio.AudioMaster.AudioMaster*
+  name: AudioMaster
+  href: api/audio.AudioMaster.html
+  isSpec: "True"
+  fullName: audio.AudioMaster.AudioMaster
+  nameWithType: AudioMaster.AudioMaster
+  package: audio
+- uid: audio.AudioMaster.clean()
+  name: clean()
+  href: api/audio.AudioMaster.html#audio_AudioMaster_clean__
+  fullName: audio.AudioMaster.clean()
+  nameWithType: AudioMaster.clean()
+- uid: audio.AudioMaster.clean*
+  name: clean
+  href: api/audio.AudioMaster.html#audio_AudioMaster_clean_
+  isSpec: "True"
+  fullName: audio.AudioMaster.clean
+  nameWithType: AudioMaster.clean
+  package: audio
+- uid: audio.AudioMaster.get()
+  name: get()
+  href: api/audio.AudioMaster.html#audio_AudioMaster_get__
+  fullName: audio.AudioMaster.get()
+  nameWithType: AudioMaster.get()
+- uid: audio.AudioMaster.get*
+  name: get
+  href: api/audio.AudioMaster.html#audio_AudioMaster_get_
+  isSpec: "True"
+  fullName: audio.AudioMaster.get
+  nameWithType: AudioMaster.get
+  package: audio
+- uid: audio.AudioSource
+  name: AudioSource
+  href: api/audio.AudioSource.html
+  fullName: audio.AudioSource
+  nameWithType: AudioSource
+- uid: audio.AudioSource.audioBuffers
+  name: audioBuffers
+  href: api/audio.AudioSource.html#audio_AudioSource_audioBuffers
+  fullName: audio.AudioSource.audioBuffers
+  nameWithType: AudioSource.audioBuffers
+- uid: audio.AudioSource.AudioSource()
+  name: AudioSource()
+  href: api/audio.AudioSource.html#audio_AudioSource_AudioSource__
+  fullName: audio.AudioSource.AudioSource()
+  nameWithType: AudioSource.AudioSource()
+- uid: audio.AudioSource.AudioSource(audio.AudioBuffer)
+  name: AudioSource(AudioBuffer buffer)
+  href: api/audio.AudioSource.html#audio_AudioSource_AudioSource_audio_AudioBuffer_
+  fullName: audio.AudioSource.AudioSource(AudioBuffer buffer)
+  nameWithType: AudioSource.AudioSource(AudioBuffer buffer)
+- uid: audio.AudioSource.AudioSource(java.lang.String...)
+  name: AudioSource(String[] sources)
+  href: api/audio.AudioSource.html#audio_AudioSource_AudioSource_java_lang_String____
+  fullName: audio.AudioSource.AudioSource(String[] sources)
+  nameWithType: AudioSource.AudioSource(String[] sources)
+- uid: audio.AudioSource.AudioSource*
+  name: AudioSource
+  href: api/audio.AudioSource.html#audio_AudioSource_AudioSource_
+  isSpec: "True"
+  fullName: audio.AudioSource.AudioSource
+  nameWithType: AudioSource.AudioSource
+  package: audio
+- uid: audio.AudioSource.getSelectedBuffer()
+  name: getSelectedBuffer()
+  href: api/audio.AudioSource.html#audio_AudioSource_getSelectedBuffer__
+  fullName: audio.AudioSource.getSelectedBuffer()
+  nameWithType: AudioSource.getSelectedBuffer()
+- uid: audio.AudioSource.getSelectedBuffer*
+  name: getSelectedBuffer
+  href: api/audio.AudioSource.html#audio_AudioSource_getSelectedBuffer_
+  isSpec: "True"
+  fullName: audio.AudioSource.getSelectedBuffer
+  nameWithType: AudioSource.getSelectedBuffer
+  package: audio
+- uid: audio.AudioSource.isLooping()
+  name: isLooping()
+  href: api/audio.AudioSource.html#audio_AudioSource_isLooping__
+  fullName: audio.AudioSource.isLooping()
+  nameWithType: AudioSource.isLooping()
+- uid: audio.AudioSource.isLooping*
+  name: isLooping
+  href: api/audio.AudioSource.html#audio_AudioSource_isLooping_
+  isSpec: "True"
+  fullName: audio.AudioSource.isLooping
+  nameWithType: AudioSource.isLooping
+  package: audio
+- uid: audio.AudioSource.isPlaying()
+  name: isPlaying()
+  href: api/audio.AudioSource.html#audio_AudioSource_isPlaying__
+  fullName: audio.AudioSource.isPlaying()
+  nameWithType: AudioSource.isPlaying()
+- uid: audio.AudioSource.isPlaying*
+  name: isPlaying
+  href: api/audio.AudioSource.html#audio_AudioSource_isPlaying_
+  isSpec: "True"
+  fullName: audio.AudioSource.isPlaying
+  nameWithType: AudioSource.isPlaying
+  package: audio
+- uid: audio.AudioSource.play(int,boolean)
+  name: play(int index, boolean isLooping)
+  href: api/audio.AudioSource.html#audio_AudioSource_play_int_boolean_
+  fullName: audio.AudioSource.play(int index, boolean isLooping)
+  nameWithType: AudioSource.play(int index, boolean isLooping)
+- uid: audio.AudioSource.play*
+  name: play
+  href: api/audio.AudioSource.html#audio_AudioSource_play_
+  isSpec: "True"
+  fullName: audio.AudioSource.play
+  nameWithType: AudioSource.play
+  package: audio
+- uid: audio.AudioSource.setLooping(boolean)
+  name: setLooping(boolean looping)
+  href: api/audio.AudioSource.html#audio_AudioSource_setLooping_boolean_
+  fullName: audio.AudioSource.setLooping(boolean looping)
+  nameWithType: AudioSource.setLooping(boolean looping)
+- uid: audio.AudioSource.setLooping*
+  name: setLooping
+  href: api/audio.AudioSource.html#audio_AudioSource_setLooping_
+  isSpec: "True"
+  fullName: audio.AudioSource.setLooping
+  nameWithType: AudioSource.setLooping
+  package: audio
+- uid: audio.AudioSource.start()
+  name: start()
+  href: api/audio.AudioSource.html#audio_AudioSource_start__
+  fullName: audio.AudioSource.start()
+  nameWithType: AudioSource.start()
+- uid: audio.AudioSource.start*
+  name: start
+  href: api/audio.AudioSource.html#audio_AudioSource_start_
+  isSpec: "True"
+  fullName: audio.AudioSource.start
+  nameWithType: AudioSource.start
+  package: audio
+- uid: audio.AudioSource.stop()
+  name: stop()
+  href: api/audio.AudioSource.html#audio_AudioSource_stop__
+  fullName: audio.AudioSource.stop()
+  nameWithType: AudioSource.stop()
+- uid: audio.AudioSource.stop*
+  name: stop
+  href: api/audio.AudioSource.html#audio_AudioSource_stop_
+  isSpec: "True"
+  fullName: audio.AudioSource.stop
+  nameWithType: AudioSource.stop
+  package: audio
+- uid: audio.AudioSource.update(float)
+  name: update(float dt)
+  href: api/audio.AudioSource.html#audio_AudioSource_update_float_
+  fullName: audio.AudioSource.update(float dt)
+  nameWithType: AudioSource.update(float dt)
+- uid: audio.AudioSource.update*
+  name: update
+  href: api/audio.AudioSource.html#audio_AudioSource_update_
+  isSpec: "True"
+  fullName: audio.AudioSource.update
+  nameWithType: AudioSource.update
+  package: audio
 - uid: ecs
   name: ecs
   href: api/ecs.html
@@ -2026,6 +2359,168 @@ references:
   fullName: ecs.Text.zIndex
   nameWithType: Text.zIndex
   package: ecs
+- uid: ecs.Tween
+  name: Tween
+  href: api/ecs.Tween.html
+  fullName: ecs.Tween
+  nameWithType: Tween
+- uid: ecs.Tween.play()
+  name: play()
+  href: api/ecs.Tween.html#ecs_Tween_play__
+  fullName: ecs.Tween.play()
+  nameWithType: Tween.play()
+- uid: ecs.Tween.play*
+  name: play
+  href: api/ecs.Tween.html#ecs_Tween_play_
+  isSpec: "True"
+  fullName: ecs.Tween.play
+  nameWithType: Tween.play
+  package: ecs
+- uid: ecs.Tween.setUpTweenObject(org.joml.Vector2f,org.joml.Vector2f,org.joml.Vector2f,float,ecs.Tween.TweenMode)
+  name: setUpTweenObject(Vector2f object, Vector2f startPos, Vector2f target, float duration, Tween.TweenMode tweenMode)
+  href: api/ecs.Tween.html#ecs_Tween_setUpTweenObject_org_joml_Vector2f_org_joml_Vector2f_org_joml_Vector2f_float_ecs_Tween_TweenMode_
+  fullName: ecs.Tween.setUpTweenObject(Vector2f object, Vector2f startPos, Vector2f target, float duration, Tween.TweenMode tweenMode)
+  nameWithType: Tween.setUpTweenObject(Vector2f object, Vector2f startPos, Vector2f target, float duration, Tween.TweenMode tweenMode)
+- uid: ecs.Tween.setUpTweenObject*
+  name: setUpTweenObject
+  href: api/ecs.Tween.html#ecs_Tween_setUpTweenObject_
+  isSpec: "True"
+  fullName: ecs.Tween.setUpTweenObject
+  nameWithType: Tween.setUpTweenObject
+  package: ecs
+- uid: ecs.Tween.setUpTweenPosition(org.joml.Vector2f,org.joml.Vector2f,float,ecs.Tween.TweenMode)
+  name: setUpTweenPosition(Vector2f startPos, Vector2f target, float duration, Tween.TweenMode tweenMode)
+  href: api/ecs.Tween.html#ecs_Tween_setUpTweenPosition_org_joml_Vector2f_org_joml_Vector2f_float_ecs_Tween_TweenMode_
+  fullName: ecs.Tween.setUpTweenPosition(Vector2f startPos, Vector2f target, float duration, Tween.TweenMode tweenMode)
+  nameWithType: Tween.setUpTweenPosition(Vector2f startPos, Vector2f target, float duration, Tween.TweenMode tweenMode)
+- uid: ecs.Tween.setUpTweenPosition*
+  name: setUpTweenPosition
+  href: api/ecs.Tween.html#ecs_Tween_setUpTweenPosition_
+  isSpec: "True"
+  fullName: ecs.Tween.setUpTweenPosition
+  nameWithType: Tween.setUpTweenPosition
+  package: ecs
+- uid: ecs.Tween.start()
+  name: start()
+  href: api/ecs.Tween.html#ecs_Tween_start__
+  fullName: ecs.Tween.start()
+  nameWithType: Tween.start()
+- uid: ecs.Tween.start*
+  name: start
+  href: api/ecs.Tween.html#ecs_Tween_start_
+  isSpec: "True"
+  fullName: ecs.Tween.start
+  nameWithType: Tween.start
+  package: ecs
+- uid: ecs.Tween.Tween()
+  name: Tween()
+  href: api/ecs.Tween.html#ecs_Tween_Tween__
+  fullName: ecs.Tween.Tween()
+  nameWithType: Tween.Tween()
+- uid: ecs.Tween.Tween*
+  name: Tween
+  href: api/ecs.Tween.html#ecs_Tween_Tween_
+  isSpec: "True"
+  fullName: ecs.Tween.Tween
+  nameWithType: Tween.Tween
+  package: ecs
+- uid: ecs.Tween.tweenFinished()
+  name: tweenFinished()
+  href: api/ecs.Tween.html#ecs_Tween_tweenFinished__
+  fullName: ecs.Tween.tweenFinished()
+  nameWithType: Tween.tweenFinished()
+- uid: ecs.Tween.tweenFinished*
+  name: tweenFinished
+  href: api/ecs.Tween.html#ecs_Tween_tweenFinished_
+  isSpec: "True"
+  fullName: ecs.Tween.tweenFinished
+  nameWithType: Tween.tweenFinished
+  package: ecs
+- uid: ecs.Tween.tweenFinishedAll()
+  name: tweenFinishedAll()
+  href: api/ecs.Tween.html#ecs_Tween_tweenFinishedAll__
+  fullName: ecs.Tween.tweenFinishedAll()
+  nameWithType: Tween.tweenFinishedAll()
+- uid: ecs.Tween.tweenFinishedAll*
+  name: tweenFinishedAll
+  href: api/ecs.Tween.html#ecs_Tween_tweenFinishedAll_
+  isSpec: "True"
+  fullName: ecs.Tween.tweenFinishedAll
+  nameWithType: Tween.tweenFinishedAll
+  package: ecs
+- uid: ecs.Tween.TweenMode
+  name: Tween.TweenMode
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode
+  fullName: ecs.Tween.TweenMode
+  nameWithType: Tween.TweenMode
+- uid: ecs.Tween.TweenMode.EASING_IN
+  name: EASING_IN
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode_EASING_IN
+  fullName: ecs.Tween.TweenMode.EASING_IN
+  nameWithType: Tween.TweenMode.EASING_IN
+- uid: ecs.Tween.TweenMode.EASING_IN_OUT
+  name: EASING_IN_OUT
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode_EASING_IN_OUT
+  fullName: ecs.Tween.TweenMode.EASING_IN_OUT
+  nameWithType: Tween.TweenMode.EASING_IN_OUT
+- uid: ecs.Tween.TweenMode.EASING_OUT
+  name: EASING_OUT
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode_EASING_OUT
+  fullName: ecs.Tween.TweenMode.EASING_OUT
+  nameWithType: Tween.TweenMode.EASING_OUT
+- uid: ecs.Tween.TweenMode.NO_EASING
+  name: NO_EASING
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode_NO_EASING
+  fullName: ecs.Tween.TweenMode.NO_EASING
+  nameWithType: Tween.TweenMode.NO_EASING
+- uid: ecs.Tween.TweenMode.TweenMode()
+  name: TweenMode()
+  href: api/ecs.Tween.TweenMode.html
+  fullName: ecs.Tween.TweenMode.TweenMode()
+  nameWithType: Tween.TweenMode.TweenMode()
+- uid: ecs.Tween.TweenMode.TweenMode*
+  name: TweenMode
+  href: api/ecs.Tween.TweenMode.html
+  isSpec: "True"
+  fullName: ecs.Tween.TweenMode.TweenMode
+  nameWithType: Tween.TweenMode.TweenMode
+  package: ecs
+- uid: ecs.Tween.TweenMode.valueOf(java.lang.String)
+  name: valueOf(String name)
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode_valueOf_java_lang_String_
+  fullName: ecs.Tween.TweenMode.valueOf(String name)
+  nameWithType: Tween.TweenMode.valueOf(String name)
+- uid: ecs.Tween.TweenMode.valueOf*
+  name: valueOf
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode_valueOf_
+  isSpec: "True"
+  fullName: ecs.Tween.TweenMode.valueOf
+  nameWithType: Tween.TweenMode.valueOf
+  package: ecs
+- uid: ecs.Tween.TweenMode.values()
+  name: values()
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode_values__
+  fullName: ecs.Tween.TweenMode.values()
+  nameWithType: Tween.TweenMode.values()
+- uid: ecs.Tween.TweenMode.values*
+  name: values
+  href: api/ecs.Tween.TweenMode.html#ecs_Tween_TweenMode_values_
+  isSpec: "True"
+  fullName: ecs.Tween.TweenMode.values
+  nameWithType: Tween.TweenMode.values
+  package: ecs
+- uid: ecs.Tween.update(float)
+  name: update(float dt)
+  href: api/ecs.Tween.html#ecs_Tween_update_float_
+  fullName: ecs.Tween.update(float dt)
+  nameWithType: Tween.update(float dt)
+- uid: ecs.Tween.update*
+  name: update
+  href: api/ecs.Tween.html#ecs_Tween_update_
+  isSpec: "True"
+  fullName: ecs.Tween.update
+  nameWithType: Tween.update
+  package: ecs
 - uid: event
   name: event
   href: api/event.html
@@ -2777,11 +3272,21 @@ references:
   fullName: graphics.Camera.getViewMatrix
   nameWithType: Camera.getViewMatrix
   package: graphics
+- uid: graphics.Camera.mode
+  name: mode
+  href: api/graphics.Camera.html#graphics_Camera_mode
+  fullName: graphics.Camera.mode
+  nameWithType: Camera.mode
 - uid: graphics.Camera.position
   name: position
   href: api/graphics.Camera.html#graphics_Camera_position
   fullName: graphics.Camera.position
   nameWithType: Camera.position
+- uid: graphics.Camera.resolution
+  name: resolution
+  href: api/graphics.Camera.html#graphics_Camera_resolution
+  fullName: graphics.Camera.resolution
+  nameWithType: Camera.resolution
 - uid: graphics.Camera.smoothFollow(org.joml.Vector2f)
   name: smoothFollow(Vector2f c)
   href: api/graphics.Camera.html#graphics_Camera_smoothFollow_org_joml_Vector2f_
@@ -10121,6 +10626,59 @@ references:
   href: api/scenes.html
   fullName: scenes
   nameWithType: scenes
+- uid: scenes.AudioDemo
+  name: AudioDemo
+  href: api/scenes.AudioDemo.html
+  fullName: scenes.AudioDemo
+  nameWithType: AudioDemo
+- uid: scenes.AudioDemo.AudioDemo()
+  name: AudioDemo()
+  href: api/scenes.AudioDemo.html#scenes_AudioDemo_AudioDemo__
+  fullName: scenes.AudioDemo.AudioDemo()
+  nameWithType: AudioDemo.AudioDemo()
+- uid: scenes.AudioDemo.AudioDemo*
+  name: AudioDemo
+  href: api/scenes.AudioDemo.html#scenes_AudioDemo_AudioDemo_
+  isSpec: "True"
+  fullName: scenes.AudioDemo.AudioDemo
+  nameWithType: AudioDemo.AudioDemo
+  package: scenes
+- uid: scenes.AudioDemo.awake()
+  name: awake()
+  href: api/scenes.AudioDemo.html#scenes_AudioDemo_awake__
+  fullName: scenes.AudioDemo.awake()
+  nameWithType: AudioDemo.awake()
+- uid: scenes.AudioDemo.awake*
+  name: awake
+  href: api/scenes.AudioDemo.html#scenes_AudioDemo_awake_
+  isSpec: "True"
+  fullName: scenes.AudioDemo.awake
+  nameWithType: AudioDemo.awake
+  package: scenes
+- uid: scenes.AudioDemo.main(java.lang.String[])
+  name: main(String[] args)
+  href: api/scenes.AudioDemo.html#scenes_AudioDemo_main_java_lang_String___
+  fullName: scenes.AudioDemo.main(String[] args)
+  nameWithType: AudioDemo.main(String[] args)
+- uid: scenes.AudioDemo.main*
+  name: main
+  href: api/scenes.AudioDemo.html#scenes_AudioDemo_main_
+  isSpec: "True"
+  fullName: scenes.AudioDemo.main
+  nameWithType: AudioDemo.main
+  package: scenes
+- uid: scenes.AudioDemo.update()
+  name: update()
+  href: api/scenes.AudioDemo.html#scenes_AudioDemo_update__
+  fullName: scenes.AudioDemo.update()
+  nameWithType: AudioDemo.update()
+- uid: scenes.AudioDemo.update*
+  name: update
+  href: api/scenes.AudioDemo.html#scenes_AudioDemo_update_
+  isSpec: "True"
+  fullName: scenes.AudioDemo.update
+  nameWithType: AudioDemo.update
+  package: scenes
 - uid: scenes.DemoPlatformer
   name: DemoPlatformer
   href: api/scenes.DemoPlatformer.html
@@ -10487,6 +11045,18 @@ references:
   isSpec: "True"
   fullName: util.Assets.Assets
   nameWithType: Assets.Assets
+  package: util
+- uid: util.Assets.getAudioBuffer(java.lang.String)
+  name: getAudioBuffer(String path)
+  href: api/util.Assets.html#util_Assets_getAudioBuffer_java_lang_String_
+  fullName: util.Assets.getAudioBuffer(String path)
+  nameWithType: Assets.getAudioBuffer(String path)
+- uid: util.Assets.getAudioBuffer*
+  name: getAudioBuffer
+  href: api/util.Assets.html#util_Assets_getAudioBuffer_
+  isSpec: "True"
+  fullName: util.Assets.getAudioBuffer
+  nameWithType: Assets.getAudioBuffer
   package: util
 - uid: util.Assets.getShader(java.lang.String)
   name: getShader(String path)

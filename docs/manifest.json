@@ -170,6 +170,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/audio.AudioBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/audio.AudioBuffer.html",
+          "hash": "59I3ItrfDyxOtC37zSlix/vSEuAmaSJbgQQQp/805KM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/audio.AudioListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/audio.AudioListener.html",
+          "hash": "YZWr10LcQauTIVW3CNISHoABRV3QQX8LSUIq9vnhvDI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/audio.AudioMaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/audio.AudioMaster.html",
+          "hash": "klzOgye9pv9bH/yzUkySlZSdAgx12f7PYCCgVPgg8d0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/audio.AudioSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/audio.AudioSource.html",
+          "hash": "fr9eRD/eRiZW9SSNXAy0OIsNqcJOpFQAc6KSUybNVYM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/audio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/audio.html",
+          "hash": "EyKIsn57cOUWfwy/LDeLpt19OCQIWWoN/Gy7Cb47nes="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ecs.CharacterController.yml",
       "output": {
         ".html": {
@@ -314,11 +374,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ecs.Tween.TweenMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ecs.Tween.TweenMode.html",
+          "hash": "a3a2EScjWgK52bSOGtnqb1vnpTKiFZdOY43hERl9yyA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ecs.Tween.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ecs.Tween.html",
+          "hash": "Xz5pPxc4za9qK9UtMeqHYscczsn+PR5NYcuOpmmApe8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ecs.yml",
       "output": {
         ".html": {
           "relative_path": "api/ecs.html",
-          "hash": "bI0mFf9FP3SmSdCYB2/Zq0Qv7+0ZhMJ2+Uuedzv7sAQ="
+          "hash": "XbiHPmfW+c3eGYRg+NZ4xMSGFQ87OhJirFpmXReu/WE="
         }
       },
       "is_incremental": false,
@@ -510,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/graphics.Camera.html",
-          "hash": "QElX6nhXH8HlcGyCzrMKTsXP4yzfGIG65rAK44KxuuM="
+          "hash": "3gGN+A3scffNnYnWexlLh99UrPu2VEG+tRHpP572M7A="
         }
       },
       "is_incremental": false,
@@ -1490,6 +1574,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/scenes.AudioDemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/scenes.AudioDemo.html",
+          "hash": "9FP27lj8s5W9somYHn1vrnnK3Z0TOsa9lzSa+cQfazw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/scenes.DemoPlatformer.yml",
       "output": {
         ".html": {
@@ -1530,7 +1626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/scenes.html",
-          "hash": "2LMszYD/V7+lXEYCebkLJVhaD/06ANUM802OGbJfTZ0="
+          "hash": "PVhuZyf8nxIXt6DRDFdBqqBPmlXOkDor8eDvIks/Rsw="
         }
       },
       "is_incremental": false,
@@ -1602,7 +1698,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "T9ZEIVDjIhTeI/U2lT1YlTa/szFbNzZS+5H1gX+aeU4="
+          "hash": "beOaSw9ybSxF65ex7j5A2q0rjp4QO4qp6JCPcBOlwZg="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1710,7 @@
       "output": {
         ".html": {
           "relative_path": "api/util.Assets.html",
-          "hash": "skg7sWSmepr6wT1UqvCOCySKmv2M4kHtcH6D4WMMr8Y="
+          "hash": "dWOhd3/2QpN2TQMFStJiyHkhbmnxOSASdWQlWAd4y1I="
         }
       },
       "is_incremental": false,
@@ -1924,23 +2020,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 4
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 152,
-          "skipped_file_count": 152
+          "total_file_count": 160,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
