@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: "audio"
+  id: "audio"
+  children:
+  - "audio.AudioBuffer"
+  - "audio.AudioListener"
+  - "audio.AudioMaster"
+  - "audio.AudioSource"
+  langs:
+  - "java"
+  name: "audio"
+  nameWithType: "audio"
+  fullName: "audio"
+  type: "Namespace"
+  syntax:
+    content: "package audio"
+references:
+- uid: "audio.AudioBuffer"
+  name: "AudioBuffer"
+  nameWithType: "AudioBuffer"
+  fullName: "audio.AudioBuffer"
+- uid: "audio.AudioListener"
+  name: "AudioListener"
+  nameWithType: "AudioListener"
+  fullName: "audio.AudioListener"
+- uid: "audio.AudioMaster"
+  name: "AudioMaster"
+  nameWithType: "AudioMaster"
+  fullName: "audio.AudioMaster"
+- uid: "audio.AudioSource"
+  name: "AudioSource"
+  nameWithType: "AudioSource"
+  fullName: "audio.AudioSource"

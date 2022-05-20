@@ -10,7 +10,9 @@ items:
   - "graphics.Camera.getPosition()"
   - "graphics.Camera.getProjectionMatrix()"
   - "graphics.Camera.getViewMatrix()"
+  - "graphics.Camera.mode"
   - "graphics.Camera.position"
+  - "graphics.Camera.resolution"
   - "graphics.Camera.smoothFollow(org.joml.Vector2f)"
   langs:
   - "java"
@@ -130,6 +132,20 @@ items:
     content: "public Matrix4f getViewMatrix()"
     return:
       type: "org.joml.Matrix4f"
+- uid: "graphics.Camera.mode"
+  id: "mode"
+  parent: "graphics.Camera"
+  langs:
+  - "java"
+  name: "mode"
+  nameWithType: "Camera.mode"
+  fullName: "graphics.Camera.mode"
+  type: "Field"
+  package: "graphics"
+  syntax:
+    content: "public Camera.Mode mode"
+    return:
+      type: "graphics.Camera.Mode"
 - uid: "graphics.Camera.position"
   id: "position"
   parent: "graphics.Camera"
@@ -143,6 +159,21 @@ items:
   summary: "Position of the camera"
   syntax:
     content: "public Vector2f position"
+    return:
+      type: "org.joml.Vector2f"
+- uid: "graphics.Camera.resolution"
+  id: "resolution"
+  parent: "graphics.Camera"
+  langs:
+  - "java"
+  name: "resolution"
+  nameWithType: "Camera.resolution"
+  fullName: "graphics.Camera.resolution"
+  type: "Field"
+  package: "graphics"
+  summary: "Custom game resolution separate from device(window) resolution"
+  syntax:
+    content: "public Vector2f resolution"
     return:
       type: "org.joml.Vector2f"
 - uid: "graphics.Camera.smoothFollow(org.joml.Vector2f)"
@@ -203,6 +234,11 @@ references:
   nameWithType: "Camera.getPosition"
   fullName: "graphics.Camera.getPosition"
   package: "graphics"
+- uid: "graphics.Camera.Mode"
+  spec.java:
+  - uid: "graphics.Camera.Mode"
+    name: "Mode"
+    fullName: "graphics.Camera.Mode"
 - uid: "java.lang.Object.notify()"
   name: "Object.notify()"
   nameWithType: "Object.notify()"

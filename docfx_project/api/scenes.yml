@@ -3,6 +3,7 @@ items:
 - uid: "scenes"
   id: "scenes"
   children:
+  - "scenes.AudioDemo"
   - "scenes.DemoPlatformer"
   - "scenes.DemoTopDown"
   - "scenes.TextRenderingDemo"
@@ -15,6 +16,10 @@ items:
   syntax:
     content: "package scenes"
 references:
+- uid: "scenes.AudioDemo"
+  name: "AudioDemo"
+  nameWithType: "AudioDemo"
+  fullName: "scenes.AudioDemo"
 - uid: "scenes.DemoPlatformer"
   name: "DemoPlatformer"
   nameWithType: "DemoPlatformer"

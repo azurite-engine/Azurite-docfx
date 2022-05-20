@@ -5,6 +5,7 @@ items:
   parent: "util"
   children:
   - "util.Assets.Assets()"
+  - "util.Assets.getAudioBuffer(java.lang.String)"
   - "util.Assets.getShader(java.lang.String)"
   - "util.Assets.getTexture(java.lang.String)"
   - "util.Assets.loadSpritesheet(java.lang.String,int,int,int,int)"
@@ -44,6 +45,24 @@ items:
   package: "util"
   syntax:
     content: "public Assets()"
+- uid: "util.Assets.getAudioBuffer(java.lang.String)"
+  id: "getAudioBuffer(java.lang.String)"
+  parent: "util.Assets"
+  langs:
+  - "java"
+  name: "getAudioBuffer(String path)"
+  nameWithType: "Assets.getAudioBuffer(String path)"
+  fullName: "util.Assets.getAudioBuffer(String path)"
+  overload: "util.Assets.getAudioBuffer*"
+  type: "Method"
+  package: "util"
+  syntax:
+    content: "public static AudioBuffer getAudioBuffer(String path)"
+    parameters:
+    - id: "path"
+      type: "java.lang.String"
+    return:
+      type: "audio.AudioBuffer"
 - uid: "util.Assets.getShader(java.lang.String)"
   id: "getShader(java.lang.String)"
   parent: "util.Assets"
@@ -147,6 +166,15 @@ references:
   name: "getTexture"
   nameWithType: "Assets.getTexture"
   fullName: "util.Assets.getTexture"
+  package: "util"
+- uid: "audio.AudioBuffer"
+  name: "AudioBuffer"
+  nameWithType: "AudioBuffer"
+  fullName: "audio.AudioBuffer"
+- uid: "util.Assets.getAudioBuffer*"
+  name: "getAudioBuffer"
+  nameWithType: "Assets.getAudioBuffer"
+  fullName: "util.Assets.getAudioBuffer"
   package: "util"
 - uid: "int"
   spec.java:

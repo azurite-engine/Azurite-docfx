@@ -1,4 +1,15 @@
 ### YamlMime:TableOfContent
+- uid: "audio"
+  name: "audio"
+  items:
+  - uid: "audio.AudioBuffer"
+    name: "AudioBuffer"
+  - uid: "audio.AudioListener"
+    name: "AudioListener"
+  - uid: "audio.AudioMaster"
+    name: "AudioMaster"
+  - uid: "audio.AudioSource"
+    name: "AudioSource"
 - uid: "io.bin"
   name: "io.bin"
   items:
@@ -51,6 +62,10 @@
     name: "SpriteRenderer"
   - uid: "ecs.Text"
     name: "Text"
+  - uid: "ecs.Tween"
+    name: "Tween"
+  - uid: "ecs.Tween.TweenMode"
+    name: "Tween.TweenMode"
 - uid: "event"
   name: "event"
   items:
@@ -218,6 +233,8 @@
 - uid: "scenes"
   name: "scenes"
   items:
+  - uid: "scenes.AudioDemo"
+    name: "AudioDemo"
   - uid: "scenes.DemoPlatformer"
     name: "DemoPlatformer"
   - uid: "scenes.DemoTopDown"
