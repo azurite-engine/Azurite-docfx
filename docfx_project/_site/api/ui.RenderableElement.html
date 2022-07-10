@@ -1,0 +1,867 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RenderableElement
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RenderableElement
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ui.RenderableElement">
+  
+  
+  <h1 id="ui_RenderableElement" data-uid="ui.RenderableElement" class="text-break">Class RenderableElement
+  </h1>
+  <div class="markdown level0 summary"><p>UIComponentRenderer is the renderable part of a UI component it can contain a solid color, a semi-transparent color, or a texture. Sprites can be tinted by the color value.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><a class="xref" href="ui.Element(class).html">Element</a></div>
+    <div class="level2"><span class="xref">RenderableElement</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_draw__">Element.draw()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getCursor__">Element.getCursor()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getEnabled__">Element.getEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getEventHandler__">Element.getEventHandler()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getFocused__">Element.getFocused()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getFont__">Element.getFont()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getFrame__">Element.getFrame()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getHeight__">Element.getHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getLayoutInfo__">Element.getLayoutInfo()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getParent__">Element.getParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getVisible__">Element.getVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getWidth__">Element.getWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getX__">Element.getX()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_getY__">Element.getY()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_hasEventHandler__">Element.hasEventHandler()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_isEnabled__">Element.isEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_isFocused__">Element.isFocused()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_isMouseOnThis__">Element.isMouseOnThis()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_isVisible__">Element.isVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_postUpdate__">Element.postUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_requestFocus__">Element.requestFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_setCursor_int_">Element.setCursor(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_setEnabled_boolean_">Element.setEnabled(boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_setFocused_boolean_">Element.setFocused(boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_setFont_ui_fonts_Font_">Element.setFont(Font)</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_setLayoutInfo_java_lang_Object_">Element.setLayoutInfo(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_setParent_ui_Container_">Element.setParent(Container)</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_setVisible_boolean_">Element.setVisible(boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_update__">Element.update()</a>
+    </div>
+    <div>
+      <a class="xref" href="ui.Element(class).html#ui_Element_zIndex__">Element.zIndex()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="ui_RenderableElement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RenderableElement extends Element</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="ui_RenderableElement_RenderableElement_" data-uid="ui.RenderableElement.RenderableElement*"></a>
+  <h4 id="ui_RenderableElement_RenderableElement_graphics_Color_ui_Frame_" data-uid="ui.RenderableElement.RenderableElement(graphics.Color,ui.Frame)">RenderableElement(Color color, Frame frame)</h4>
+  <div class="markdown level1 summary"><p>Create the spriteRenderer using a Color object, no sprite.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderableElement(Color color, Frame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>of type Color, range from 0-255</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ui.Frame.html">Frame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_RenderableElement_" data-uid="ui.RenderableElement.RenderableElement*"></a>
+  <h4 id="ui_RenderableElement_RenderableElement_graphics_Sprite_ui_Frame_" data-uid="ui.RenderableElement.RenderableElement(graphics.Sprite,ui.Frame)">RenderableElement(Sprite sprite, Frame frame)</h4>
+  <div class="markdown level1 summary"><p>Create a spriteRenderer using a sprite that is already loaded. Default tint color is white (no tinting visible).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderableElement(Sprite sprite, Frame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Sprite.html">Sprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ui.Frame.html">Frame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_RenderableElement_" data-uid="ui.RenderableElement.RenderableElement*"></a>
+  <h4 id="ui_RenderableElement_RenderableElement_java_lang_String_ui_Frame_" data-uid="ui.RenderableElement.RenderableElement(java.lang.String,ui.Frame)">RenderableElement(String path, Frame frame)</h4>
+  <div class="markdown level1 summary"><p>Create a spriteRenderer using an image from the fileSystem.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderableElement(String path, Frame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>to the image (ie. &quot;src/assets/images/pepper.png&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ui.Frame.html">Frame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_RenderableElement_" data-uid="ui.RenderableElement.RenderableElement*"></a>
+  <h4 id="ui_RenderableElement_RenderableElement_org_joml_Vector4f_ui_Frame_" data-uid="ui.RenderableElement.RenderableElement(org.joml.Vector4f,ui.Frame)">RenderableElement(Vector4f color, Frame frame)</h4>
+  <div class="markdown level1 summary"><p>Create the spriteRenderer using a color vector, no sprite.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderableElement(Vector4f color, Frame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>of type JOML Vector4f, range from 0-1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ui.Frame.html">Frame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="ui_RenderableElement_color" data-uid="ui.RenderableElement.color">color</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector4f color</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ui_RenderableElement_defaultColor" data-uid="ui.RenderableElement.defaultColor">defaultColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector4f defaultColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ui_RenderableElement_hoverColor" data-uid="ui.RenderableElement.hoverColor">hoverColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4f hoverColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ui_RenderableElement_tintColor" data-uid="ui.RenderableElement.tintColor">tintColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4f tintColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ui_RenderableElement_getColor_" data-uid="ui.RenderableElement.getColor*"></a>
+  <h4 id="ui_RenderableElement_getColor__" data-uid="ui.RenderableElement.getColor()">getColor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color getColor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Color.html">Color</a></td>
+        <td><p>type Color in standard RGBA form in the range 0-255</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_getColorVector_" data-uid="ui.RenderableElement.getColorVector*"></a>
+  <h4 id="ui_RenderableElement_getColorVector__" data-uid="ui.RenderableElement.getColorVector()">getColorVector()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4f getColorVector()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td><p>a Vector4f containing the normalized (0-1) color values (R, G, B, and A)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_getRenderFrame_" data-uid="ui.RenderableElement.getRenderFrame*"></a>
+  <h4 id="ui_RenderableElement_getRenderFrame__" data-uid="ui.RenderableElement.getRenderFrame()">getRenderFrame()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Frame getRenderFrame()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ui.Frame.html">Frame</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_getTexCoords_" data-uid="ui.RenderableElement.getTexCoords*"></a>
+  <h4 id="ui_RenderableElement_getTexCoords__" data-uid="ui.RenderableElement.getTexCoords()">getTexCoords()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2f[] getTexCoords()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector2f</span>[]</td>
+        <td><p>Vector2f array of the UV coordinates of the sprite if applicable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_getTexture_" data-uid="ui.RenderableElement.getTexture*"></a>
+  <h4 id="ui_RenderableElement_getTexture__" data-uid="ui.RenderableElement.getTexture()">getTexture()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture getTexture()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><p>type Texture of the sprite if applicable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_setAlpha_" data-uid="ui.RenderableElement.setAlpha*"></a>
+  <h4 id="ui_RenderableElement_setAlpha_float_" data-uid="ui.RenderableElement.setAlpha(float)">setAlpha(float a)</h4>
+  <div class="markdown level1 summary"><p>Change the alpha/opacity of the sprite and/or color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setAlpha(float a)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>alpha/opacity</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_setColor_" data-uid="ui.RenderableElement.setColor*"></a>
+  <h4 id="ui_RenderableElement_setColor_graphics_Color_" data-uid="ui.RenderableElement.setColor(graphics.Color)">setColor(Color color)</h4>
+  <div class="markdown level1 summary"><p>Change the color by passing a Color object, converting it to a normalized Vector4f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setColor(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>should be in range of 0-255</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_setColor_" data-uid="ui.RenderableElement.setColor*"></a>
+  <h4 id="ui_RenderableElement_setColor_org_joml_Vector4f_" data-uid="ui.RenderableElement.setColor(org.joml.Vector4f)">setColor(Vector4f color)</h4>
+  <div class="markdown level1 summary"><p>Change the color by passing a Vector4f</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setColor(Vector4f color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>vector, values should be in the range of 0-1</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_setRenderFrame_" data-uid="ui.RenderableElement.setRenderFrame*"></a>
+  <h4 id="ui_RenderableElement_setRenderFrame_ui_Frame_" data-uid="ui.RenderableElement.setRenderFrame(ui.Frame)">setRenderFrame(Frame frame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setRenderFrame(Frame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ui.Frame.html">Frame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_setSize_" data-uid="ui.RenderableElement.setSize*"></a>
+  <h4 id="ui_RenderableElement_setSize_org_joml_Vector2f_" data-uid="ui.RenderableElement.setSize(org.joml.Vector2f)">setSize(Vector2f size)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSize(Vector2f size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector2f</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_setSprite_" data-uid="ui.RenderableElement.setSprite*"></a>
+  <h4 id="ui_RenderableElement_setSprite_graphics_Sprite_" data-uid="ui.RenderableElement.setSprite(graphics.Sprite)">setSprite(Sprite sprite)</h4>
+  <div class="markdown level1 summary"><p>Change the sprite contained in the SpriteRenderer Component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSprite(Sprite sprite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Sprite.html">Sprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_setTexture_" data-uid="ui.RenderableElement.setTexture*"></a>
+  <h4 id="ui_RenderableElement_setTexture_graphics_Texture_" data-uid="ui.RenderableElement.setTexture(graphics.Texture)">setTexture(Texture texture)</h4>
+  <div class="markdown level1 summary"><p>Set the texture of the Sprite if required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setTexture(Texture texture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td><p>the new texture of this sprite</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_RenderableElement_start_" data-uid="ui.RenderableElement.start*"></a>
+  <h4 id="ui_RenderableElement_start__" data-uid="ui.RenderableElement.start()">start()</h4>
+  <div class="markdown level1 summary"><p>Initialize the Element, called once after creation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void start()</code></pre>
+  </div>
+  
+  
+  <a id="ui_RenderableElement_update_" data-uid="ui.RenderableElement.update*"></a>
+  <h4 id="ui_RenderableElement_update_float_" data-uid="ui.RenderableElement.update(float)">update(float dt)</h4>
+  <div class="markdown level1 summary"><p>Update method called every frame by parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void update(float dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td><p>Engine.deltaTime</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

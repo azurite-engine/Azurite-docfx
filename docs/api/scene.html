@@ -90,47 +90,47 @@
       <h4><a class="xref" href="scene.Scene.html">Scene</a></h4>
       <section><p>Abstract class encapsulating the game logic, the gameObjects, the renderers, the physics specifications and all the necessary ecs-related logic. Programming/Interacting with this game engine will usually involve the following boilerplate code:</p>
 <pre><code class="lang-java">public class Main extends Scene {
-         public static void main(String[] args) {
-             Engine.init(1920, 1080, &quot;Azurite Engine Demo In Comment&quot;, 1.0f);
-             Engine.scenes().switchScene(new Main(), true);
-             Engine.showWindow();
-         }
-
-         public void awake() {
-             camera = new Camera();
-             ...
-         }
-
-         public void update() {
-             ...
-         }
+     public static void main(String[] args) {
+         Engine.init(1920, 1080, &quot;Azurite Engine Demo In Comment&quot;, 1.0f);
+         Engine.scenes().switchScene(new Main(), true);
+         Engine.showWindow();
      }
+
+     public void awake() {
+         camera = new Camera();
+         ...
+     }
+
+     public void update() {
+         ...
+     }
+ }
 </code></pre>
 <p>A simple example of a scene with just a rendered sprite:</p>
 <pre><code class="lang-java">public class Main extends Scene {
-         GameObject player;
-         Sprite s;
+     GameObject player;
+     Sprite s;
 
-         public static void main(String[] args) {
-             Engine.init(1920, 1080, &quot;Azurite Engine Demo In Comment&quot;, 1.0f);
-             Engine.scenes().switchScene(new Main(), true);
-             Engine.showWindow();
-         }
+     public static void main(String[] args) {
+         Engine.init(1920, 1080, &quot;Azurite Engine Demo In Comment&quot;, 1.0f);
+         Engine.scenes().switchScene(new Main(), true);
+         Engine.showWindow();
+     }
 
-         public void awake() {
-             camera = new Camera();
+     public void awake() {
+         camera = new Camera();
 
-             player = new GameObject();
-             s = new Sprite
-             player.addComponent(new SpriteRenderer(s, new Vector2f(100)));
-         }
+         player = new GameObject();
+         s = new Sprite
+         player.addComponent(new SpriteRenderer(s, new Vector2f(100)));
+     }
 
-         public void update() {
-             if (Keyboard.getKeyDown(GLFW.GLFW_KEY_SPACE)) {
-                 player.transform.add(new Vector2f(1, 0));
-             }
+     public void update() {
+         if (Keyboard.getKeyDown(GLFW.GLFW_KEY_SPACE)) {
+             player.transform.add(new Vector2f(1, 0));
          }
      }
+ }
 </code></pre>
 </section>
       <h4><a class="xref" href="scene.SceneManager.html">SceneManager</a></h4>

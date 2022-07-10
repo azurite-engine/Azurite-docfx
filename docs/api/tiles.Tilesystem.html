@@ -137,12 +137,12 @@
   
   
   <a id="tiles_Tilesystem_Tilesystem_" data-uid="tiles.Tilesystem.Tilesystem*"></a>
-  <h4 id="tiles_Tilesystem_Tilesystem_tiles_Spritesheet_tiles_Spritesheet_int_int_int_int_int___" data-uid="tiles.Tilesystem.Tilesystem(tiles.Spritesheet,tiles.Spritesheet,int,int,int,int,int[])">Tilesystem(Spritesheet a, Spritesheet b, int xTiles, int yTiles, int width, int height, int[] layers)</h4>
+  <h4 id="tiles_Tilesystem_Tilesystem_java_lang_String_int_int_" data-uid="tiles.Tilesystem.Tilesystem(java.lang.String,int,int)">Tilesystem(String tmxFile, int width, int height)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Tilesystem(Spritesheet a, Spritesheet b, int xTiles, int yTiles, int width, int height, int[] layers)</code></pre>
+    <pre><code class="lang-csharp hljs">public Tilesystem(String tmxFile, int width, int height)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,23 +155,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="tiles.Spritesheet.html">Spritesheet</a></td>
-        <td><span class="parametername">a</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="tiles.Spritesheet.html">Spritesheet</a></td>
-        <td><span class="parametername">b</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">xTiles</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">yTiles</span></td>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">tmxFile</span></td>
         <td></td>
       </tr>
       <tr>
@@ -184,37 +169,6 @@
         <td><span class="parametername">height</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><span class="xref">int</span>[]</td>
-        <td><span class="parametername">layers</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="tiles_Tilesystem_map" data-uid="tiles.Tilesystem.map">map</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int[] map</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span>[]</td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -222,12 +176,12 @@
   
   
   <a id="tiles_Tilesystem_getAt_" data-uid="tiles.Tilesystem.getAt*"></a>
-  <h4 id="tiles_Tilesystem_getAt_int_int_int_" data-uid="tiles.Tilesystem.getAt(int,int,int)">getAt(int x, int y, int dimensionWidth)</h4>
+  <h4 id="tiles_Tilesystem_getAt_int_int_int_int___" data-uid="tiles.Tilesystem.getAt(int,int,int,int[])">getAt(int x, int y, int dimensionWidth, int[] map)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int getAt(int x, int y, int dimensionWidth)</code></pre>
+    <pre><code class="lang-csharp hljs">public int getAt(int x, int y, int dimensionWidth, int[] map)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -252,6 +206,11 @@
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">dimensionWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td><span class="parametername">map</span></td>
         <td></td>
       </tr>
     </tbody>

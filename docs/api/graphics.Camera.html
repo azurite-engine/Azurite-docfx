@@ -180,6 +180,30 @@
   </h3>
   
   
+  <h4 id="graphics_Camera_instance" data-uid="graphics.Camera.instance">instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Camera instance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="graphics_Camera_mode" data-uid="graphics.Camera.mode">mode</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -229,13 +253,13 @@
   </table>
   
   
-  <h4 id="graphics_Camera_resolution" data-uid="graphics.Camera.resolution">resolution</h4>
-  <div class="markdown level1 summary"><p>Custom game resolution separate from device(window) resolution</p>
+  <h4 id="graphics_Camera_worldSize" data-uid="graphics.Camera.worldSize">worldSize</h4>
+  <div class="markdown level1 summary"><p>World size otherwise known as pixel size</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2f resolution</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2f worldSize</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -265,6 +289,56 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void adjustProjection()</code></pre>
   </div>
+  
+  
+  <a id="graphics_Camera_getInverseProjection_" data-uid="graphics.Camera.getInverseProjection*"></a>
+  <h4 id="graphics_Camera_getInverseProjection__" data-uid="graphics.Camera.getInverseProjection()">getInverseProjection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4f getInverseProjection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Matrix4f</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Camera_getInverseView_" data-uid="graphics.Camera.getInverseView*"></a>
+  <h4 id="graphics_Camera_getInverseView__" data-uid="graphics.Camera.getInverseView()">getInverseView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4f getInverseView()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Matrix4f</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="graphics_Camera_getPosition_" data-uid="graphics.Camera.getPosition*"></a>
@@ -339,6 +413,131 @@
     <tbody>
       <tr>
         <td><span class="xref">org.joml.Matrix4f</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Camera_getViewportPosX_" data-uid="graphics.Camera.getViewportPosX*"></a>
+  <h4 id="graphics_Camera_getViewportPosX__" data-uid="graphics.Camera.getViewportPosX()">getViewportPosX()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getViewportPosX()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Camera_getViewportPosY_" data-uid="graphics.Camera.getViewportPosY*"></a>
+  <h4 id="graphics_Camera_getViewportPosY__" data-uid="graphics.Camera.getViewportPosY()">getViewportPosY()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getViewportPosY()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Camera_getViewportSizeX_" data-uid="graphics.Camera.getViewportSizeX*"></a>
+  <h4 id="graphics_Camera_getViewportSizeX__" data-uid="graphics.Camera.getViewportSizeX()">getViewportSizeX()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getViewportSizeX()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Camera_getViewportSizeY_" data-uid="graphics.Camera.getViewportSizeY*"></a>
+  <h4 id="graphics_Camera_getViewportSizeY__" data-uid="graphics.Camera.getViewportSizeY()">getViewportSizeY()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getViewportSizeY()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_Camera_getWorldSize_" data-uid="graphics.Camera.getWorldSize*"></a>
+  <h4 id="graphics_Camera_getWorldSize__" data-uid="graphics.Camera.getWorldSize()">getWorldSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2f getWorldSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector2f</span></td>
         <td></td>
       </tr>
     </tbody>

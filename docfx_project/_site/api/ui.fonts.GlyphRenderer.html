@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GlyphRenderer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GlyphRenderer
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ui.fonts.GlyphRenderer">
+  
+  
+  <h1 id="ui_fonts_GlyphRenderer" data-uid="ui.fonts.GlyphRenderer" class="text-break">Class GlyphRenderer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><span class="xref">GlyphRenderer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="ui_fonts_GlyphRenderer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GlyphRenderer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_GlyphRenderer_" data-uid="ui.fonts.GlyphRenderer.GlyphRenderer*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_GlyphRenderer_util_Transform_ui_fonts_Glyph_ui_Text_char_boolean_graphics_Color_" data-uid="ui.fonts.GlyphRenderer.GlyphRenderer(util.Transform,ui.fonts.Glyph,ui.Text,char,boolean,graphics.Color)">GlyphRenderer(Transform transform, Glyph glyph, Text parentText, char c, boolean isSticky, Color color)</h4>
+  <div class="markdown level1 summary"><p>Create a spriteRenderer using a sprite that is already loaded. Default tint color is white (no tinting visible).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlyphRenderer(Transform transform, Glyph glyph, Text parentText, char c, boolean isSticky, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="util.Transform.html">Transform</a></td>
+        <td><span class="parametername">transform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ui.fonts.Glyph.html">Glyph</a></td>
+        <td><span class="parametername">glyph</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ui.Text.html">Text</a></td>
+        <td><span class="parametername">parentText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">isSticky</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="graphics.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_addX_" data-uid="ui.fonts.GlyphRenderer.addX*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_addX_float_" data-uid="ui.fonts.GlyphRenderer.addX(float)">addX(float x)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addX(float x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_addY_" data-uid="ui.fonts.GlyphRenderer.addY*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_addY_float_" data-uid="ui.fonts.GlyphRenderer.addY(float)">addY(float x)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addY(float x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_getCharacter_" data-uid="ui.fonts.GlyphRenderer.getCharacter*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_getCharacter__" data-uid="ui.fonts.GlyphRenderer.getCharacter()">getCharacter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char getCharacter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_getColor_" data-uid="ui.fonts.GlyphRenderer.getColor*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_getColor__" data-uid="ui.fonts.GlyphRenderer.getColor()">getColor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color getColor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Color.html">Color</a></td>
+        <td><p>type Color in standard RGBA form in the range 0-255</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_getColorVector_" data-uid="ui.fonts.GlyphRenderer.getColorVector*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_getColorVector__" data-uid="ui.fonts.GlyphRenderer.getColorVector()">getColorVector()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4f getColorVector()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td><p>a Vector4f containing the normalized (0-1) color values (R, G, B, and A)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_getLocalTransform_" data-uid="ui.fonts.GlyphRenderer.getLocalTransform*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_getLocalTransform__" data-uid="ui.fonts.GlyphRenderer.getLocalTransform()">getLocalTransform()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform getLocalTransform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="util.Transform.html">Transform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_getParentText_" data-uid="ui.fonts.GlyphRenderer.getParentText*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_getParentText__" data-uid="ui.fonts.GlyphRenderer.getParentText()">getParentText()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text getParentText()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ui.Text.html">Text</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_getTexCoords_" data-uid="ui.fonts.GlyphRenderer.getTexCoords*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_getTexCoords__" data-uid="ui.fonts.GlyphRenderer.getTexCoords()">getTexCoords()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2f[] getTexCoords()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector2f</span>[]</td>
+        <td><p>Vector2f array of the UV coordinates of the sprite if applicable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_getTexture_" data-uid="ui.fonts.GlyphRenderer.getTexture*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_getTexture__" data-uid="ui.fonts.GlyphRenderer.getTexture()">getTexture()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture getTexture()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><p>type Texture of the sprite if applicable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_isDirty_" data-uid="ui.fonts.GlyphRenderer.isDirty*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_isDirty__" data-uid="ui.fonts.GlyphRenderer.isDirty()">isDirty()</h4>
+  <div class="markdown level1 summary"><p>Used by the renderer to determine if this glyph should be sent back to the GPU to be redrawn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean isDirty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>true or false if the sprite or color has changes since last draw.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_isSticky_" data-uid="ui.fonts.GlyphRenderer.isSticky*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_isSticky__" data-uid="ui.fonts.GlyphRenderer.isSticky()">isSticky()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean isSticky()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_setAlpha_" data-uid="ui.fonts.GlyphRenderer.setAlpha*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_setAlpha_float_" data-uid="ui.fonts.GlyphRenderer.setAlpha(float)">setAlpha(float a)</h4>
+  <div class="markdown level1 summary"><p>Change the alpha/opacity of the sprite and/or color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setAlpha(float a)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>alpha/opacity</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_setClean_" data-uid="ui.fonts.GlyphRenderer.setClean*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_setClean__" data-uid="ui.fonts.GlyphRenderer.setClean()">setClean()</h4>
+  <div class="markdown level1 summary"><p>Used by the renderer to reset the state of the GlyphRenderer to clean.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setClean()</code></pre>
+  </div>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_setColor_" data-uid="ui.fonts.GlyphRenderer.setColor*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_setColor_graphics_Color_" data-uid="ui.fonts.GlyphRenderer.setColor(graphics.Color)">setColor(Color color)</h4>
+  <div class="markdown level1 summary"><p>Change the color by passing a Color object, converting it to a normalized Vector4f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setColor(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>should be in range of 0-255</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_setColor_" data-uid="ui.fonts.GlyphRenderer.setColor*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_setColor_org_joml_Vector4f_" data-uid="ui.fonts.GlyphRenderer.setColor(org.joml.Vector4f)">setColor(Vector4f color)</h4>
+  <div class="markdown level1 summary"><p>Change the color by passing a Vector4f</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setColor(Vector4f color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector4f</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>vector, values should be in the range of 0-1</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_setDirty_" data-uid="ui.fonts.GlyphRenderer.setDirty*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_setDirty__" data-uid="ui.fonts.GlyphRenderer.setDirty()">setDirty()</h4>
+  <div class="markdown level1 summary"><p>Used by the renderer to reset the state of the GlyphRenderer to dirty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setDirty()</code></pre>
+  </div>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_update_" data-uid="ui.fonts.GlyphRenderer.update*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_update_float_" data-uid="ui.fonts.GlyphRenderer.update(float)">update(float dt)</h4>
+  <div class="markdown level1 summary"><p>Update method called every frame by parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void update(float dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td><p>Engine.deltaTime</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ui_fonts_GlyphRenderer_updatePosition_" data-uid="ui.fonts.GlyphRenderer.updatePosition*"></a>
+  <h4 id="ui_fonts_GlyphRenderer_updatePosition_org_joml_Vector2f_" data-uid="ui.fonts.GlyphRenderer.updatePosition(org.joml.Vector2f)">updatePosition(Vector2f delta)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void updatePosition(Vector2f delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">org.joml.Vector2f</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

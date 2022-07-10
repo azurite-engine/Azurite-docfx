@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WeightedCombine
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WeightedCombine
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="graphics.postprocess.WeightedCombine">
+  
+  
+  <h1 id="graphics_postprocess_WeightedCombine" data-uid="graphics.postprocess.WeightedCombine" class="text-break">Class WeightedCombine
+  </h1>
+  <div class="markdown level0 summary"><p>A Post Processing Step that combines two textures multiplying them with corresponding weights and then adding them</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><a class="xref" href="graphics.postprocess.PostProcessStep.html">PostProcessStep</a></div>
+    <div class="level2"><span class="xref">WeightedCombine</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_apply__">PostProcessStep.apply()</a>
+    </div>
+    <div>
+      <a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_createFramebuffer__">PostProcessStep.createFramebuffer()</a>
+    </div>
+    <div>
+      <a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_createShader__">PostProcessStep.createShader()</a>
+    </div>
+    <div>
+      <a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_init__">PostProcessStep.init()</a>
+    </div>
+    <div>
+      <a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_prepare__">PostProcessStep.prepare()</a>
+    </div>
+    <div>
+      <a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_uploadUniforms_graphics_Shader_">PostProcessStep.uploadUniforms(Shader)</a>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="graphics_postprocess_WeightedCombine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WeightedCombine extends PostProcessStep</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="graphics_postprocess_WeightedCombine_WeightedCombine_" data-uid="graphics.postprocess.WeightedCombine.WeightedCombine*"></a>
+  <h4 id="graphics_postprocess_WeightedCombine_WeightedCombine_graphics_postprocess_PostProcessStep_Target_" data-uid="graphics.postprocess.WeightedCombine.WeightedCombine(graphics.postprocess.PostProcessStep.Target)">WeightedCombine(PostProcessStep.Target target)</h4>
+  <div class="markdown level1 summary"><p>Default Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WeightedCombine(PostProcessStep.Target target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.postprocess.PostProcessStep.Target.html#graphics_postprocess_PostProcessStep_Target">PostProcessStep.Target</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Where the final texture is to be rendered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="graphics_postprocess_WeightedCombine_createShader_" data-uid="graphics.postprocess.WeightedCombine.createShader*"></a>
+  <h4 id="graphics_postprocess_WeightedCombine_createShader__" data-uid="graphics.postprocess.WeightedCombine.createShader()">createShader()</h4>
+  <div class="markdown level1 summary"><p>Create the shader to be used for this step</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Shader createShader()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Shader.html">Shader</a></td>
+        <td><p>the created shader</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_createShader__">PostProcessStep.createShader()</a></div>
+  
+  
+  <a id="graphics_postprocess_WeightedCombine_prepare_" data-uid="graphics.postprocess.WeightedCombine.prepare*"></a>
+  <h4 id="graphics_postprocess_WeightedCombine_prepare__" data-uid="graphics.postprocess.WeightedCombine.prepare()">prepare()</h4>
+  <div class="markdown level1 summary"><p>Prepare the framebuffer by clearing it and binding any textures required</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void prepare()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_prepare__">PostProcessStep.prepare()</a></div>
+  
+  
+  <a id="graphics_postprocess_WeightedCombine_setTextureA_" data-uid="graphics.postprocess.WeightedCombine.setTextureA*"></a>
+  <h4 id="graphics_postprocess_WeightedCombine_setTextureA_graphics_Texture_" data-uid="graphics.postprocess.WeightedCombine.setTextureA(graphics.Texture)">setTextureA(Texture texture)</h4>
+  <div class="markdown level1 summary"><p>Set the input texture A's id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setTextureA(Texture texture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td><p>input texture</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_postprocess_WeightedCombine_setTextureB_" data-uid="graphics.postprocess.WeightedCombine.setTextureB*"></a>
+  <h4 id="graphics_postprocess_WeightedCombine_setTextureB_graphics_Texture_" data-uid="graphics.postprocess.WeightedCombine.setTextureB(graphics.Texture)">setTextureB(Texture texture)</h4>
+  <div class="markdown level1 summary"><p>Set the input texture B's id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setTextureB(Texture texture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td><p>input texture</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_postprocess_WeightedCombine_setWeightA_" data-uid="graphics.postprocess.WeightedCombine.setWeightA*"></a>
+  <h4 id="graphics_postprocess_WeightedCombine_setWeightA_float_" data-uid="graphics.postprocess.WeightedCombine.setWeightA(float)">setWeightA(float weightA)</h4>
+  <div class="markdown level1 summary"><p>Set the input texture A's weight</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setWeightA(float weightA)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">weightA</span></td>
+        <td><p>input weight</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_postprocess_WeightedCombine_setWeightB_" data-uid="graphics.postprocess.WeightedCombine.setWeightB*"></a>
+  <h4 id="graphics_postprocess_WeightedCombine_setWeightB_float_" data-uid="graphics.postprocess.WeightedCombine.setWeightB(float)">setWeightB(float weightB)</h4>
+  <div class="markdown level1 summary"><p>Set the input texture B's weight</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setWeightB(float weightB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">weightB</span></td>
+        <td><p>input weight</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="graphics_postprocess_WeightedCombine_uploadUniforms_" data-uid="graphics.postprocess.WeightedCombine.uploadUniforms*"></a>
+  <h4 id="graphics_postprocess_WeightedCombine_uploadUniforms_graphics_Shader_" data-uid="graphics.postprocess.WeightedCombine.uploadUniforms(graphics.Shader)">uploadUniforms(Shader shader)</h4>
+  <div class="markdown level1 summary"><p>Upload uniforms to the shader</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void uploadUniforms(Shader shader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.Shader.html">Shader</a></td>
+        <td><span class="parametername">shader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="graphics.postprocess.PostProcessStep.html#graphics_postprocess_PostProcessStep_uploadUniforms_graphics_Shader_">PostProcessStep.uploadUniforms(Shader shader)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

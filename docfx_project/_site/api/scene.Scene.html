@@ -85,47 +85,47 @@
   </h1>
   <div class="markdown level0 summary"><p>Abstract class encapsulating the game logic, the gameObjects, the renderers, the physics specifications and all the necessary ecs-related logic. Programming/Interacting with this game engine will usually involve the following boilerplate code:</p>
 <pre><code class="lang-java">public class Main extends Scene {
-         public static void main(String[] args) {
-             Engine.init(1920, 1080, &quot;Azurite Engine Demo In Comment&quot;, 1.0f);
-             Engine.scenes().switchScene(new Main(), true);
-             Engine.showWindow();
-         }
-
-         public void awake() {
-             camera = new Camera();
-             ...
-         }
-
-         public void update() {
-             ...
-         }
+     public static void main(String[] args) {
+         Engine.init(1920, 1080, &quot;Azurite Engine Demo In Comment&quot;, 1.0f);
+         Engine.scenes().switchScene(new Main(), true);
+         Engine.showWindow();
      }
+
+     public void awake() {
+         camera = new Camera();
+         ...
+     }
+
+     public void update() {
+         ...
+     }
+ }
 </code></pre>
 <p>A simple example of a scene with just a rendered sprite:</p>
 <pre><code class="lang-java">public class Main extends Scene {
-         GameObject player;
-         Sprite s;
+     GameObject player;
+     Sprite s;
 
-         public static void main(String[] args) {
-             Engine.init(1920, 1080, &quot;Azurite Engine Demo In Comment&quot;, 1.0f);
-             Engine.scenes().switchScene(new Main(), true);
-             Engine.showWindow();
-         }
+     public static void main(String[] args) {
+         Engine.init(1920, 1080, &quot;Azurite Engine Demo In Comment&quot;, 1.0f);
+         Engine.scenes().switchScene(new Main(), true);
+         Engine.showWindow();
+     }
 
-         public void awake() {
-             camera = new Camera();
+     public void awake() {
+         camera = new Camera();
 
-             player = new GameObject();
-             s = new Sprite
-             player.addComponent(new SpriteRenderer(s, new Vector2f(100)));
-         }
+         player = new GameObject();
+         s = new Sprite
+         player.addComponent(new SpriteRenderer(s, new Vector2f(100)));
+     }
 
-         public void update() {
-             if (Keyboard.getKeyDown(GLFW.GLFW_KEY_SPACE)) {
-                 player.transform.add(new Vector2f(1, 0));
-             }
+     public void update() {
+         if (Keyboard.getKeyDown(GLFW.GLFW_KEY_SPACE)) {
+             player.transform.add(new Vector2f(1, 0));
          }
      }
+ }
 </code></pre>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -257,7 +257,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="postprocess.ForwardToTexture.html">ForwardToTexture</a></td>
+        <td><a class="xref" href="graphics.postprocess.ForwardToTexture.html">ForwardToTexture</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -334,6 +334,30 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="scene_Scene_uiRenderer" data-uid="scene.Scene.uiRenderer">uiRenderer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIRenderer uiRenderer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="graphics.renderer.UIRenderer.html">UIRenderer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -378,6 +402,33 @@ Add a new gameObject to the scene and immediately call its start method.</p>
   </table>
   
   
+  <a id="scene_Scene_addText_" data-uid="scene.Scene.addText*"></a>
+  <h4 id="scene_Scene_addText_ui_Text_" data-uid="scene.Scene.addText(ui.Text)">addText(Text t)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addText(Text t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ui.Text.html">Text</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="scene_Scene_addToRenderers_" data-uid="scene.Scene.addToRenderers*"></a>
   <h4 id="scene_Scene_addToRenderers_ecs_GameObject_" data-uid="scene.Scene.addToRenderers(ecs.GameObject)">addToRenderers(GameObject gameObject)</h4>
   <div class="markdown level1 summary"><p>Add a gameObject to all renderers</p>
@@ -407,13 +458,13 @@ Add a new gameObject to the scene and immediately call its start method.</p>
   </table>
   
   
-  <a id="scene_Scene_addUiObject_" data-uid="scene.Scene.addUiObject*"></a>
-  <h4 id="scene_Scene_addUiObject_ecs_Text_" data-uid="scene.Scene.addUiObject(ecs.Text)">addUiObject(Text t)</h4>
+  <a id="scene_Scene_addUIElement_" data-uid="scene.Scene.addUIElement*"></a>
+  <h4 id="scene_Scene_addUIElement_ui_Element_" data-uid="scene.Scene.addUIElement(ui.Element)">addUIElement(Element e)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void addUiObject(Text t)</code></pre>
+    <pre><code class="lang-csharp hljs">public void addUIElement(Element e)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -426,8 +477,8 @@ Add a new gameObject to the scene and immediately call its start method.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ecs.Text.html">Text</a></td>
-        <td><span class="parametername">t</span></td>
+        <td><a class="xref" href="ui.Element(class).html">Element</a></td>
+        <td><span class="parametername">e</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -715,7 +766,7 @@ Add a new gameObject to the scene and immediately call its start method.</p>
   
   <a id="scene_Scene_sceneId_" data-uid="scene.Scene.sceneId*"></a>
   <h4 id="scene_Scene_sceneId__" data-uid="scene.Scene.sceneId()">sceneId()</h4>
-  <div class="markdown level1 summary"><p>The sceneId is meant to represent the instance of a scene as an integer</p>
+  <div class="markdown level1 summary"><p>Apply post processing to a texture</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
