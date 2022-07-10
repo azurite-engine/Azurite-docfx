@@ -5,14 +5,14 @@ items:
   parent: "graphics.renderer"
   children:
   - "graphics.renderer.TextRenderer.TextRenderer()"
-  - "graphics.renderer.TextRenderer.add(ecs.Text)"
+  - "graphics.renderer.TextRenderer.add(ui.Text)"
   - "graphics.renderer.TextRenderer.createBatch(int)"
   - "graphics.renderer.TextRenderer.createFramebuffer()"
   - "graphics.renderer.TextRenderer.createShader()"
   - "graphics.renderer.TextRenderer.getMaxBatchSize()"
   - "graphics.renderer.TextRenderer.prepare()"
   - "graphics.renderer.TextRenderer.rebuffer()"
-  - "graphics.renderer.TextRenderer.remove(ecs.Text)"
+  - "graphics.renderer.TextRenderer.remove(ui.Text)"
   - "graphics.renderer.TextRenderer.render()"
   - "graphics.renderer.TextRenderer.uploadUniforms(graphics.Shader)"
   langs:
@@ -65,8 +65,8 @@ items:
   package: "graphics.renderer"
   syntax:
     content: "public TextRenderer()"
-- uid: "graphics.renderer.TextRenderer.add(ecs.Text)"
-  id: "add(ecs.Text)"
+- uid: "graphics.renderer.TextRenderer.add(ui.Text)"
+  id: "add(ui.Text)"
   parent: "graphics.renderer.TextRenderer"
   langs:
   - "java"
@@ -81,7 +81,7 @@ items:
     content: "public void add(Text textObject)"
     parameters:
     - id: "textObject"
-      type: "ecs.Text"
+      type: "ui.Text"
       description: "the Text with renderable glyphs"
 - uid: "graphics.renderer.TextRenderer.createBatch(int)"
   id: "createBatch(int)"
@@ -185,8 +185,8 @@ items:
   summary: "Rebuffer all the data into batches"
   syntax:
     content: "protected void rebuffer()"
-- uid: "graphics.renderer.TextRenderer.remove(ecs.Text)"
-  id: "remove(ecs.Text)"
+- uid: "graphics.renderer.TextRenderer.remove(ui.Text)"
+  id: "remove(ui.Text)"
   parent: "graphics.renderer.TextRenderer"
   langs:
   - "java"
@@ -200,7 +200,7 @@ items:
     content: "public void remove(Text text)"
     parameters:
     - id: "text"
-      type: "ecs.Text"
+      type: "ui.Text"
 - uid: "graphics.renderer.TextRenderer.render()"
   id: "render()"
   parent: "graphics.renderer.TextRenderer"
@@ -293,10 +293,10 @@ references:
   nameWithType: "TextRenderer.prepare"
   fullName: "graphics.renderer.TextRenderer.prepare"
   package: "graphics.renderer"
-- uid: "ecs.Text"
+- uid: "ui.Text"
   name: "Text"
   nameWithType: "Text"
-  fullName: "ecs.Text"
+  fullName: "ui.Text"
 - uid: "graphics.renderer.TextRenderer.add*"
   name: "add"
   nameWithType: "TextRenderer.add"

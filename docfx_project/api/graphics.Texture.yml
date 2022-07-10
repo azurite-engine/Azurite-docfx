@@ -359,7 +359,7 @@ items:
   overload: "graphics.Texture.toFile*"
   type: "Method"
   package: "graphics"
-  summary: "Will write am OpenGL Texture to the provided file"
+  summary: "Will write a OpenGL Texture to the provided file"
   syntax:
     content: "public static void toFile(String file, int id, int width, int height)"
     parameters:

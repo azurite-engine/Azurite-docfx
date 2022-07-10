@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: "ui.element.ValueHolder"
+  id: "ValueHolder"
+  parent: "ui.element"
+  children:
+  - "ui.element.ValueHolder.getValue()"
+  - "ui.element.ValueHolder.setValue(float)"
+  langs:
+  - "java"
+  name: "ValueHolder"
+  nameWithType: "ValueHolder"
+  fullName: "ui.element.ValueHolder"
+  type: "Interface"
+  package: "ui.element"
+  syntax:
+    content: "public interface ValueHolder"
+- uid: "ui.element.ValueHolder.getValue()"
+  id: "getValue()"
+  parent: "ui.element.ValueHolder"
+  langs:
+  - "java"
+  name: "getValue()"
+  nameWithType: "ValueHolder.getValue()"
+  fullName: "ui.element.ValueHolder.getValue()"
+  overload: "ui.element.ValueHolder.getValue*"
+  type: "Method"
+  package: "ui.element"
+  syntax:
+    content: "public abstract float getValue()"
+    return:
+      type: "float"
+- uid: "ui.element.ValueHolder.setValue(float)"
+  id: "setValue(float)"
+  parent: "ui.element.ValueHolder"
+  langs:
+  - "java"
+  name: "setValue(float newValue)"
+  nameWithType: "ValueHolder.setValue(float newValue)"
+  fullName: "ui.element.ValueHolder.setValue(float newValue)"
+  overload: "ui.element.ValueHolder.setValue*"
+  type: "Method"
+  package: "ui.element"
+  syntax:
+    content: "public abstract void setValue(float newValue)"
+    parameters:
+    - id: "newValue"
+      type: "float"
+references:
+- uid: "float"
+  spec.java:
+  - uid: "float"
+    name: "float"
+    fullName: "float"
+- uid: "ui.element.ValueHolder.getValue*"
+  name: "getValue"
+  nameWithType: "ValueHolder.getValue"
+  fullName: "ui.element.ValueHolder.getValue"
+  package: "ui.element"
+- uid: "ui.element.ValueHolder.setValue*"
+  name: "setValue"
+  nameWithType: "ValueHolder.setValue"
+  fullName: "ui.element.ValueHolder.setValue"
+  package: "ui.element"

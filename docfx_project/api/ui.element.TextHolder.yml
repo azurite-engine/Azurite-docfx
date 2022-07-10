@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: "ui.element.TextHolder"
+  id: "TextHolder"
+  parent: "ui.element"
+  children:
+  - "ui.element.TextHolder.getText()"
+  - "ui.element.TextHolder.setText(java.lang.String)"
+  langs:
+  - "java"
+  name: "TextHolder"
+  nameWithType: "TextHolder"
+  fullName: "ui.element.TextHolder"
+  type: "Interface"
+  package: "ui.element"
+  syntax:
+    content: "public interface TextHolder"
+- uid: "ui.element.TextHolder.getText()"
+  id: "getText()"
+  parent: "ui.element.TextHolder"
+  langs:
+  - "java"
+  name: "getText()"
+  nameWithType: "TextHolder.getText()"
+  fullName: "ui.element.TextHolder.getText()"
+  overload: "ui.element.TextHolder.getText*"
+  type: "Method"
+  package: "ui.element"
+  syntax:
+    content: "public abstract String getText()"
+    return:
+      type: "java.lang.String"
+- uid: "ui.element.TextHolder.setText(java.lang.String)"
+  id: "setText(java.lang.String)"
+  parent: "ui.element.TextHolder"
+  langs:
+  - "java"
+  name: "setText(String newText)"
+  nameWithType: "TextHolder.setText(String newText)"
+  fullName: "ui.element.TextHolder.setText(String newText)"
+  overload: "ui.element.TextHolder.setText*"
+  type: "Method"
+  package: "ui.element"
+  syntax:
+    content: "public abstract void setText(String newText)"
+    parameters:
+    - id: "newText"
+      type: "java.lang.String"
+references:
+- uid: "java.lang.String"
+  spec.java:
+  - uid: "java.lang.String"
+    name: "String"
+    fullName: "java.lang.String"
+- uid: "ui.element.TextHolder.getText*"
+  name: "getText"
+  nameWithType: "TextHolder.getText"
+  fullName: "ui.element.TextHolder.getText"
+  package: "ui.element"
+- uid: "ui.element.TextHolder.setText*"
+  name: "setText"
+  nameWithType: "TextHolder.setText"
+  fullName: "ui.element.TextHolder.setText"
+  package: "ui.element"

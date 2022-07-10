@@ -87,7 +87,7 @@ items:
   overload: "graphics.Sprite.getHeight*"
   type: "Method"
   package: "graphics"
-  summary: "Get the height of the texture"
+  summary: "Get the height of the Sprite"
   syntax:
     content: "public float getHeight()"
     return:
@@ -151,7 +151,7 @@ items:
   overload: "graphics.Sprite.getWidth*"
   type: "Method"
   package: "graphics"
-  summary: "Get the width of the texture"
+  summary: "Get the width of the Sprite"
   syntax:
     content: "public float getWidth()"
     return:

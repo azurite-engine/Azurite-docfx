@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: "util.Observer"
+  id: "Observer"
+  parent: "util"
+  children:
+  - "util.Observer.notify(Type)"
+  langs:
+  - "java"
+  name: "Observer<Type>"
+  nameWithType: "Observer<Type>"
+  fullName: "util.Observer<Type>"
+  type: "Interface"
+  package: "util"
+  summary: "Standard observer model."
+  syntax:
+    content: "public interface Observer<Type>"
+    typeParameters:
+    - id: "Type"
+- uid: "util.Observer.notify(Type)"
+  id: "notify(Type)"
+  parent: "util.Observer"
+  langs:
+  - "java"
+  name: "notify(Type newVal)"
+  nameWithType: "Observer<Type>.notify(Type newVal)"
+  fullName: "util.Observer<Type>.notify(Type newVal)"
+  overload: "util.Observer.notify*"
+  type: "Method"
+  package: "util"
+  summary: "This method gets called by an <xref uid=\"util.Observable\" data-throw-if-not-resolved=\"false\">Observable</xref> if the value has been changed"
+  syntax:
+    content: "public abstract void notify(Type newVal)"
+    parameters:
+    - id: "newVal"
+      type: "Type"
+      description: "the new value of the observed variable"
+references:
+- uid: "Type"
+  spec.java:
+  - uid: "Type"
+    name: "Type"
+    fullName: "Type"
+- uid: "util.Observer.notify*"
+  name: "notify"
+  nameWithType: "Observer<Type>.notify"
+  fullName: "util.Observer<Type>.notify"
+  package: "util"

@@ -9,6 +9,7 @@ items:
   - "graphics.renderer.RenderBatch"
   - "graphics.renderer.Renderer"
   - "graphics.renderer.TextRenderer"
+  - "graphics.renderer.UIRenderer"
   langs:
   - "java"
   name: "graphics.renderer"
@@ -42,3 +43,7 @@ references:
   name: "TextRenderer"
   nameWithType: "TextRenderer"
   fullName: "graphics.renderer.TextRenderer"
+- uid: "graphics.renderer.UIRenderer"
+  name: "UIRenderer"
+  nameWithType: "UIRenderer"
+  fullName: "graphics.renderer.UIRenderer"

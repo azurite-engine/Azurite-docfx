@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: "ui.layout.ContainerLayout"
+  id: "ContainerLayout"
+  parent: "ui.layout"
+  children:
+  - "ui.layout.ContainerLayout.updateComponents(ui.Container)"
+  langs:
+  - "java"
+  name: "ContainerLayout"
+  nameWithType: "ContainerLayout"
+  fullName: "ui.layout.ContainerLayout"
+  type: "Interface"
+  package: "ui.layout"
+  syntax:
+    content: "public interface ContainerLayout"
+- uid: "ui.layout.ContainerLayout.updateComponents(ui.Container)"
+  id: "updateComponents(ui.Container)"
+  parent: "ui.layout.ContainerLayout"
+  langs:
+  - "java"
+  name: "updateComponents(Container container)"
+  nameWithType: "ContainerLayout.updateComponents(Container container)"
+  fullName: "ui.layout.ContainerLayout.updateComponents(Container container)"
+  overload: "ui.layout.ContainerLayout.updateComponents*"
+  type: "Method"
+  package: "ui.layout"
+  syntax:
+    content: "public abstract void updateComponents(Container container)"
+    parameters:
+    - id: "container"
+      type: "ui.Container"
+references:
+- uid: "ui.Container"
+  name: "Container"
+  nameWithType: "Container"
+  fullName: "ui.Container"
+- uid: "ui.layout.ContainerLayout.updateComponents*"
+  name: "updateComponents"
+  nameWithType: "ContainerLayout.updateComponents"
+  fullName: "ui.layout.ContainerLayout.updateComponents"
+  package: "ui.layout"

@@ -12,6 +12,7 @@ items:
   - "graphics.Shader"
   - "graphics.ShaderDatatype"
   - "graphics.Sprite"
+  - "graphics.Spritesheet"
   - "graphics.Texture"
   - "graphics.Window"
   langs:
@@ -59,6 +60,10 @@ references:
   name: "Sprite"
   nameWithType: "Sprite"
   fullName: "graphics.Sprite"
+- uid: "graphics.Spritesheet"
+  name: "Spritesheet"
+  nameWithType: "Spritesheet"
+  fullName: "graphics.Spritesheet"
 - uid: "graphics.Texture"
   name: "Texture"
   nameWithType: "Texture"

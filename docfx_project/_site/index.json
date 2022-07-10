@@ -324,6 +324,11 @@
     "title": "Class Sprite",
     "keywords": "Class Sprite Contains the texture and UV coordinates used by openGL to render an image Inheritance java.lang.Object Sprite Inherited Members java.lang.Object.clone() java.lang.Object.equals(java.lang.Object) java.lang.Object.finalize() java.lang.Object.getClass() java.lang.Object.hashCode() java.lang.Object.notify() java.lang.Object.notifyAll() java.lang.Object.toString() java.lang.Object.wait() java.lang.Object.wait(long) java.lang.Object.wait(long,int) Namespace : Assembly : .dll Syntax public class Sprite Constructors Sprite(Texture texture) Construct a texture using default texture coordinates. Declaration public Sprite(Texture texture) Parameters Type Name Description Texture texture The texture for this sprite Sprite(Texture texture, Vector2f[] uv) Construct a Sprite using custom texture coordinates (uv). Declaration public Sprite(Texture texture, Vector2f[] uv) Parameters Type Name Description Texture texture The texture for this sprite org.joml.Vector2f [] uv The sprite's texture coords Fields texture The texture for this sprite Declaration protected Texture texture Field Value Type Description Texture Methods getHeight() Get the height of the texture Declaration public float getHeight() Returns Type Description float getTexture() Get this sprite's texture Declaration public Texture getTexture() Returns Type Description Texture getTextureCoordinates() Get this sprite's texture coordinates Declaration public Vector2f[] getTextureCoordinates() Returns Type Description org.joml.Vector2f [] getTextureID() Get the texture id of this sprite Declaration public int getTextureID() Returns Type Description int getWidth() Get the width of the texture Declaration public float getWidth() Returns Type Description float setTexture(Texture texture) Set this sprite's texture Declaration public void setTexture(Texture texture) Parameters Type Name Description Texture texture"
   },
+  "api/graphics.Spritesheet.html": {
+    "href": "api/graphics.Spritesheet.html",
+    "title": "Class Spritesheet",
+    "keywords": "Class Spritesheet Inheritance java.lang.Object Spritesheet Inherited Members java.lang.Object.clone() java.lang.Object.equals(java.lang.Object) java.lang.Object.finalize() java.lang.Object.getClass() java.lang.Object.hashCode() java.lang.Object.notify() java.lang.Object.notifyAll() java.lang.Object.toString() java.lang.Object.wait() java.lang.Object.wait(long) java.lang.Object.wait(long,int) Namespace : Assembly : .dll Syntax public class Spritesheet Constructors Spritesheet(Texture texture, int spriteWidth, int spriteHeight, int numSprites, int spacing) Takes a texture, sprite width, height, number of sprites and the pixel spacing between sprites (if applicable), and adds each sprite in the sheet to a List. Declaration public Spritesheet(Texture texture, int spriteWidth, int spriteHeight, int numSprites, int spacing) Parameters Type Name Description Texture texture int spriteWidth int spriteHeight int numSprites int spacing Methods getSize() Returns the integer size of the List of Sprites Declaration public int getSize() Returns Type Description int int size getSprite(int index) Return a single sprite by passing it's index in the sprite list Declaration public Sprite getSprite(int index) Parameters Type Name Description int index of the sprite Returns Type Description Sprite Sprite getSprites() Declaration public List<Sprite> getSprites() Returns Type Description java.util.List < Sprite > entire list of sprites contained in Spritesheet"
+  },
   "api/graphics.Texture.html": {
     "href": "api/graphics.Texture.html",
     "title": "Class Texture",
@@ -453,6 +458,11 @@
     "href": "api/io.xml.html",
     "title": "Namespace io.xml",
     "keywords": "Namespace io.xml Classes XMLElement XMLParser A simple XML string parsing class. Accepts: - spacing at any allowed position - node, sub nodes and attributes inside nodes - self-closing nodes - comments - different encoding in ?xml header Does not accept e.g.: - namespaces - complex ?xml headers - stylesheet - DTD declaration and data - entities XMLSyntaxException XMLTokenizer"
+  },
+  "api/io.xml.XML.html": {
+    "href": "api/io.xml.XML.html",
+    "title": "Class XML",
+    "keywords": "Class XML Takes file path and creates a XMLElement. Inheritance java.lang.Object XML Inherited Members java.lang.Object.clone() java.lang.Object.equals(java.lang.Object) java.lang.Object.finalize() java.lang.Object.getClass() java.lang.Object.hashCode() java.lang.Object.notify() java.lang.Object.notifyAll() java.lang.Object.toString() java.lang.Object.wait() java.lang.Object.wait(long) java.lang.Object.wait(long,int) Namespace : Assembly : .dll Syntax public class XML Constructors XML(String path) Declaration public XML(String path) Parameters Type Name Description java.lang.String path Fields root Declaration protected XMLElement root Field Value Type Description XMLElement Methods getRoot() Declaration public XMLElement getRoot() Returns Type Description XMLElement getXml() Declaration public String getXml() Returns Type Description java.lang.String"
   },
   "api/io.xml.XMLElement.html": {
     "href": "api/io.xml.XMLElement.html",
@@ -699,6 +709,31 @@
     "title": "Class TMXParser",
     "keywords": "Class TMXParser What is this? Inheritance java.lang.Object TMXParser Inherited Members java.lang.Object.clone() java.lang.Object.equals(java.lang.Object) java.lang.Object.finalize() java.lang.Object.getClass() java.lang.Object.hashCode() java.lang.Object.notify() java.lang.Object.notifyAll() java.lang.Object.toString() java.lang.Object.wait() java.lang.Object.wait(long) java.lang.Object.wait(long,int) Namespace : Assembly : .dll Syntax public class TMXParser Constructors TMXParser() Declaration public TMXParser()"
   },
+  "api/ui.Alignment.html": {
+    "href": "api/ui.Alignment.html",
+    "title": "Enum Alignment",
+    "keywords": "Enum Alignment Inherited Members java.lang.Enum.<T>valueOf(java.lang.Class<T>,java.lang.String) java.lang.Enum.clone() java.lang.Enum.compareTo(E) java.lang.Enum.equals(java.lang.Object) java.lang.Enum.finalize() java.lang.Enum.getDeclaringClass() java.lang.Enum.hashCode() java.lang.Enum.name() java.lang.Enum.ordinal() java.lang.Enum.toString() java.lang.Object.getClass() java.lang.Object.notify() java.lang.Object.notifyAll() java.lang.Object.wait() java.lang.Object.wait(long) java.lang.Object.wait(long,int) Namespace : Assembly : .dll Syntax public enum Alignment extends Enum<Alignment> Fields Name Description BOTTOM CENTER LEFT RIGHT TOP Methods Name Description valueOf(String name) values()"
+  },
+  "api/ui.fonts.Font.html": {
+    "href": "api/ui.fonts.Font.html",
+    "title": "Class Font",
+    "keywords": "Class Font This class contains a font texture for drawing text. A lot of credit for the base of this file goes to @SilverTiger on GitHub, his base has been heavily modified to work in Azurite. Inheritance java.lang.Object Font Inherited Members java.lang.Object.clone() java.lang.Object.equals(java.lang.Object) java.lang.Object.finalize() java.lang.Object.getClass() java.lang.Object.hashCode() java.lang.Object.notify() java.lang.Object.notifyAll() java.lang.Object.toString() java.lang.Object.wait() java.lang.Object.wait(long) java.lang.Object.wait(long,int) Namespace : Assembly : .dll Syntax public class Font Constructors Font() Creates a default anti-aliased font with monospaced glyphs and default size 16. Declaration public Font() Font(boolean antiAlias) Creates a default font with monospaced glyphs and default size 16. Declaration public Font(boolean antiAlias) Parameters Type Name Description boolean antiAlias Whether the font should be anti-aliased or not Font(int size) Creates a default anti-aliased font with monospaced glyphs and specified size. Declaration public Font(int size) Parameters Type Name Description int size Font size Font(int size, boolean antiAlias) Creates a default font with monospaced glyphs and specified size. Declaration public Font(int size, boolean antiAlias) Parameters Type Name Description int size Font size boolean antiAlias Whether the font should be anti-aliased or not Font(Font font) Creates an anti-aliased font from an AWT Font. Declaration public Font(Font font) Parameters Type Name Description java.awt.Font font The AWT Font Font(Font font, boolean antiAlias) Creates a font from an AWT Font. Declaration public Font(Font font, boolean antiAlias) Parameters Type Name Description java.awt.Font font The AWT Font boolean antiAlias Whether the font should be anti-aliased or not Font(InputStream in, int size) Creates an anti-aliased Font from an input stream. Declaration public Font(InputStream in, int size) Parameters Type Name Description java.io.InputStream in The input stream int size Font size Font(InputStream in, int size, boolean antiAlias) Creates a Font from an input stream. Declaration public Font(InputStream in, int size, boolean antiAlias) Parameters Type Name Description java.io.InputStream in The input stream int size Font size boolean antiAlias Whether the font should be anti-aliased or not Font(String path, float size, boolean antiAlias) Creates a Font from an input stream. Declaration public Font(String path, float size, boolean antiAlias) Parameters Type Name Description java.lang.String path Path to TTF file float size Font size boolean antiAlias Whether the font should be anti-aliased or not Methods getFontHeight() Declaration public int getFontHeight() Returns Type Description int getGlyphs() Declaration public Map<Character,Glyph> getGlyphs() Returns Type Description java.util.Map < java.lang.Character , Glyph > getHeight(CharSequence text) Gets the height of the specified text. Declaration public int getHeight(CharSequence text) Parameters Type Name Description java.lang.CharSequence text The text Returns Type Description int Height in pixels of the text. getTexture() Declaration public Texture getTexture() Returns Type Description Texture"
+  },
+  "api/ui.html": {
+    "href": "api/ui.html",
+    "title": "Namespace ui",
+    "keywords": "Namespace ui Classes Container CursorManager Element EventHandler FocusManager Frame Layer RenderableElement UIComponentRenderer is the renderable part of a UI component it can contain a solid color, a semi-transparent color, or a texture. Sprites can be tinted by the color value. Text Enums Alignment EventHandler.Event"
+  },
+  "api/ui.layout.ContainerLayout.html": {
+    "href": "api/ui.layout.ContainerLayout.html",
+    "title": "Interface ContainerLayout",
+    "keywords": "Interface ContainerLayout Namespace : Assembly : .dll Syntax public interface ContainerLayout Methods updateComponents(Container container) Declaration public abstract void updateComponents(Container container) Parameters Type Name Description Container container"
+  },
+  "api/ui.layout.html": {
+    "href": "api/ui.layout.html",
+    "title": "Namespace ui.layout",
+    "keywords": "Namespace ui.layout Classes AbsoluteLayout BoxLayout GridLayout Interfaces ContainerLayout Enums BoxLayout.Orientation GridLayout.FillingOrder"
+  },
   "api/util.Assets.html": {
     "href": "api/util.Assets.html",
     "title": "Class Assets",
@@ -732,7 +767,7 @@
   "api/util.html": {
     "href": "api/util.html",
     "title": "Namespace util",
-    "keywords": "Namespace util Classes Assets Engine Logger MathUtils An util class containing a lot of useful methods to do maths and physics calculations. OrderPreservingList<T> A LinkedList override to create an order-preserving list to improve speed in a special use case: You want to remove and add object from/to a list and keep the elements in the list sorted without having to re-sort each time. Pair<L,R> A Pair is a tupel of two different values with potentially two different types. Transform Represents the position in X and Y coordinates, rotation and the scale (width and height) Triple<L,M,R> A Triple is a tupel of three different values with potentially three different types."
+    "keywords": "Namespace util Classes Assets Engine Logger MathUtils An util class containing a lot of useful methods to do maths and physics calculations. Observable<Type> Standard observable model. OrderPreservingList<T> A LinkedList override to create an order-preserving list to improve speed in a special use case: You want to remove and add object from/to a list and keep the elements in the list sorted without having to re-sort each time. Pair<L,R> A Pair is a tupel of two different values with potentially two different types. Transform Represents the position in X and Y coordinates, rotation and the scale (width and height) Triple<L,M,R> A Triple is a tupel of three different values with potentially three different types. Interfaces Observer<Type> Standard observer model."
   },
   "api/util.Logger.html": {
     "href": "api/util.Logger.html",

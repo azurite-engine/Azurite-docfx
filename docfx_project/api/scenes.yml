@@ -7,6 +7,7 @@ items:
   - "scenes.DemoPlatformer"
   - "scenes.DemoTopDown"
   - "scenes.TextRenderingDemo"
+  - "scenes.UIRenderingDemo"
   langs:
   - "java"
   name: "scenes"
@@ -32,3 +33,7 @@ references:
   name: "TextRenderingDemo"
   nameWithType: "TextRenderingDemo"
   fullName: "scenes.TextRenderingDemo"
+- uid: "scenes.UIRenderingDemo"
+  name: "UIRenderingDemo"
+  nameWithType: "UIRenderingDemo"
+  fullName: "scenes.UIRenderingDemo"

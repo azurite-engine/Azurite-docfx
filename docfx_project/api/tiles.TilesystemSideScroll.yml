@@ -4,7 +4,7 @@ items:
   id: "TilesystemSideScroll"
   parent: "tiles"
   children:
-  - "tiles.TilesystemSideScroll.TilesystemSideScroll(tiles.Spritesheet,int,int,int,int,ecs.GameObject,int[])"
+  - "tiles.TilesystemSideScroll.TilesystemSideScroll(graphics.Spritesheet,int,int,int,int,ecs.GameObject,int[])"
   - "tiles.TilesystemSideScroll.getIndex(int,int)"
   - "tiles.TilesystemSideScroll.getType(int,int)"
   langs:
@@ -31,8 +31,8 @@ items:
   - "java.lang.Object.wait()"
   - "java.lang.Object.wait(long)"
   - "java.lang.Object.wait(long,int)"
-- uid: "tiles.TilesystemSideScroll.TilesystemSideScroll(tiles.Spritesheet,int,int,int,int,ecs.GameObject,int[])"
-  id: "TilesystemSideScroll(tiles.Spritesheet,int,int,int,int,ecs.GameObject,int[])"
+- uid: "tiles.TilesystemSideScroll.TilesystemSideScroll(graphics.Spritesheet,int,int,int,int,ecs.GameObject,int[])"
+  id: "TilesystemSideScroll(graphics.Spritesheet,int,int,int,int,ecs.GameObject,int[])"
   parent: "tiles.TilesystemSideScroll"
   langs:
   - "java"
@@ -46,7 +46,7 @@ items:
     content: "public TilesystemSideScroll(Spritesheet s, int xTiles, int yTiles, int width, int height, GameObject c, int[] layers)"
     parameters:
     - id: "s"
-      type: "tiles.Spritesheet"
+      type: "graphics.Spritesheet"
     - id: "xTiles"
       type: "int"
     - id: "yTiles"
@@ -100,10 +100,10 @@ items:
     return:
       type: "int"
 references:
-- uid: "tiles.Spritesheet"
+- uid: "graphics.Spritesheet"
   name: "Spritesheet"
   nameWithType: "Spritesheet"
-  fullName: "tiles.Spritesheet"
+  fullName: "graphics.Spritesheet"
 - uid: "int"
   spec.java:
   - uid: "int"

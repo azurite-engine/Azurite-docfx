@@ -14,7 +14,6 @@ items:
   - "ecs.PolygonCollider"
   - "ecs.SpriteAnimation"
   - "ecs.SpriteRenderer"
-  - "ecs.Text"
   - "ecs.Tween"
   - "ecs.Tween.TweenMode"
   langs:
@@ -70,10 +69,6 @@ references:
   name: "SpriteRenderer"
   nameWithType: "SpriteRenderer"
   fullName: "ecs.SpriteRenderer"
-- uid: "ecs.Text"
-  name: "Text"
-  nameWithType: "Text"
-  fullName: "ecs.Text"
 - uid: "ecs.Tween"
   name: "Tween"
   nameWithType: "Tween"

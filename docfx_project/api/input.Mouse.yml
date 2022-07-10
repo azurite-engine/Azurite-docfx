@@ -6,6 +6,9 @@ items:
   children:
   - "input.Mouse.Mouse()"
   - "input.Mouse.clearMouseInput()"
+  - "input.Mouse.get()"
+  - "input.Mouse.getWorldX()"
+  - "input.Mouse.getWorldY()"
   - "input.Mouse.mouse"
   - "input.Mouse.mouseButton"
   - "input.Mouse.mouseButtonDown(int)"
@@ -21,6 +24,7 @@ items:
   - "input.Mouse.scrollY"
   - "input.Mouse.setupCallbacks()"
   - "input.Mouse.update()"
+  - "input.Mouse.worldMouse"
   langs:
   - "java"
   name: "Mouse"
@@ -71,6 +75,53 @@ items:
   summary: "Clear the mouse state"
   syntax:
     content: "public static void clearMouseInput()"
+- uid: "input.Mouse.get()"
+  id: "get()"
+  parent: "input.Mouse"
+  langs:
+  - "java"
+  name: "get()"
+  nameWithType: "Mouse.get()"
+  fullName: "input.Mouse.get()"
+  overload: "input.Mouse.get*"
+  type: "Method"
+  package: "input"
+  syntax:
+    content: "public static Vector2f get()"
+    return:
+      type: "org.joml.Vector2f"
+- uid: "input.Mouse.getWorldX()"
+  id: "getWorldX()"
+  parent: "input.Mouse"
+  langs:
+  - "java"
+  name: "getWorldX()"
+  nameWithType: "Mouse.getWorldX()"
+  fullName: "input.Mouse.getWorldX()"
+  overload: "input.Mouse.getWorldX*"
+  type: "Method"
+  package: "input"
+  syntax:
+    content: "public static float getWorldX()"
+    return:
+      type: "float"
+      description: "Get the mouse position in the world"
+- uid: "input.Mouse.getWorldY()"
+  id: "getWorldY()"
+  parent: "input.Mouse"
+  langs:
+  - "java"
+  name: "getWorldY()"
+  nameWithType: "Mouse.getWorldY()"
+  fullName: "input.Mouse.getWorldY()"
+  overload: "input.Mouse.getWorldY*"
+  type: "Method"
+  package: "input"
+  syntax:
+    content: "public static float getWorldY()"
+    return:
+      type: "float"
+      description: "Get the mouse position in the world"
 - uid: "input.Mouse.mouse"
   id: "mouse"
   parent: "input.Mouse"
@@ -299,6 +350,21 @@ items:
   summary: "Called each frame to update mouse button states and mouse position."
   syntax:
     content: "public static void update()"
+- uid: "input.Mouse.worldMouse"
+  id: "worldMouse"
+  parent: "input.Mouse"
+  langs:
+  - "java"
+  name: "worldMouse"
+  nameWithType: "Mouse.worldMouse"
+  fullName: "input.Mouse.worldMouse"
+  type: "Field"
+  package: "input"
+  summary: "Position of the mouse in world space"
+  syntax:
+    content: "public static Vector2f worldMouse"
+    return:
+      type: "org.joml.Vector2f"
 references:
 - uid: "input.Mouse.Mouse*"
   name: "Mouse"
@@ -345,16 +411,31 @@ references:
   - uid: "org.joml.Vector2f"
     name: "Vector2f"
     fullName: "org.joml.Vector2f"
-- uid: "long"
-  spec.java:
-  - uid: "long"
-    name: "long"
-    fullName: "long"
+- uid: "input.Mouse.get*"
+  name: "get"
+  nameWithType: "Mouse.get"
+  fullName: "input.Mouse.get"
+  package: "input"
 - uid: "float"
   spec.java:
   - uid: "float"
     name: "float"
     fullName: "float"
+- uid: "input.Mouse.getWorldX*"
+  name: "getWorldX"
+  nameWithType: "Mouse.getWorldX"
+  fullName: "input.Mouse.getWorldX"
+  package: "input"
+- uid: "input.Mouse.getWorldY*"
+  name: "getWorldY"
+  nameWithType: "Mouse.getWorldY"
+  fullName: "input.Mouse.getWorldY"
+  package: "input"
+- uid: "long"
+  spec.java:
+  - uid: "long"
+    name: "long"
+    fullName: "long"
 - uid: "boolean[]"
   spec.java:
   - uid: "boolean"

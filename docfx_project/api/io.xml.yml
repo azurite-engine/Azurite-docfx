@@ -3,6 +3,7 @@ items:
 - uid: "io.xml"
   id: "xml"
   children:
+  - "io.xml.XML"
   - "io.xml.XMLElement"
   - "io.xml.XMLParser"
   - "io.xml.XMLSyntaxException"
@@ -16,6 +17,10 @@ items:
   syntax:
     content: "package io.xml"
 references:
+- uid: "io.xml.XML"
+  name: "XML"
+  nameWithType: "XML"
+  fullName: "io.xml.XML"
 - uid: "io.xml.XMLElement"
   name: "XMLElement"
   nameWithType: "XMLElement"
