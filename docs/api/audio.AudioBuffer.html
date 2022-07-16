@@ -83,8 +83,7 @@
   
   <h1 id="audio_AudioBuffer" data-uid="audio.AudioBuffer" class="text-break">Class AudioBuffer
   </h1>
-  <div class="markdown level0 summary"><h1 id="azurite">Azurite</h1>
-<p>Instantiations of this class hold all information about how a sound should be replayed and the sound data itself (if you know OpenGL, think of this as a massive vbo containing a single noise or piece of music).</p>
+  <div class="markdown level0 summary"><p>Instantiations of this class hold all information about how a sound should be replayed and the sound data itself (if you know OpenGL, think of this as a massive vbo containing a single noise or piece of music).</p>
 <p>Personally I don't really like how it works right now; it allocates a lot of memory for every sound file that needs to be played; maybe we can have a destructor or some kind of cleanup daemon?</p>
 <p>I based the design off of an article by Michael Eric Oberlin found <a href="https://michaelericoberlin.wordpress.com/2016/07/04/effective-openal-with-lwjgl-3/">here</a>.</p>
 </div>
