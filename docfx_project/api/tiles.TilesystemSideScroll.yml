@@ -14,7 +14,7 @@ items:
   fullName: "tiles.TilesystemSideScroll"
   type: "Class"
   package: "tiles"
-  summary: "An example class of a platformer stage and it's tilemap. Eventually I think this should be expanded to a more general API, maybe even with a <xref uid=\"scene.Scene\" data-throw-if-not-resolved=\"false\">Scene</xref> dedicated to an in-engine way of constructing them (Mario Maker flavoured Azurite?), but that's likely a future plan; I, the mortal JavaDocumentator, don't have insight into the minds of the owners of this game engine (go ask Asher, idk)."
+  summary: "An example class of a platformer stage and it's tilemap. Eventually I think this should be expanded to a more general API, maybe even with a <xref uid=\"scene.Scene\" data-throw-if-not-resolved=\"false\">Scene</xref> dedicated to an in-engine way of constructing them (Mario Maker flavoured Azurite?), but that's likely a future plan; I, the mortal JavaDocumentator, don't have insight into the minds of the owners of this game engine (go ask Asher, idk). lol see <xref uid=\"tiles.Tilesystem\" data-throw-if-not-resolved=\"false\">Tilesystem</xref>, this is now deprectated :D -Asher"
   syntax:
     content: "public class TilesystemSideScroll"
   inheritance:

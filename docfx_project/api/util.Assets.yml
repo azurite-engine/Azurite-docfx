@@ -17,6 +17,7 @@ items:
   fullName: "util.Assets"
   type: "Class"
   package: "util"
+  summary: "The Assets class contains methods to assist in loading common resources used by the engine from the filesystem as well as HashMaps to keep track of loaded resources. If the same path is loaded again via the Assets class, it will call the item up from the hashmap rather than reload it."
   syntax:
     content: "public class Assets"
   inheritance:

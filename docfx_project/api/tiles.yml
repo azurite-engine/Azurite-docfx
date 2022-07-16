@@ -3,7 +3,6 @@ items:
 - uid: "tiles"
   id: "tiles"
   children:
-  - "tiles.TMXParser"
   - "tiles.Tilesystem"
   - "tiles.TilesystemSideScroll"
   langs:
@@ -15,10 +14,6 @@ items:
   syntax:
     content: "package tiles"
 references:
-- uid: "tiles.TMXParser"
-  name: "TMXParser"
-  nameWithType: "TMXParser"
-  fullName: "tiles.TMXParser"
 - uid: "tiles.Tilesystem"
   name: "Tilesystem"
   nameWithType: "Tilesystem"

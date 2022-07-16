@@ -331,8 +331,6 @@
 - uid: "tiles"
   name: "tiles"
   items:
-  - uid: "tiles.TMXParser"
-    name: "TMXParser"
   - uid: "tiles.Tilesystem"
     name: "Tilesystem"
   - uid: "tiles.TilesystemSideScroll"

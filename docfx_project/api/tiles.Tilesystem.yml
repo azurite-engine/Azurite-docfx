@@ -14,6 +14,7 @@ items:
   fullName: "tiles.Tilesystem"
   type: "Class"
   package: "tiles"
+  summary: "The Tilesystem class loads a .tmx file (XML file format for the Tiled map editor) and generates a 2D array of GameObjects with SpriteRenderers corresponding to the texture determined by the .tmx file. Currently only Axis-aligned maps are supported (no isometric or hexagonal maps right now)."
   syntax:
     content: "public class Tilesystem"
   inheritance:

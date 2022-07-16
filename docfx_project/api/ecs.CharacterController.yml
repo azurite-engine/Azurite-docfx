@@ -15,6 +15,7 @@ items:
   fullName: "ecs.CharacterController"
   type: "Class"
   package: "ecs"
+  summary: "Character controllers built to support the Top down and Side scroller Demo scenes."
   syntax:
     content: "public class CharacterController extends Component"
   inheritance:

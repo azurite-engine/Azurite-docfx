@@ -18,6 +18,7 @@ items:
   fullName: "util.Logger"
   type: "Class"
   package: "util"
+  summary: "Logging utility to print colored and labeled errors with class references."
   syntax:
     content: "public class Logger"
   inheritance:

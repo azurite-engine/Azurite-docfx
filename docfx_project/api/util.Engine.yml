@@ -26,6 +26,7 @@ items:
   fullName: "util.Engine"
   type: "Class"
   package: "util"
+  summary: "The Engine class initializes the Window and the game loop. It can also be used to access some globally used classes like the scene manager and Window."
   syntax:
     content: "public final class Engine"
   inheritance:

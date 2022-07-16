@@ -14,7 +14,7 @@ items:
   fullName: "audio.AudioListener"
   type: "Class"
   package: "audio"
-  summary: "# Azurite #\n\nThis is where the \"ear\" is located. There can only ever be one Listener, hence the singleton."
+  summary: "This is where the \"ear\" is located. There can only ever be one Listener, hence the singleton."
   syntax:
     content: "public class AudioListener extends Component"
   inheritance:

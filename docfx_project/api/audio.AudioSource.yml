@@ -23,7 +23,7 @@ items:
   fullName: "audio.AudioSource"
   type: "Class"
   package: "audio"
-  summary: "# Azurite #\n\nObject representing a sound's source as well as it's velocity (for applying the doppler effect)."
+  summary: "Object representing a sound's source as well as it's velocity (for applying the doppler effect)."
   syntax:
     content: "public class AudioSource extends Component"
   inheritance:

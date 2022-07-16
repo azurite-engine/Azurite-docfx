@@ -17,7 +17,7 @@ items:
   fullName: "audio.AudioBuffer"
   type: "Class"
   package: "audio"
-  summary: "# Azurite #\n\nInstantiations of this class hold all information about how a sound should be replayed and the sound data itself (if you know OpenGL, think of this as a massive vbo containing a single noise or piece of music).\n\nPersonally I don't really like how it works right now; it allocates a lot of memory for every sound file that needs to be played; maybe we can have a destructor or some kind of cleanup daemon?\n\nI based the design off of an article by Michael Eric Oberlin found [here][].\n\n\n[here]: https://michaelericoberlin.wordpress.com/2016/07/04/effective-openal-with-lwjgl-3/"
+  summary: "Instantiations of this class hold all information about how a sound should be replayed and the sound data itself (if you know OpenGL, think of this as a massive vbo containing a single noise or piece of music).\n\nPersonally I don't really like how it works right now; it allocates a lot of memory for every sound file that needs to be played; maybe we can have a destructor or some kind of cleanup daemon?\n\nI based the design off of an article by Michael Eric Oberlin found [here][].\n\n\n[here]: https://michaelericoberlin.wordpress.com/2016/07/04/effective-openal-with-lwjgl-3/"
   syntax:
     content: "public class AudioBuffer"
   inheritance:

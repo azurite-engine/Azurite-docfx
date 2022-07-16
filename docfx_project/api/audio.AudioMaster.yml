@@ -15,7 +15,7 @@ items:
   fullName: "audio.AudioMaster"
   type: "Class"
   package: "audio"
-  summary: "# Azurite #\n\nMain audio center: equivocal to graphics.Window but for initializing audio stuff, like toggling and changing some parameters in the OpenAL API"
+  summary: "Main audio center: equivocal to graphics.Window but for initializing audio stuff, like toggling and changing some parameters in the OpenAL API"
   syntax:
     content: "public class AudioMaster"
   inheritance:

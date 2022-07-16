@@ -4,16 +4,7 @@ items:
   id: "Keyboard"
   parent: "input"
   children:
-  - "input.Keyboard.A_KEY"
-  - "input.Keyboard.DOWN_ARROW"
-  - "input.Keyboard.D_KEY"
   - "input.Keyboard.Keyboard()"
-  - "input.Keyboard.LEFT_ARROW"
-  - "input.Keyboard.RIGHT_ARROW"
-  - "input.Keyboard.SPACE"
-  - "input.Keyboard.S_KEY"
-  - "input.Keyboard.UP_ARROW"
-  - "input.Keyboard.W_KEY"
   - "input.Keyboard.getKey(int)"
   - "input.Keyboard.getKeyDown(int)"
   - "input.Keyboard.getKeyHeld(int)"
@@ -28,6 +19,7 @@ items:
   fullName: "input.Keyboard"
   type: "Class"
   package: "input"
+  summary: "Class containing everything related to keyboard input. Implementations of GLFW key callbacks are all found here. getKey, getKeyDown, getKeyUp, etc..."
   syntax:
     content: "public class Keyboard"
   inheritance:
@@ -44,48 +36,6 @@ items:
   - "java.lang.Object.wait()"
   - "java.lang.Object.wait(long)"
   - "java.lang.Object.wait(long,int)"
-- uid: "input.Keyboard.A_KEY"
-  id: "A_KEY"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "A_KEY"
-  nameWithType: "Keyboard.A_KEY"
-  fullName: "input.Keyboard.A_KEY"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int A_KEY"
-    return:
-      type: "int"
-- uid: "input.Keyboard.DOWN_ARROW"
-  id: "DOWN_ARROW"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "DOWN_ARROW"
-  nameWithType: "Keyboard.DOWN_ARROW"
-  fullName: "input.Keyboard.DOWN_ARROW"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int DOWN_ARROW"
-    return:
-      type: "int"
-- uid: "input.Keyboard.D_KEY"
-  id: "D_KEY"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "D_KEY"
-  nameWithType: "Keyboard.D_KEY"
-  fullName: "input.Keyboard.D_KEY"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int D_KEY"
-    return:
-      type: "int"
 - uid: "input.Keyboard.Keyboard()"
   id: "Keyboard()"
   parent: "input.Keyboard"
@@ -99,90 +49,6 @@ items:
   package: "input"
   syntax:
     content: "public Keyboard()"
-- uid: "input.Keyboard.LEFT_ARROW"
-  id: "LEFT_ARROW"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "LEFT_ARROW"
-  nameWithType: "Keyboard.LEFT_ARROW"
-  fullName: "input.Keyboard.LEFT_ARROW"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int LEFT_ARROW"
-    return:
-      type: "int"
-- uid: "input.Keyboard.RIGHT_ARROW"
-  id: "RIGHT_ARROW"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "RIGHT_ARROW"
-  nameWithType: "Keyboard.RIGHT_ARROW"
-  fullName: "input.Keyboard.RIGHT_ARROW"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int RIGHT_ARROW"
-    return:
-      type: "int"
-- uid: "input.Keyboard.SPACE"
-  id: "SPACE"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "SPACE"
-  nameWithType: "Keyboard.SPACE"
-  fullName: "input.Keyboard.SPACE"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int SPACE"
-    return:
-      type: "int"
-- uid: "input.Keyboard.S_KEY"
-  id: "S_KEY"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "S_KEY"
-  nameWithType: "Keyboard.S_KEY"
-  fullName: "input.Keyboard.S_KEY"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int S_KEY"
-    return:
-      type: "int"
-- uid: "input.Keyboard.UP_ARROW"
-  id: "UP_ARROW"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "UP_ARROW"
-  nameWithType: "Keyboard.UP_ARROW"
-  fullName: "input.Keyboard.UP_ARROW"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int UP_ARROW"
-    return:
-      type: "int"
-- uid: "input.Keyboard.W_KEY"
-  id: "W_KEY"
-  parent: "input.Keyboard"
-  langs:
-  - "java"
-  name: "W_KEY"
-  nameWithType: "Keyboard.W_KEY"
-  fullName: "input.Keyboard.W_KEY"
-  type: "Field"
-  package: "input"
-  syntax:
-    content: "public static int W_KEY"
-    return:
-      type: "int"
 - uid: "input.Keyboard.getKey(int)"
   id: "getKey(int)"
   parent: "input.Keyboard"

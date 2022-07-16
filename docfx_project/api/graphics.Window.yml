@@ -29,6 +29,7 @@ items:
   fullName: "graphics.Window"
   type: "Class"
   package: "graphics"
+  summary: "The Window class handles setup of GLFW"
   syntax:
     content: "public class Window"
   inheritance:
