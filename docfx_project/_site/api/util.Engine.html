@@ -162,6 +162,41 @@
   </table>
   
   
+  <a id="util_Engine_enableLogFiles_" data-uid="util.Engine.enableLogFiles*"></a>
+  <h4 id="util_Engine_enableLogFiles_java_io_File_int_" data-uid="util.Engine.enableLogFiles(java.io.File,int)">enableLogFiles(File folderPath, int logLevel)</h4>
+  <div class="markdown level1 summary"><p>Enables a parallel thread saving the logging history every <a class="xref" href="util.LoggingThread.html#util_LoggingThread_CYCLE">LoggingThread#CYCLE</a> seconds to a file named after the calling datetime of this method into the specified folder. Everytime the instances shuts down (<a class="xref" href="util.Engine.html#util_Engine_isRunning__">Engine#isRunning()</a> is false), the file is closed and won't be touched again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void enableLogFiles(File folderPath, int logLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.io.File</span></td>
+        <td><span class="parametername">folderPath</span></td>
+        <td><p>the path of the folder to save the log files to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p><a class="xref" href="util.Log.html#util_Log_FATAL_ONLY">Log#FATAL_ONLY</a>, <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a>, <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="util_Engine_getDeltaTime_" data-uid="util.Engine.getDeltaTime*"></a>
   <h4 id="util_Engine_getDeltaTime__" data-uid="util.Engine.getDeltaTime()">getDeltaTime()</h4>
   <div class="markdown level1 summary"></div>
@@ -437,6 +472,35 @@
   </table>
   
   
+  <a id="util_Engine_interrupt_" data-uid="util.Engine.interrupt*"></a>
+  <h4 id="util_Engine_interrupt_int_" data-uid="util.Engine.interrupt(int)">interrupt(int code)</h4>
+  <div class="markdown level1 summary"><p>Cuts off the engine and exits out of the program immediately with saving the logs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void interrupt(int code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>the exit code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="util_Engine_isRunning_" data-uid="util.Engine.isRunning*"></a>
   <h4 id="util_Engine_isRunning__" data-uid="util.Engine.isRunning()">isRunning()</h4>
   <div class="markdown level1 summary"></div>
@@ -573,6 +637,17 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="util_Engine_windowStopped_" data-uid="util.Engine.windowStopped*"></a>
+  <h4 id="util_Engine_windowStopped__" data-uid="util.Engine.windowStopped()">windowStopped()</h4>
+  <div class="markdown level1 summary"><p>Not meant to be called. Only used for <a class="xref" href="graphics.Window.html">Window</a> to stop the engine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void windowStopped()</code></pre>
+  </div>
 </article>
           </div>
           

@@ -1,0 +1,1036 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Log
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Log
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="util.Log">
+  
+  
+  <h1 id="util_Log" data-uid="util.Log" class="text-break">Class Log
+  </h1>
+  <div class="markdown level0 summary"><p>Logging utility to print colored and labeled errors with class references. Always call the methods of this class directly and do not nest it inside other functions, because it will mess up the stacktrace and would therefore display a wrong source.
+Logging modes:
+- FATAL -&gt; only fatal errors and major problems are reported; this is the minimal setting
+- WARNINGS -&gt; includes fatal errors and minor warnings; useful for detecting common issues
+- NO_DEBUG -&gt; displays all information except for hard debug logs; for integrity checks
+- ALL -&gt; shows all logs including hard debug for a detailed overview over vital systems</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><span class="xref">Log</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="util_Log_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Log</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="util_Log_Log_" data-uid="util.Log.Log*"></a>
+  <h4 id="util_Log_Log__" data-uid="util.Log.Log()">Log()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Log()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="util_Log_ALL" data-uid="util.Log.ALL">ALL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final int ALL</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_CL_BLUE" data-uid="util.Log.CL_BLUE">CL_BLUE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String CL_BLUE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_CL_CYAN" data-uid="util.Log.CL_CYAN">CL_CYAN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String CL_CYAN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_CL_GRAY" data-uid="util.Log.CL_GRAY">CL_GRAY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String CL_GRAY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_CL_GREEN" data-uid="util.Log.CL_GREEN">CL_GREEN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String CL_GREEN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_CL_ORANGE" data-uid="util.Log.CL_ORANGE">CL_ORANGE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String CL_ORANGE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_CL_PURPLE" data-uid="util.Log.CL_PURPLE">CL_PURPLE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String CL_PURPLE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_CL_RED" data-uid="util.Log.CL_RED">CL_RED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String CL_RED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_FATAL_ONLY" data-uid="util.Log.FATAL_ONLY">FATAL_ONLY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final int FATAL_ONLY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_NO_DEBUG" data-uid="util.Log.NO_DEBUG">NO_DEBUG</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final int NO_DEBUG</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="util_Log_WARNINGS" data-uid="util.Log.WARNINGS">WARNINGS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final int WARNINGS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="util_Log_crash_" data-uid="util.Log.crash*"></a>
+  <h4 id="util_Log_crash_java_lang_Exception_" data-uid="util.Log.crash(java.lang.Exception)">crash(Exception e)</h4>
+  <div class="markdown level1 summary"><p>Report a crash of the engine and log the actual exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void crash(Exception e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.Exception</span></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>the exception causing the crash</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_debug_" data-uid="util.Log.debug*"></a>
+  <h4 id="util_Log_debug_java_lang_String_" data-uid="util.Log.debug(java.lang.String)">debug(String log)</h4>
+  <div class="markdown level1 summary"><p>Printed on level <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a> only. Use this method to print a detailed debug message about vital information in the system. Includes the source class of the method call in the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void debug(String log)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>the information to be logged</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_debug_" data-uid="util.Log.debug*"></a>
+  <h4 id="util_Log_debug_java_lang_String_boolean_" data-uid="util.Log.debug(java.lang.String,boolean)">debug(String log, boolean printSource)</h4>
+  <div class="markdown level1 summary"><p>Printed on level <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a> only. Use this method to print a detailed debug message about vital information in the system. May be used to exclude the source class of the method call from the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void debug(String log, boolean printSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>the information to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">printSource</span></td>
+        <td><p>if set to false, the source class is excluded; if set to true, the call is identical to <a class="xref" href="util.Log.html#util_Log_debug_java_lang_String_">Log#debug(String)</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_debug_" data-uid="util.Log.debug*"></a>
+  <h4 id="util_Log_debug_java_lang_String_int_" data-uid="util.Log.debug(java.lang.String,int)">debug(String log, int stepUp)</h4>
+  <div class="markdown level1 summary"><p>Printed on level <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a> only. Use this method to print a detailed debug message about vital information in the system. Includes the source class of the method call in the log as well as a second source class further down the stacktrace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void debug(String log, int stepUp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>the information to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">stepUp</span></td>
+        <td><p>the amount of steps to take starting at the default calling class to reach the second class to log;
+e.g. if the stacktrace is <code>A -&gt; B -&gt; C -&gt; D -&gt; debug</code>
+then D would be the default calling class and a stepUp of 2 would specify B as the second one to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_fatal_" data-uid="util.Log.fatal*"></a>
+  <h4 id="util_Log_fatal_java_lang_String_" data-uid="util.Log.fatal(java.lang.String)">fatal(String error)</h4>
+  <div class="markdown level1 summary"><p>Printed on all four levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a>, <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a> and <a class="xref" href="util.Log.html#util_Log_FATAL_ONLY">Log#FATAL_ONLY</a>. Use this method to document fatal failures in vital functions. Includes the source class of the method call in the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void fatal(String error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>the error to be logged</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_fatal_" data-uid="util.Log.fatal*"></a>
+  <h4 id="util_Log_fatal_java_lang_String_boolean_" data-uid="util.Log.fatal(java.lang.String,boolean)">fatal(String error, boolean printSource)</h4>
+  <div class="markdown level1 summary"><p>Printed on all four levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a>, <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a> and <a class="xref" href="util.Log.html#util_Log_FATAL_ONLY">Log#FATAL_ONLY</a>. Use this method to document fatal failures in vital functions. May be used to exclude the source class of the method call from the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void fatal(String error, boolean printSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>the error to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">printSource</span></td>
+        <td><p>if set to false, the source class is excluded; if set to true, the call is identical to <a class="xref" href="util.Log.html#util_Log_fatal_java_lang_String_">Log#fatal(String)</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_fatal_" data-uid="util.Log.fatal*"></a>
+  <h4 id="util_Log_fatal_java_lang_String_int_" data-uid="util.Log.fatal(java.lang.String,int)">fatal(String error, int stepUp)</h4>
+  <div class="markdown level1 summary"><p>Printed on all four levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a>, <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a> and <a class="xref" href="util.Log.html#util_Log_FATAL_ONLY">Log#FATAL_ONLY</a>. Use this method to document fatal failures in vital functions. Includes the source class of the method call in the log as well as a second source class further down the stacktrace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void fatal(String error, int stepUp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>the error to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">stepUp</span></td>
+        <td><p>the amount of steps to take starting at the default calling class to reach the second class to log;
+e.g. if the stacktrace is <code>A -&gt; B -&gt; C -&gt; D -&gt; debug</code>
+then D would be the default calling class and a stepUp of 2 would specify B as the second one to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_info_" data-uid="util.Log.info*"></a>
+  <h4 id="util_Log_info_java_lang_String_" data-uid="util.Log.info(java.lang.String)">info(String info)</h4>
+  <div class="markdown level1 summary"><p>Printed on levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a> and <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a> only. Use this method to notify of regular system events like successful loading operations for example. Includes the source class of the method call in the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void info(String info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>the information to be logged</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_info_" data-uid="util.Log.info*"></a>
+  <h4 id="util_Log_info_java_lang_String_boolean_" data-uid="util.Log.info(java.lang.String,boolean)">info(String info, boolean printSource)</h4>
+  <div class="markdown level1 summary"><p>Printed on levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a> and <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a> only. Use this method to notify of regular system events like successful loading operations for example. May be used to exclude the source class of the method call from the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void info(String info, boolean printSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>the information to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">printSource</span></td>
+        <td><p>if set to false, the source class is excluded; if set to true, the call is identical to <a class="xref" href="util.Log.html#util_Log_info_java_lang_String_">Log#info(String)</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_info_" data-uid="util.Log.info*"></a>
+  <h4 id="util_Log_info_java_lang_String_int_" data-uid="util.Log.info(java.lang.String,int)">info(String info, int stepUp)</h4>
+  <div class="markdown level1 summary"><p>Printed on levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a> and <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a> only. Use this method to notify of regular system events like successful loading operations for example. Includes the source class of the method call in the log as well as a second source class further down the stacktrace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void info(String info, int stepUp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>the information to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">stepUp</span></td>
+        <td><p>the amount of steps to take starting at the default calling class to reach the second class to log;
+e.g. if the stacktrace is <code>A -&gt; B -&gt; C -&gt; D -&gt; debug</code>
+then D would be the default calling class and a stepUp of 2 would specify B as the second one to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_p_" data-uid="util.Log.p*"></a>
+  <h4 id="util_Log_p_java_lang_String_" data-uid="util.Log.p(java.lang.String)">p(String text)</h4>
+  <div class="markdown level1 summary"><p>Always printed. Use this method to make temporary manual debugging messages, that should get removed before any major update or release. Includes the source class of the method call in the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void p(String text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>the debug to be logged</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_p_" data-uid="util.Log.p*"></a>
+  <h4 id="util_Log_p_java_lang_String_int_" data-uid="util.Log.p(java.lang.String,int)">p(String text, int stepUp)</h4>
+  <div class="markdown level1 summary"><p>Always printed. Use this method to make temporary manual debugging messages, that should get removed before any major update or release. Includes the source class of the method call in the log as well as a second source class further down the stacktrace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void p(String text, int stepUp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>the debug to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">stepUp</span></td>
+        <td><p>the amount of steps to take starting at the default calling class to reach the second class to log;
+e.g. if the stacktrace is <code>A -&gt; B -&gt; C -&gt; D -&gt; debug</code>
+then D would be the default calling class and a stepUp of 2 would specify B as the second one to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_setLogLevel_" data-uid="util.Log.setLogLevel*"></a>
+  <h4 id="util_Log_setLogLevel_int_" data-uid="util.Log.setLogLevel(int)">setLogLevel(int logLevel)</h4>
+  <div class="markdown level1 summary"><p>Set the log level to filter the amount of logs printed to the terminal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void setLogLevel(int logLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p><a class="xref" href="util.Log.html#util_Log_FATAL_ONLY">Log#FATAL_ONLY</a>, <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a>, <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_startLogging_" data-uid="util.Log.startLogging*"></a>
+  <h4 id="util_Log_startLogging_java_io_File_int_" data-uid="util.Log.startLogging(java.io.File,int)">startLogging(File path, int logLevel)</h4>
+  <div class="markdown level1 summary"><p>Starts a thread for saving the log into a file. the saved log may have a different logging level than the printed one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static synchronized void startLogging(File path, int logLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.io.File</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>the folder path for the log file to be saved to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>the logging level for the saved file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.io.IOException</span></td>
+        <td><p>if any issue happens during the creation and saving of the log file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_warn_" data-uid="util.Log.warn*"></a>
+  <h4 id="util_Log_warn_java_lang_String_" data-uid="util.Log.warn(java.lang.String)">warn(String warn)</h4>
+  <div class="markdown level1 summary"><p>Printed on levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a> and <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a>. Use this method to warn about unintended behaviour that might lead to bugs that aren't spotted yet. Includes the source class of the method call in the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void warn(String warn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">warn</span></td>
+        <td><p>the warning to be logged</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_warn_" data-uid="util.Log.warn*"></a>
+  <h4 id="util_Log_warn_java_lang_String_boolean_" data-uid="util.Log.warn(java.lang.String,boolean)">warn(String warn, boolean printSource)</h4>
+  <div class="markdown level1 summary"><p>Printed on levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a> and <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a>. Use this method to warn about unintended behaviour that might lead to bugs that aren't spotted yet. May be used to exclude the source class of the method call from the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void warn(String warn, boolean printSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">warn</span></td>
+        <td><p>the warning to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">printSource</span></td>
+        <td><p>if set to false, the source class is excluded; if set to true, the call is identical to <a class="xref" href="util.Log.html#util_Log_warn_java_lang_String_">Log#warn(String)</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_Log_warn_" data-uid="util.Log.warn*"></a>
+  <h4 id="util_Log_warn_java_lang_String_int_" data-uid="util.Log.warn(java.lang.String,int)">warn(String warn, int stepUp)</h4>
+  <div class="markdown level1 summary"><p>Printed on levels <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a> and <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a>. Use this method to warn about unintended behaviour that might lead to bugs that aren't spotted yet. Includes the source class of the method call in the log as well as a second source class further down the stacktrace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void warn(String warn, int stepUp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">warn</span></td>
+        <td><p>the warning to be logged</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">stepUp</span></td>
+        <td><p>the amount of steps to take starting at the default calling class to reach the second class to log;
+e.g. if the stacktrace is <code>A -&gt; B -&gt; C -&gt; D -&gt; debug</code>
+then D would be the default calling class and a stepUp of 2 would specify B as the second one to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

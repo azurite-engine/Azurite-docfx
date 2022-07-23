@@ -93,9 +93,16 @@
       <h4><a class="xref" href="util.Engine.html">Engine</a></h4>
       <section><p>The Engine class initializes the Window and the game loop. It can also be used to access some globally used classes like the scene manager and Window.</p>
 </section>
-      <h4><a class="xref" href="util.Logger.html">Logger</a></h4>
-      <section><p>Logging utility to print colored and labeled errors with class references.</p>
+      <h4><a class="xref" href="util.Log.html">Log</a></h4>
+      <section><p>Logging utility to print colored and labeled errors with class references. Always call the methods of this class directly and do not nest it inside other functions, because it will mess up the stacktrace and would therefore display a wrong source.
+Logging modes:
+- FATAL -&gt; only fatal errors and major problems are reported; this is the minimal setting
+- WARNINGS -&gt; includes fatal errors and minor warnings; useful for detecting common issues
+- NO_DEBUG -&gt; displays all information except for hard debug logs; for integrity checks
+- ALL -&gt; shows all logs including hard debug for a detailed overview over vital systems</p>
 </section>
+      <h4><a class="xref" href="util.LoggingThread.html">LoggingThread</a></h4>
+      <section></section>
       <h4><a class="xref" href="util.MathUtils.html">MathUtils</a></h4>
       <section><p>An util class containing a lot of useful methods to do maths and physics calculations.</p>
 </section>

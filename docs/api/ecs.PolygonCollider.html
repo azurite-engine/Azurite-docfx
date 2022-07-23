@@ -224,6 +224,34 @@
   </h3>
   
   
+  <a id="ecs_PolygonCollider_addTag_" data-uid="ecs.PolygonCollider.addTag*"></a>
+  <h4 id="ecs_PolygonCollider_addTag_java_lang_String_" data-uid="ecs.PolygonCollider.addTag(java.lang.String)">addTag(String tag)</h4>
+  <div class="markdown level1 summary"><p>Adds a tag to this collider, making it a tagged collider if it isnt already one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addTag(String tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="ecs_PolygonCollider_canCollideWith_" data-uid="ecs.PolygonCollider.canCollideWith*"></a>
   <h4 id="ecs_PolygonCollider_canCollideWith_physics_collision_Collider_" data-uid="ecs.PolygonCollider.canCollideWith(physics.collision.Collider)">canCollideWith(Collider other)</h4>
   <div class="markdown level1 summary"><p>Determines whether a collider could potentially intersect with another collider ONLY by their collision layers. This method can be considered part of the broad phase of collision detection.</p>
@@ -362,6 +390,32 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ecs_PolygonCollider_hasTags_" data-uid="ecs.PolygonCollider.hasTags*"></a>
+  <h4 id="ecs_PolygonCollider_hasTags__" data-uid="ecs.PolygonCollider.hasTags()">hasTags()</h4>
+  <div class="markdown level1 summary"><p>Defines whether a collider is a tagged or an untagged collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean hasTags()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -564,6 +618,52 @@
   </table>
   
   
+  <a id="ecs_PolygonCollider_matchTags_" data-uid="ecs.PolygonCollider.matchTags*"></a>
+  <h4 id="ecs_PolygonCollider_matchTags_physics_collision_Collider_" data-uid="ecs.PolygonCollider.matchTags(physics.collision.Collider)">matchTags(Collider collider)</h4>
+  <div class="markdown level1 summary"><p>Checks for matching tags with another collider. There are 3 different rules for tag matching:
+- a collider without tags can only collide with a collider without tags (ignoring tags and only using layers)
+- a collider without tags can never collide with a tagged collider
+- a tagged collider can only collide with another tagged object, if there is any intersection comparing both sets of tags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean matchTags(Collider collider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="physics.collision.Collider.html">Collider</a></td>
+        <td><span class="parametername">collider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="ecs_PolygonCollider_passive_" data-uid="ecs.PolygonCollider.passive*"></a>
   <h4 id="ecs_PolygonCollider_passive__" data-uid="ecs.PolygonCollider.passive()">passive()</h4>
   <div class="markdown level1 summary"><p>Defines the behaviour of this collider. A passive collider will never get checked against others colliders, however any collider might get checked against it.</p>
@@ -584,6 +684,34 @@
     <tbody>
       <tr>
         <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ecs_PolygonCollider_removeTag_" data-uid="ecs.PolygonCollider.removeTag*"></a>
+  <h4 id="ecs_PolygonCollider_removeTag_java_lang_String_" data-uid="ecs.PolygonCollider.removeTag(java.lang.String)">removeTag(String tag)</h4>
+  <div class="markdown level1 summary"><p>Removes a tag to this collider. If the last tag got removed, this collider becomes an untagged collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void removeTag(String tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">tag</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -696,6 +824,32 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="ecs.Component.html#ecs_Component_start__">Component.start()</a></div>
+  
+  
+  <a id="ecs_PolygonCollider_tags_" data-uid="ecs.PolygonCollider.tags*"></a>
+  <h4 id="ecs_PolygonCollider_tags__" data-uid="ecs.PolygonCollider.tags()">tags()</h4>
+  <div class="markdown level1 summary"><p>All tags assigned to this collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Set&lt;String&gt; tags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.Set</span>&lt;<span class="xref">java.lang.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="ecs_PolygonCollider_update_" data-uid="ecs.PolygonCollider.update*"></a>

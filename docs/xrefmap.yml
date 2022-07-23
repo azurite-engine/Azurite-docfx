@@ -1615,6 +1615,18 @@ references:
   href: api/ecs.PolygonCollider.html
   fullName: ecs.PolygonCollider
   nameWithType: PolygonCollider
+- uid: ecs.PolygonCollider.addTag(java.lang.String)
+  name: addTag(String tag)
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_addTag_java_lang_String_
+  fullName: ecs.PolygonCollider.addTag(String tag)
+  nameWithType: PolygonCollider.addTag(String tag)
+- uid: ecs.PolygonCollider.addTag*
+  name: addTag
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_addTag_
+  isSpec: "True"
+  fullName: ecs.PolygonCollider.addTag
+  nameWithType: PolygonCollider.addTag
+  package: ecs
 - uid: ecs.PolygonCollider.canCollideWith(physics.collision.Collider)
   name: canCollideWith(Collider other)
   href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_canCollideWith_physics_collision_Collider_
@@ -1662,6 +1674,18 @@ references:
   isSpec: "True"
   fullName: ecs.PolygonCollider.hasMask
   nameWithType: PolygonCollider.hasMask
+  package: ecs
+- uid: ecs.PolygonCollider.hasTags()
+  name: hasTags()
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_hasTags__
+  fullName: ecs.PolygonCollider.hasTags()
+  nameWithType: PolygonCollider.hasTags()
+- uid: ecs.PolygonCollider.hasTags*
+  name: hasTags
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_hasTags_
+  isSpec: "True"
+  fullName: ecs.PolygonCollider.hasTags
+  nameWithType: PolygonCollider.hasTags
   package: ecs
 - uid: ecs.PolygonCollider.isOnLayer(int)
   name: isOnLayer(int layer)
@@ -1716,6 +1740,18 @@ references:
   fullName: ecs.PolygonCollider.mask
   nameWithType: PolygonCollider.mask
   package: ecs
+- uid: ecs.PolygonCollider.matchTags(physics.collision.Collider)
+  name: matchTags(Collider collider)
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_matchTags_physics_collision_Collider_
+  fullName: ecs.PolygonCollider.matchTags(Collider collider)
+  nameWithType: PolygonCollider.matchTags(Collider collider)
+- uid: ecs.PolygonCollider.matchTags*
+  name: matchTags
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_matchTags_
+  isSpec: "True"
+  fullName: ecs.PolygonCollider.matchTags
+  nameWithType: PolygonCollider.matchTags
+  package: ecs
 - uid: ecs.PolygonCollider.passive()
   name: passive()
   href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_passive__
@@ -1744,6 +1780,18 @@ references:
   isSpec: "True"
   fullName: ecs.PolygonCollider.PolygonCollider
   nameWithType: PolygonCollider.PolygonCollider
+  package: ecs
+- uid: ecs.PolygonCollider.removeTag(java.lang.String)
+  name: removeTag(String tag)
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_removeTag_java_lang_String_
+  fullName: ecs.PolygonCollider.removeTag(String tag)
+  nameWithType: PolygonCollider.removeTag(String tag)
+- uid: ecs.PolygonCollider.removeTag*
+  name: removeTag
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_removeTag_
+  isSpec: "True"
+  fullName: ecs.PolygonCollider.removeTag
+  nameWithType: PolygonCollider.removeTag
   package: ecs
 - uid: ecs.PolygonCollider.setLayer(int,boolean)
   name: setLayer(int layer, boolean active)
@@ -1792,6 +1840,18 @@ references:
   isSpec: "True"
   fullName: ecs.PolygonCollider.start
   nameWithType: PolygonCollider.start
+  package: ecs
+- uid: ecs.PolygonCollider.tags()
+  name: tags()
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_tags__
+  fullName: ecs.PolygonCollider.tags()
+  nameWithType: PolygonCollider.tags()
+- uid: ecs.PolygonCollider.tags*
+  name: tags
+  href: api/ecs.PolygonCollider.html#ecs_PolygonCollider_tags_
+  isSpec: "True"
+  fullName: ecs.PolygonCollider.tags
+  nameWithType: PolygonCollider.tags
   package: ecs
 - uid: ecs.PolygonCollider.update(float)
   name: update(float dt)
@@ -9237,6 +9297,18 @@ references:
   href: api/physics.collision.Collider.html
   fullName: physics.collision.Collider
   nameWithType: Collider
+- uid: physics.collision.Collider.addTag(java.lang.String)
+  name: addTag(String tag)
+  href: api/physics.collision.Collider.html#physics_collision_Collider_addTag_java_lang_String_
+  fullName: physics.collision.Collider.addTag(String tag)
+  nameWithType: Collider.addTag(String tag)
+- uid: physics.collision.Collider.addTag*
+  name: addTag
+  href: api/physics.collision.Collider.html#physics_collision_Collider_addTag_
+  isSpec: "True"
+  fullName: physics.collision.Collider.addTag
+  nameWithType: Collider.addTag
+  package: physics.collision
 - uid: physics.collision.Collider.canCollideWith(physics.collision.Collider)
   name: canCollideWith(Collider collider)
   href: api/physics.collision.Collider.html#physics_collision_Collider_canCollideWith_physics_collision_Collider_
@@ -9285,6 +9357,18 @@ references:
   fullName: physics.collision.Collider.hasMask
   nameWithType: Collider.hasMask
   package: physics.collision
+- uid: physics.collision.Collider.hasTags()
+  name: hasTags()
+  href: api/physics.collision.Collider.html#physics_collision_Collider_hasTags__
+  fullName: physics.collision.Collider.hasTags()
+  nameWithType: Collider.hasTags()
+- uid: physics.collision.Collider.hasTags*
+  name: hasTags
+  href: api/physics.collision.Collider.html#physics_collision_Collider_hasTags_
+  isSpec: "True"
+  fullName: physics.collision.Collider.hasTags
+  nameWithType: Collider.hasTags
+  package: physics.collision
 - uid: physics.collision.Collider.isOnLayer(int)
   name: isOnLayer(int layer)
   href: api/physics.collision.Collider.html#physics_collision_Collider_isOnLayer_int_
@@ -9321,6 +9405,18 @@ references:
   fullName: physics.collision.Collider.mask
   nameWithType: Collider.mask
   package: physics.collision
+- uid: physics.collision.Collider.matchTags(physics.collision.Collider)
+  name: matchTags(Collider collider)
+  href: api/physics.collision.Collider.html#physics_collision_Collider_matchTags_physics_collision_Collider_
+  fullName: physics.collision.Collider.matchTags(Collider collider)
+  nameWithType: Collider.matchTags(Collider collider)
+- uid: physics.collision.Collider.matchTags*
+  name: matchTags
+  href: api/physics.collision.Collider.html#physics_collision_Collider_matchTags_
+  isSpec: "True"
+  fullName: physics.collision.Collider.matchTags
+  nameWithType: Collider.matchTags
+  package: physics.collision
 - uid: physics.collision.Collider.passive()
   name: passive()
   href: api/physics.collision.Collider.html#physics_collision_Collider_passive__
@@ -9332,6 +9428,18 @@ references:
   isSpec: "True"
   fullName: physics.collision.Collider.passive
   nameWithType: Collider.passive
+  package: physics.collision
+- uid: physics.collision.Collider.removeTag(java.lang.String)
+  name: removeTag(String tag)
+  href: api/physics.collision.Collider.html#physics_collision_Collider_removeTag_java_lang_String_
+  fullName: physics.collision.Collider.removeTag(String tag)
+  nameWithType: Collider.removeTag(String tag)
+- uid: physics.collision.Collider.removeTag*
+  name: removeTag
+  href: api/physics.collision.Collider.html#physics_collision_Collider_removeTag_
+  isSpec: "True"
+  fullName: physics.collision.Collider.removeTag
+  nameWithType: Collider.removeTag
   package: physics.collision
 - uid: physics.collision.Collider.setLayer(int,boolean)
   name: setLayer(int layer, boolean active)
@@ -9356,6 +9464,18 @@ references:
   isSpec: "True"
   fullName: physics.collision.Collider.setMask
   nameWithType: Collider.setMask
+  package: physics.collision
+- uid: physics.collision.Collider.tags()
+  name: tags()
+  href: api/physics.collision.Collider.html#physics_collision_Collider_tags__
+  fullName: physics.collision.Collider.tags()
+  nameWithType: Collider.tags()
+- uid: physics.collision.Collider.tags*
+  name: tags
+  href: api/physics.collision.Collider.html#physics_collision_Collider_tags_
+  isSpec: "True"
+  fullName: physics.collision.Collider.tags
+  nameWithType: Collider.tags
   package: physics.collision
 - uid: physics.collision.CollisionInformation
   name: CollisionInformation
@@ -15561,6 +15681,18 @@ references:
   fullName: util.Engine.deltaTime
   nameWithType: Engine.deltaTime
   package: util
+- uid: util.Engine.enableLogFiles(java.io.File,int)
+  name: enableLogFiles(File folderPath, int logLevel)
+  href: api/util.Engine.html#util_Engine_enableLogFiles_java_io_File_int_
+  fullName: util.Engine.enableLogFiles(File folderPath, int logLevel)
+  nameWithType: Engine.enableLogFiles(File folderPath, int logLevel)
+- uid: util.Engine.enableLogFiles*
+  name: enableLogFiles
+  href: api/util.Engine.html#util_Engine_enableLogFiles_
+  isSpec: "True"
+  fullName: util.Engine.enableLogFiles
+  nameWithType: Engine.enableLogFiles
+  package: util
 - uid: util.Engine.Engine()
   name: Engine()
   href: api/util.Engine.html
@@ -15641,6 +15773,18 @@ references:
   fullName: util.Engine.init
   nameWithType: Engine.init
   package: util
+- uid: util.Engine.interrupt(int)
+  name: interrupt(int code)
+  href: api/util.Engine.html#util_Engine_interrupt_int_
+  fullName: util.Engine.interrupt(int code)
+  nameWithType: Engine.interrupt(int code)
+- uid: util.Engine.interrupt*
+  name: interrupt
+  href: api/util.Engine.html#util_Engine_interrupt_
+  isSpec: "True"
+  fullName: util.Engine.interrupt
+  nameWithType: Engine.interrupt
+  package: util
 - uid: util.Engine.isRunning()
   name: isRunning()
   href: api/util.Engine.html#util_Engine_isRunning__
@@ -15713,6 +15857,231 @@ references:
   fullName: util.Engine.window
   nameWithType: Engine.window
   package: util
+- uid: util.Engine.windowStopped()
+  name: windowStopped()
+  href: api/util.Engine.html#util_Engine_windowStopped__
+  fullName: util.Engine.windowStopped()
+  nameWithType: Engine.windowStopped()
+- uid: util.Engine.windowStopped*
+  name: windowStopped
+  href: api/util.Engine.html#util_Engine_windowStopped_
+  isSpec: "True"
+  fullName: util.Engine.windowStopped
+  nameWithType: Engine.windowStopped
+  package: util
+- uid: util.Log
+  name: Log
+  href: api/util.Log.html
+  fullName: util.Log
+  nameWithType: Log
+- uid: util.Log.ALL
+  name: ALL
+  href: api/util.Log.html#util_Log_ALL
+  fullName: util.Log.ALL
+  nameWithType: Log.ALL
+- uid: util.Log.CL_BLUE
+  name: CL_BLUE
+  href: api/util.Log.html#util_Log_CL_BLUE
+  fullName: util.Log.CL_BLUE
+  nameWithType: Log.CL_BLUE
+- uid: util.Log.CL_CYAN
+  name: CL_CYAN
+  href: api/util.Log.html#util_Log_CL_CYAN
+  fullName: util.Log.CL_CYAN
+  nameWithType: Log.CL_CYAN
+- uid: util.Log.CL_GRAY
+  name: CL_GRAY
+  href: api/util.Log.html#util_Log_CL_GRAY
+  fullName: util.Log.CL_GRAY
+  nameWithType: Log.CL_GRAY
+- uid: util.Log.CL_GREEN
+  name: CL_GREEN
+  href: api/util.Log.html#util_Log_CL_GREEN
+  fullName: util.Log.CL_GREEN
+  nameWithType: Log.CL_GREEN
+- uid: util.Log.CL_ORANGE
+  name: CL_ORANGE
+  href: api/util.Log.html#util_Log_CL_ORANGE
+  fullName: util.Log.CL_ORANGE
+  nameWithType: Log.CL_ORANGE
+- uid: util.Log.CL_PURPLE
+  name: CL_PURPLE
+  href: api/util.Log.html#util_Log_CL_PURPLE
+  fullName: util.Log.CL_PURPLE
+  nameWithType: Log.CL_PURPLE
+- uid: util.Log.CL_RED
+  name: CL_RED
+  href: api/util.Log.html#util_Log_CL_RED
+  fullName: util.Log.CL_RED
+  nameWithType: Log.CL_RED
+- uid: util.Log.crash(java.lang.Exception)
+  name: crash(Exception e)
+  href: api/util.Log.html#util_Log_crash_java_lang_Exception_
+  fullName: util.Log.crash(Exception e)
+  nameWithType: Log.crash(Exception e)
+- uid: util.Log.crash*
+  name: crash
+  href: api/util.Log.html#util_Log_crash_
+  isSpec: "True"
+  fullName: util.Log.crash
+  nameWithType: Log.crash
+  package: util
+- uid: util.Log.debug(java.lang.String)
+  name: debug(String log)
+  href: api/util.Log.html#util_Log_debug_java_lang_String_
+  fullName: util.Log.debug(String log)
+  nameWithType: Log.debug(String log)
+- uid: util.Log.debug(java.lang.String,boolean)
+  name: debug(String log, boolean printSource)
+  href: api/util.Log.html#util_Log_debug_java_lang_String_boolean_
+  fullName: util.Log.debug(String log, boolean printSource)
+  nameWithType: Log.debug(String log, boolean printSource)
+- uid: util.Log.debug(java.lang.String,int)
+  name: debug(String log, int stepUp)
+  href: api/util.Log.html#util_Log_debug_java_lang_String_int_
+  fullName: util.Log.debug(String log, int stepUp)
+  nameWithType: Log.debug(String log, int stepUp)
+- uid: util.Log.debug*
+  name: debug
+  href: api/util.Log.html#util_Log_debug_
+  isSpec: "True"
+  fullName: util.Log.debug
+  nameWithType: Log.debug
+  package: util
+- uid: util.Log.fatal(java.lang.String)
+  name: fatal(String error)
+  href: api/util.Log.html#util_Log_fatal_java_lang_String_
+  fullName: util.Log.fatal(String error)
+  nameWithType: Log.fatal(String error)
+- uid: util.Log.fatal(java.lang.String,boolean)
+  name: fatal(String error, boolean printSource)
+  href: api/util.Log.html#util_Log_fatal_java_lang_String_boolean_
+  fullName: util.Log.fatal(String error, boolean printSource)
+  nameWithType: Log.fatal(String error, boolean printSource)
+- uid: util.Log.fatal(java.lang.String,int)
+  name: fatal(String error, int stepUp)
+  href: api/util.Log.html#util_Log_fatal_java_lang_String_int_
+  fullName: util.Log.fatal(String error, int stepUp)
+  nameWithType: Log.fatal(String error, int stepUp)
+- uid: util.Log.fatal*
+  name: fatal
+  href: api/util.Log.html#util_Log_fatal_
+  isSpec: "True"
+  fullName: util.Log.fatal
+  nameWithType: Log.fatal
+  package: util
+- uid: util.Log.FATAL_ONLY
+  name: FATAL_ONLY
+  href: api/util.Log.html#util_Log_FATAL_ONLY
+  fullName: util.Log.FATAL_ONLY
+  nameWithType: Log.FATAL_ONLY
+- uid: util.Log.info(java.lang.String)
+  name: info(String info)
+  href: api/util.Log.html#util_Log_info_java_lang_String_
+  fullName: util.Log.info(String info)
+  nameWithType: Log.info(String info)
+- uid: util.Log.info(java.lang.String,boolean)
+  name: info(String info, boolean printSource)
+  href: api/util.Log.html#util_Log_info_java_lang_String_boolean_
+  fullName: util.Log.info(String info, boolean printSource)
+  nameWithType: Log.info(String info, boolean printSource)
+- uid: util.Log.info(java.lang.String,int)
+  name: info(String info, int stepUp)
+  href: api/util.Log.html#util_Log_info_java_lang_String_int_
+  fullName: util.Log.info(String info, int stepUp)
+  nameWithType: Log.info(String info, int stepUp)
+- uid: util.Log.info*
+  name: info
+  href: api/util.Log.html#util_Log_info_
+  isSpec: "True"
+  fullName: util.Log.info
+  nameWithType: Log.info
+  package: util
+- uid: util.Log.Log()
+  name: Log()
+  href: api/util.Log.html#util_Log_Log__
+  fullName: util.Log.Log()
+  nameWithType: Log.Log()
+- uid: util.Log.Log*
+  name: Log
+  href: api/util.Log.html#util_Log_Log_
+  isSpec: "True"
+  fullName: util.Log.Log
+  nameWithType: Log.Log
+  package: util
+- uid: util.Log.NO_DEBUG
+  name: NO_DEBUG
+  href: api/util.Log.html#util_Log_NO_DEBUG
+  fullName: util.Log.NO_DEBUG
+  nameWithType: Log.NO_DEBUG
+- uid: util.Log.p(java.lang.String)
+  name: p(String text)
+  href: api/util.Log.html#util_Log_p_java_lang_String_
+  fullName: util.Log.p(String text)
+  nameWithType: Log.p(String text)
+- uid: util.Log.p(java.lang.String,int)
+  name: p(String text, int stepUp)
+  href: api/util.Log.html#util_Log_p_java_lang_String_int_
+  fullName: util.Log.p(String text, int stepUp)
+  nameWithType: Log.p(String text, int stepUp)
+- uid: util.Log.p*
+  name: p
+  href: api/util.Log.html#util_Log_p_
+  isSpec: "True"
+  fullName: util.Log.p
+  nameWithType: Log.p
+  package: util
+- uid: util.Log.setLogLevel(int)
+  name: setLogLevel(int logLevel)
+  href: api/util.Log.html#util_Log_setLogLevel_int_
+  fullName: util.Log.setLogLevel(int logLevel)
+  nameWithType: Log.setLogLevel(int logLevel)
+- uid: util.Log.setLogLevel*
+  name: setLogLevel
+  href: api/util.Log.html#util_Log_setLogLevel_
+  isSpec: "True"
+  fullName: util.Log.setLogLevel
+  nameWithType: Log.setLogLevel
+  package: util
+- uid: util.Log.startLogging(java.io.File,int)
+  name: startLogging(File path, int logLevel)
+  href: api/util.Log.html#util_Log_startLogging_java_io_File_int_
+  fullName: util.Log.startLogging(File path, int logLevel)
+  nameWithType: Log.startLogging(File path, int logLevel)
+- uid: util.Log.startLogging*
+  name: startLogging
+  href: api/util.Log.html#util_Log_startLogging_
+  isSpec: "True"
+  fullName: util.Log.startLogging
+  nameWithType: Log.startLogging
+  package: util
+- uid: util.Log.warn(java.lang.String)
+  name: warn(String warn)
+  href: api/util.Log.html#util_Log_warn_java_lang_String_
+  fullName: util.Log.warn(String warn)
+  nameWithType: Log.warn(String warn)
+- uid: util.Log.warn(java.lang.String,boolean)
+  name: warn(String warn, boolean printSource)
+  href: api/util.Log.html#util_Log_warn_java_lang_String_boolean_
+  fullName: util.Log.warn(String warn, boolean printSource)
+  nameWithType: Log.warn(String warn, boolean printSource)
+- uid: util.Log.warn(java.lang.String,int)
+  name: warn(String warn, int stepUp)
+  href: api/util.Log.html#util_Log_warn_java_lang_String_int_
+  fullName: util.Log.warn(String warn, int stepUp)
+  nameWithType: Log.warn(String warn, int stepUp)
+- uid: util.Log.warn*
+  name: warn
+  href: api/util.Log.html#util_Log_warn_
+  isSpec: "True"
+  fullName: util.Log.warn
+  nameWithType: Log.warn
+  package: util
+- uid: util.Log.WARNINGS
+  name: WARNINGS
+  href: api/util.Log.html#util_Log_WARNINGS
+  fullName: util.Log.WARNINGS
+  nameWithType: Log.WARNINGS
 - uid: util.Logger
   name: Logger
   href: api/util.Logger.html
@@ -15801,6 +16170,93 @@ references:
   isSpec: "True"
   fullName: util.Logger.logSystemCompatibilityError
   nameWithType: Logger.logSystemCompatibilityError
+  package: util
+- uid: util.LoggingThread
+  name: LoggingThread
+  href: api/util.LoggingThread.html
+  fullName: util.LoggingThread
+  nameWithType: LoggingThread
+- uid: util.LoggingThread.CYCLE
+  name: CYCLE
+  href: api/util.LoggingThread.html#util_LoggingThread_CYCLE
+  fullName: util.LoggingThread.CYCLE
+  nameWithType: LoggingThread.CYCLE
+- uid: util.LoggingThread.init()
+  name: init()
+  href: api/util.LoggingThread.html#util_LoggingThread_init__
+  fullName: util.LoggingThread.init()
+  nameWithType: LoggingThread.init()
+- uid: util.LoggingThread.init*
+  name: init
+  href: api/util.LoggingThread.html#util_LoggingThread_init_
+  isSpec: "True"
+  fullName: util.LoggingThread.init
+  nameWithType: LoggingThread.init
+  package: util
+- uid: util.LoggingThread.log(java.lang.String,int)
+  name: log(String log, int logLevel)
+  href: api/util.LoggingThread.html#util_LoggingThread_log_java_lang_String_int_
+  fullName: util.LoggingThread.log(String log, int logLevel)
+  nameWithType: LoggingThread.log(String log, int logLevel)
+- uid: util.LoggingThread.log*
+  name: log
+  href: api/util.LoggingThread.html#util_LoggingThread_log_
+  isSpec: "True"
+  fullName: util.LoggingThread.log
+  nameWithType: LoggingThread.log
+  package: util
+- uid: util.LoggingThread.LOG_NAME
+  name: LOG_NAME
+  href: api/util.LoggingThread.html#util_LoggingThread_LOG_NAME
+  fullName: util.LoggingThread.LOG_NAME
+  nameWithType: LoggingThread.LOG_NAME
+- uid: util.LoggingThread.LoggingThread(java.io.File,int)
+  name: LoggingThread(File path, int logLevel)
+  href: api/util.LoggingThread.html#util_LoggingThread_LoggingThread_java_io_File_int_
+  fullName: util.LoggingThread.LoggingThread(File path, int logLevel)
+  nameWithType: LoggingThread.LoggingThread(File path, int logLevel)
+- uid: util.LoggingThread.LoggingThread*
+  name: LoggingThread
+  href: api/util.LoggingThread.html#util_LoggingThread_LoggingThread_
+  isSpec: "True"
+  fullName: util.LoggingThread.LoggingThread
+  nameWithType: LoggingThread.LoggingThread
+  package: util
+- uid: util.LoggingThread.run()
+  name: run()
+  href: api/util.LoggingThread.html#util_LoggingThread_run__
+  fullName: util.LoggingThread.run()
+  nameWithType: LoggingThread.run()
+- uid: util.LoggingThread.run*
+  name: run
+  href: api/util.LoggingThread.html#util_LoggingThread_run_
+  isSpec: "True"
+  fullName: util.LoggingThread.run
+  nameWithType: LoggingThread.run
+  package: util
+- uid: util.LoggingThread.save()
+  name: save()
+  href: api/util.LoggingThread.html#util_LoggingThread_save__
+  fullName: util.LoggingThread.save()
+  nameWithType: LoggingThread.save()
+- uid: util.LoggingThread.save*
+  name: save
+  href: api/util.LoggingThread.html#util_LoggingThread_save_
+  isSpec: "True"
+  fullName: util.LoggingThread.save
+  nameWithType: LoggingThread.save
+  package: util
+- uid: util.LoggingThread.setLogLevel(int)
+  name: setLogLevel(int logLevel)
+  href: api/util.LoggingThread.html#util_LoggingThread_setLogLevel_int_
+  fullName: util.LoggingThread.setLogLevel(int logLevel)
+  nameWithType: LoggingThread.setLogLevel(int logLevel)
+- uid: util.LoggingThread.setLogLevel*
+  name: setLogLevel
+  href: api/util.LoggingThread.html#util_LoggingThread_setLogLevel_
+  isSpec: "True"
+  fullName: util.LoggingThread.setLogLevel
+  nameWithType: LoggingThread.setLogLevel
   package: util
 - uid: util.MathUtils
   name: MathUtils

@@ -96,6 +96,35 @@
   </h3>
   
   
+  <a id="physics_collision_Collider_addTag_" data-uid="physics.collision.Collider.addTag*"></a>
+  <h4 id="physics_collision_Collider_addTag_java_lang_String_" data-uid="physics.collision.Collider.addTag(java.lang.String)">addTag(String tag)</h4>
+  <div class="markdown level1 summary"><p>Adds a tag to this collider, making it a tagged collider if it isnt already one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void addTag(String tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>the new case-sensitive tag to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="physics_collision_Collider_canCollideWith_" data-uid="physics.collision.Collider.canCollideWith*"></a>
   <h4 id="physics_collision_Collider_canCollideWith_physics_collision_Collider_" data-uid="physics.collision.Collider.canCollideWith(physics.collision.Collider)">canCollideWith(Collider collider)</h4>
   <div class="markdown level1 summary"><p>Determines whether a collider could potentially intersect with another collider ONLY by their collision layers. This method can be considered part of the broad phase of collision detection.</p>
@@ -258,6 +287,33 @@
   </table>
   
   
+  <a id="physics_collision_Collider_hasTags_" data-uid="physics.collision.Collider.hasTags*"></a>
+  <h4 id="physics_collision_Collider_hasTags__" data-uid="physics.collision.Collider.hasTags()">hasTags()</h4>
+  <div class="markdown level1 summary"><p>Defines whether a collider is a tagged or an untagged collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract boolean hasTags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>true, if and only if that collider contains at least a one tag</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="physics_collision_Collider_isOnLayer_" data-uid="physics.collision.Collider.isOnLayer*"></a>
   <h4 id="physics_collision_Collider_isOnLayer_int_" data-uid="physics.collision.Collider.isOnLayer(int)">isOnLayer(int layer)</h4>
   <div class="markdown level1 summary"><p>Determines whether the collider exists in a specified layer.</p>
@@ -357,6 +413,54 @@
   </table>
   
   
+  <a id="physics_collision_Collider_matchTags_" data-uid="physics.collision.Collider.matchTags*"></a>
+  <h4 id="physics_collision_Collider_matchTags_physics_collision_Collider_" data-uid="physics.collision.Collider.matchTags(physics.collision.Collider)">matchTags(Collider collider)</h4>
+  <div class="markdown level1 summary"><p>Checks for matching tags with another collider. There are 3 different rules for tag matching:
+- a collider without tags can only collide with a collider without tags (ignoring tags and only using layers)
+- a collider without tags can never collide with a tagged collider
+- a tagged collider can only collide with another tagged object, if there is any intersection comparing both sets of tags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract boolean matchTags(Collider collider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><span class="parametername">collider</span></td>
+        <td><p>another collider</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>true, if the colliders are allowed to collide</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="physics_collision_Collider_passive_" data-uid="physics.collision.Collider.passive*"></a>
   <h4 id="physics_collision_Collider_passive__" data-uid="physics.collision.Collider.passive()">passive()</h4>
   <div class="markdown level1 summary"><p>Defines the behaviour of this collider. A passive collider will never get checked against others colliders, however any collider might get checked against it.</p>
@@ -378,6 +482,35 @@
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><p>whether this collider is passive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_removeTag_" data-uid="physics.collision.Collider.removeTag*"></a>
+  <h4 id="physics_collision_Collider_removeTag_java_lang_String_" data-uid="physics.collision.Collider.removeTag(java.lang.String)">removeTag(String tag)</h4>
+  <div class="markdown level1 summary"><p>Removes a tag to this collider. If the last tag got removed, this collider becomes an untagged collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void removeTag(String tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>the case-sensitive tag to remove</p>
 </td>
       </tr>
     </tbody>
@@ -448,6 +581,33 @@
         <td><span class="xref">boolean</span></td>
         <td><span class="parametername">active</span></td>
         <td><p>whether the mask should enabled (true) or disabled (false)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="physics_collision_Collider_tags_" data-uid="physics.collision.Collider.tags*"></a>
+  <h4 id="physics_collision_Collider_tags__" data-uid="physics.collision.Collider.tags()">tags()</h4>
+  <div class="markdown level1 summary"><p>All tags assigned to this collider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Set&lt;String&gt; tags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.Set</span>&lt;<span class="xref">java.lang.String</span>&gt;</td>
+        <td><p>an unmodifiable set of all tags assigned to this collider</p>
 </td>
       </tr>
     </tbody>
