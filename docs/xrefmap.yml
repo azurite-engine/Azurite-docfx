@@ -11543,11 +11543,11 @@ references:
   href: api/scene.SceneManager.html#scene_SceneManager_switchScene_int_
   fullName: scene.SceneManager.switchScene(int id)
   nameWithType: SceneManager.switchScene(int id)
-- uid: scene.SceneManager.switchScene(scene.Scene,boolean)
-  name: switchScene(Scene scene, boolean addIfUnknown)
-  href: api/scene.SceneManager.html#scene_SceneManager_switchScene_scene_Scene_boolean_
-  fullName: scene.SceneManager.switchScene(Scene scene, boolean addIfUnknown)
-  nameWithType: SceneManager.switchScene(Scene scene, boolean addIfUnknown)
+- uid: scene.SceneManager.switchScene(scene.Scene)
+  name: switchScene(Scene scene)
+  href: api/scene.SceneManager.html#scene_SceneManager_switchScene_scene_Scene_
+  fullName: scene.SceneManager.switchScene(Scene scene)
+  nameWithType: SceneManager.switchScene(Scene scene)
 - uid: scene.SceneManager.switchScene*
   name: switchScene
   href: api/scene.SceneManager.html#scene_SceneManager_switchScene_
