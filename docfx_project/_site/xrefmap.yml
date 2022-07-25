@@ -8934,40 +8934,74 @@ references:
   href: api/io.xml.XML.html
   fullName: io.xml.XML
   nameWithType: XML
-- uid: io.xml.XML.getRoot()
-  name: getRoot()
-  href: api/io.xml.XML.html#io_xml_XML_getRoot__
-  fullName: io.xml.XML.getRoot()
-  nameWithType: XML.getRoot()
-- uid: io.xml.XML.getRoot*
-  name: getRoot
-  href: api/io.xml.XML.html#io_xml_XML_getRoot_
+- uid: io.xml.XML.parse(byte[])
+  name: parse(byte[] input)
+  href: api/io.xml.XML.html#io_xml_XML_parse_byte___
+  fullName: io.xml.XML.parse(byte[] input)
+  nameWithType: XML.parse(byte[] input)
+- uid: io.xml.XML.parse(byte[],java.nio.charset.Charset)
+  name: parse(byte[] input, Charset charset)
+  href: api/io.xml.XML.html#io_xml_XML_parse_byte___java_nio_charset_Charset_
+  fullName: io.xml.XML.parse(byte[] input, Charset charset)
+  nameWithType: XML.parse(byte[] input, Charset charset)
+- uid: io.xml.XML.parse(java.lang.String)
+  name: parse(String input)
+  href: api/io.xml.XML.html#io_xml_XML_parse_java_lang_String_
+  fullName: io.xml.XML.parse(String input)
+  nameWithType: XML.parse(String input)
+- uid: io.xml.XML.parse(java.util.List<io.xml.XMLToken>,int)
+  name: parse(List<XMLToken> tokens, int startingPoint)
+  href: api/io.xml.XML.html#io_xml_XML_parse_java_util_List_io_xml_XMLToken__int_
+  fullName: io.xml.XML.parse(List<XMLToken> tokens, int startingPoint)
+  nameWithType: XML.parse(List<XMLToken> tokens, int startingPoint)
+- uid: io.xml.XML.parse*
+  name: parse
+  href: api/io.xml.XML.html#io_xml_XML_parse_
   isSpec: "True"
-  fullName: io.xml.XML.getRoot
-  nameWithType: XML.getRoot
+  fullName: io.xml.XML.parse
+  nameWithType: XML.parse
   package: io.xml
-- uid: io.xml.XML.getXml()
-  name: getXml()
-  href: api/io.xml.XML.html#io_xml_XML_getXml__
-  fullName: io.xml.XML.getXml()
-  nameWithType: XML.getXml()
-- uid: io.xml.XML.getXml*
-  name: getXml
-  href: api/io.xml.XML.html#io_xml_XML_getXml_
+- uid: io.xml.XML.readHeader(byte[])
+  name: readHeader(byte[] input)
+  href: api/io.xml.XML.html#io_xml_XML_readHeader_byte___
+  fullName: io.xml.XML.readHeader(byte[] input)
+  nameWithType: XML.readHeader(byte[] input)
+- uid: io.xml.XML.readHeader*
+  name: readHeader
+  href: api/io.xml.XML.html#io_xml_XML_readHeader_
   isSpec: "True"
-  fullName: io.xml.XML.getXml
-  nameWithType: XML.getXml
+  fullName: io.xml.XML.readHeader
+  nameWithType: XML.readHeader
   package: io.xml
-- uid: io.xml.XML.root
-  name: root
-  href: api/io.xml.XML.html#io_xml_XML_root
-  fullName: io.xml.XML.root
-  nameWithType: XML.root
-- uid: io.xml.XML.XML(java.lang.String)
-  name: XML(String path)
-  href: api/io.xml.XML.html#io_xml_XML_XML_java_lang_String_
-  fullName: io.xml.XML.XML(String path)
-  nameWithType: XML.XML(String path)
+- uid: io.xml.XML.tokenize(java.lang.String)
+  name: tokenize(String input)
+  href: api/io.xml.XML.html#io_xml_XML_tokenize_java_lang_String_
+  fullName: io.xml.XML.tokenize(String input)
+  nameWithType: XML.tokenize(String input)
+- uid: io.xml.XML.tokenize*
+  name: tokenize
+  href: api/io.xml.XML.html#io_xml_XML_tokenize_
+  isSpec: "True"
+  fullName: io.xml.XML.tokenize
+  nameWithType: XML.tokenize
+  package: io.xml
+- uid: io.xml.XML.transformValue(java.lang.String,boolean)
+  name: transformValue(String value, boolean isRaw)
+  href: api/io.xml.XML.html#io_xml_XML_transformValue_java_lang_String_boolean_
+  fullName: io.xml.XML.transformValue(String value, boolean isRaw)
+  nameWithType: XML.transformValue(String value, boolean isRaw)
+- uid: io.xml.XML.transformValue*
+  name: transformValue
+  href: api/io.xml.XML.html#io_xml_XML_transformValue_
+  isSpec: "True"
+  fullName: io.xml.XML.transformValue
+  nameWithType: XML.transformValue
+  package: io.xml
+- uid: io.xml.XML.XML()
+  name: XML()
+  href: api/io.xml.XML.html#io_xml_XML_XML__
+  fullName: io.xml.XML.XML()
+  nameWithType: XML.XML()
 - uid: io.xml.XML.XML*
   name: XML
   href: api/io.xml.XML.html#io_xml_XML_XML_
@@ -9191,6 +9225,59 @@ references:
   fullName: io.xml.XMLSyntaxException.XMLSyntaxException
   nameWithType: XMLSyntaxException.XMLSyntaxException
   package: io.xml
+- uid: io.xml.XMLToken
+  name: XMLToken
+  href: api/io.xml.XMLToken.html
+  fullName: io.xml.XMLToken
+  nameWithType: XMLToken
+- uid: io.xml.XMLToken.getTokenType()
+  name: getTokenType()
+  href: api/io.xml.XMLToken.html#io_xml_XMLToken_getTokenType__
+  fullName: io.xml.XMLToken.getTokenType()
+  nameWithType: XMLToken.getTokenType()
+- uid: io.xml.XMLToken.getTokenType*
+  name: getTokenType
+  href: api/io.xml.XMLToken.html#io_xml_XMLToken_getTokenType_
+  isSpec: "True"
+  fullName: io.xml.XMLToken.getTokenType
+  nameWithType: XMLToken.getTokenType
+  package: io.xml
+- uid: io.xml.XMLToken.getValue()
+  name: getValue()
+  href: api/io.xml.XMLToken.html#io_xml_XMLToken_getValue__
+  fullName: io.xml.XMLToken.getValue()
+  nameWithType: XMLToken.getValue()
+- uid: io.xml.XMLToken.getValue*
+  name: getValue
+  href: api/io.xml.XMLToken.html#io_xml_XMLToken_getValue_
+  isSpec: "True"
+  fullName: io.xml.XMLToken.getValue
+  nameWithType: XMLToken.getValue
+  package: io.xml
+- uid: io.xml.XMLToken.toString()
+  name: toString()
+  href: api/io.xml.XMLToken.html#io_xml_XMLToken_toString__
+  fullName: io.xml.XMLToken.toString()
+  nameWithType: XMLToken.toString()
+- uid: io.xml.XMLToken.toString*
+  name: toString
+  href: api/io.xml.XMLToken.html#io_xml_XMLToken_toString_
+  isSpec: "True"
+  fullName: io.xml.XMLToken.toString
+  nameWithType: XMLToken.toString
+  package: io.xml
+- uid: io.xml.XMLToken.XMLToken(java.lang.String,io.xml.XMLTokenType)
+  name: XMLToken(String value, XMLTokenType tokenType)
+  href: api/io.xml.XMLToken.html#io_xml_XMLToken_XMLToken_java_lang_String_io_xml_XMLTokenType_
+  fullName: io.xml.XMLToken.XMLToken(String value, XMLTokenType tokenType)
+  nameWithType: XMLToken.XMLToken(String value, XMLTokenType tokenType)
+- uid: io.xml.XMLToken.XMLToken*
+  name: XMLToken
+  href: api/io.xml.XMLToken.html#io_xml_XMLToken_XMLToken_
+  isSpec: "True"
+  fullName: io.xml.XMLToken.XMLToken
+  nameWithType: XMLToken.XMLToken
+  package: io.xml
 - uid: io.xml.XMLTokenizer
   name: XMLTokenizer
   href: api/io.xml.XMLTokenizer.html
@@ -9286,6 +9373,92 @@ references:
   isSpec: "True"
   fullName: io.xml.XMLTokenizer.XMLTokenizer
   nameWithType: XMLTokenizer.XMLTokenizer
+  package: io.xml
+- uid: io.xml.XMLTokenType
+  name: XMLTokenType
+  href: api/io.xml.XMLTokenType.html
+  fullName: io.xml.XMLTokenType
+  nameWithType: XMLTokenType
+- uid: io.xml.XMLTokenType.ATTR_EQUALS
+  name: ATTR_EQUALS
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_ATTR_EQUALS
+  fullName: io.xml.XMLTokenType.ATTR_EQUALS
+  nameWithType: XMLTokenType.ATTR_EQUALS
+- uid: io.xml.XMLTokenType.CLOSE_TAG
+  name: CLOSE_TAG
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_CLOSE_TAG
+  fullName: io.xml.XMLTokenType.CLOSE_TAG
+  nameWithType: XMLTokenType.CLOSE_TAG
+- uid: io.xml.XMLTokenType.COMMENT_TAG
+  name: COMMENT_TAG
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_COMMENT_TAG
+  fullName: io.xml.XMLTokenType.COMMENT_TAG
+  nameWithType: XMLTokenType.COMMENT_TAG
+- uid: io.xml.XMLTokenType.IDENTIFIER
+  name: IDENTIFIER
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_IDENTIFIER
+  fullName: io.xml.XMLTokenType.IDENTIFIER
+  nameWithType: XMLTokenType.IDENTIFIER
+- uid: io.xml.XMLTokenType.OPEN_COMMENT
+  name: OPEN_COMMENT
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_OPEN_COMMENT
+  fullName: io.xml.XMLTokenType.OPEN_COMMENT
+  nameWithType: XMLTokenType.OPEN_COMMENT
+- uid: io.xml.XMLTokenType.OPEN_TAG
+  name: OPEN_TAG
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_OPEN_TAG
+  fullName: io.xml.XMLTokenType.OPEN_TAG
+  nameWithType: XMLTokenType.OPEN_TAG
+- uid: io.xml.XMLTokenType.QUOTATION
+  name: QUOTATION
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_QUOTATION
+  fullName: io.xml.XMLTokenType.QUOTATION
+  nameWithType: XMLTokenType.QUOTATION
+- uid: io.xml.XMLTokenType.SLASH
+  name: SLASH
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_SLASH
+  fullName: io.xml.XMLTokenType.SLASH
+  nameWithType: XMLTokenType.SLASH
+- uid: io.xml.XMLTokenType.SPACING
+  name: SPACING
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_SPACING
+  fullName: io.xml.XMLTokenType.SPACING
+  nameWithType: XMLTokenType.SPACING
+- uid: io.xml.XMLTokenType.valueOf(java.lang.String)
+  name: valueOf(String name)
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_valueOf_java_lang_String_
+  fullName: io.xml.XMLTokenType.valueOf(String name)
+  nameWithType: XMLTokenType.valueOf(String name)
+- uid: io.xml.XMLTokenType.valueOf*
+  name: valueOf
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_valueOf_
+  isSpec: "True"
+  fullName: io.xml.XMLTokenType.valueOf
+  nameWithType: XMLTokenType.valueOf
+  package: io.xml
+- uid: io.xml.XMLTokenType.values()
+  name: values()
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_values__
+  fullName: io.xml.XMLTokenType.values()
+  nameWithType: XMLTokenType.values()
+- uid: io.xml.XMLTokenType.values*
+  name: values
+  href: api/io.xml.XMLTokenType.html#io_xml_XMLTokenType_values_
+  isSpec: "True"
+  fullName: io.xml.XMLTokenType.values
+  nameWithType: XMLTokenType.values
+  package: io.xml
+- uid: io.xml.XMLTokenType.XMLTokenType()
+  name: XMLTokenType()
+  href: api/io.xml.XMLTokenType.html
+  fullName: io.xml.XMLTokenType.XMLTokenType()
+  nameWithType: XMLTokenType.XMLTokenType()
+- uid: io.xml.XMLTokenType.XMLTokenType*
+  name: XMLTokenType
+  href: api/io.xml.XMLTokenType.html
+  isSpec: "True"
+  fullName: io.xml.XMLTokenType.XMLTokenType
+  nameWithType: XMLTokenType.XMLTokenType
   package: io.xml
 - uid: physics.collision
   name: physics.collision

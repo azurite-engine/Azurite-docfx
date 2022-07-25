@@ -83,8 +83,7 @@
   
   <h1 id="io_xml_XML" data-uid="io.xml.XML" class="text-break">Class XML
   </h1>
-  <div class="markdown level0 summary"><p>Takes file path and creates a XMLElement.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -138,12 +137,24 @@
   
   
   <a id="io_xml_XML_XML_" data-uid="io.xml.XML.XML*"></a>
-  <h4 id="io_xml_XML_XML_java_lang_String_" data-uid="io.xml.XML.XML(java.lang.String)">XML(String path)</h4>
+  <h4 id="io_xml_XML_XML__" data-uid="io.xml.XML.XML()">XML()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public XML(String path)</code></pre>
+    <pre><code class="lang-csharp hljs">public XML()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="io_xml_XML_parse_" data-uid="io.xml.XML.parse*"></a>
+  <h4 id="io_xml_XML_parse_byte___" data-uid="io.xml.XML.parse(byte[])">parse(byte[] input)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XMLElement parse(byte[] input)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,50 +167,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">java.lang.String</span></td>
-        <td><span class="parametername">path</span></td>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">input</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="io_xml_XML_root" data-uid="io.xml.XML.root">root</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected XMLElement root</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="io.xml.XMLElement.html">XMLElement</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="io_xml_XML_getRoot_" data-uid="io.xml.XML.getRoot*"></a>
-  <h4 id="io_xml_XML_getRoot__" data-uid="io.xml.XML.getRoot()">getRoot()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public XMLElement getRoot()</code></pre>
-  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -217,14 +190,256 @@
   </table>
   
   
-  <a id="io_xml_XML_getXml_" data-uid="io.xml.XML.getXml*"></a>
-  <h4 id="io_xml_XML_getXml__" data-uid="io.xml.XML.getXml()">getXml()</h4>
+  <a id="io_xml_XML_parse_" data-uid="io.xml.XML.parse*"></a>
+  <h4 id="io_xml_XML_parse_byte___java_nio_charset_Charset_" data-uid="io.xml.XML.parse(byte[],java.nio.charset.Charset)">parse(byte[] input, Charset charset)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String getXml()</code></pre>
+    <pre><code class="lang-csharp hljs">public static XMLElement parse(byte[] input, Charset charset)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.nio.charset.Charset</span></td>
+        <td><span class="parametername">charset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="io.xml.XMLElement.html">XMLElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="io_xml_XML_parse_" data-uid="io.xml.XML.parse*"></a>
+  <h4 id="io_xml_XML_parse_java_lang_String_" data-uid="io.xml.XML.parse(java.lang.String)">parse(String input)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XMLElement parse(String input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="io.xml.XMLElement.html">XMLElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="io_xml_XML_parse_" data-uid="io.xml.XML.parse*"></a>
+  <h4 id="io_xml_XML_parse_java_util_List_io_xml_XMLToken__int_" data-uid="io.xml.XML.parse(java.util.List&lt;io.xml.XMLToken&gt;,int)">parse(List&lt;XMLToken&gt; tokens, int startingPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Pair&lt;XMLElement,Integer&gt; parse(List&lt;XMLToken&gt; tokens, int startingPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="io.xml.XMLToken.html">XMLToken</a>&gt;</td>
+        <td><span class="parametername">tokens</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">startingPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="util.Pair.html">Pair</a>&lt;<a class="xref" href="io.xml.XMLElement.html">XMLElement</a>,<span class="xref">java.lang.Integer</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="io_xml_XML_readHeader_" data-uid="io.xml.XML.readHeader*"></a>
+  <h4 id="io_xml_XML_readHeader_byte___" data-uid="io.xml.XML.readHeader(byte[])">readHeader(byte[] input)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Charset readHeader(byte[] input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.nio.charset.Charset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="io_xml_XML_tokenize_" data-uid="io.xml.XML.tokenize*"></a>
+  <h4 id="io_xml_XML_tokenize_java_lang_String_" data-uid="io.xml.XML.tokenize(java.lang.String)">tokenize(String input)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static List&lt;XMLToken&gt; tokenize(String input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="io.xml.XMLToken.html">XMLToken</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="io_xml_XML_transformValue_" data-uid="io.xml.XML.transformValue*"></a>
+  <h4 id="io_xml_XML_transformValue_java_lang_String_boolean_" data-uid="io.xml.XML.transformValue(java.lang.String,boolean)">transformValue(String value, boolean isRaw)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String transformValue(String value, boolean isRaw)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">isRaw</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

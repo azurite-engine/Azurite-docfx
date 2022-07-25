@@ -78,13 +78,13 @@ items:
   package: "util"
   summary: "Loads a text file from the filesystem and returns it in a String"
   syntax:
-    content: "public static String getDataFile(String path)"
+    content: "public static ByteBuffer getDataFile(String path)"
     parameters:
     - id: "path"
       type: "java.lang.String"
       description: "to data file"
     return:
-      type: "java.lang.String"
+      type: "java.nio.ByteBuffer"
       description: "returns type String"
 - uid: "util.Assets.getShader(java.lang.String)"
   id: "getShader(java.lang.String)"
@@ -181,6 +181,11 @@ references:
   nameWithType: "Assets.getShader"
   fullName: "util.Assets.getShader"
   package: "util"
+- uid: "java.nio.ByteBuffer"
+  spec.java:
+  - uid: "java.nio.ByteBuffer"
+    name: "ByteBuffer"
+    fullName: "java.nio.ByteBuffer"
 - uid: "util.Assets.getDataFile*"
   name: "getDataFile"
   nameWithType: "Assets.getDataFile"
