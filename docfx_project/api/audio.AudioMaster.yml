@@ -8,6 +8,7 @@ items:
   - "audio.AudioMaster.alGetError()"
   - "audio.AudioMaster.clean()"
   - "audio.AudioMaster.get()"
+  - "audio.AudioMaster.update(float)"
   langs:
   - "java"
   name: "AudioMaster"
@@ -102,6 +103,22 @@ items:
     content: "public static synchronized AudioMaster get()"
     return:
       type: "audio.AudioMaster"
+- uid: "audio.AudioMaster.update(float)"
+  id: "update(float)"
+  parent: "audio.AudioMaster"
+  langs:
+  - "java"
+  name: "update(float dt)"
+  nameWithType: "AudioMaster.update(float dt)"
+  fullName: "audio.AudioMaster.update(float dt)"
+  overload: "audio.AudioMaster.update*"
+  type: "Method"
+  package: "audio"
+  syntax:
+    content: "public void update(float dt)"
+    parameters:
+    - id: "dt"
+      type: "float"
 references:
 - uid: "audio.AudioMaster.AudioMaster*"
   name: "AudioMaster"
@@ -121,6 +138,16 @@ references:
   name: "addSource"
   nameWithType: "AudioMaster.addSource"
   fullName: "audio.AudioMaster.addSource"
+  package: "audio"
+- uid: "float"
+  spec.java:
+  - uid: "float"
+    name: "float"
+    fullName: "float"
+- uid: "audio.AudioMaster.update*"
+  name: "update"
+  nameWithType: "AudioMaster.update"
+  fullName: "audio.AudioMaster.update"
   package: "audio"
 - uid: "audio.AudioMaster.clean*"
   name: "clean"

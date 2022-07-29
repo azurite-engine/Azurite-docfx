@@ -703,18 +703,6 @@ references:
   fullName: audio.AudioListener.get
   nameWithType: AudioListener.get
   package: audio
-- uid: audio.AudioListener.start()
-  name: start()
-  href: api/audio.AudioListener.html#audio_AudioListener_start__
-  fullName: audio.AudioListener.start()
-  nameWithType: AudioListener.start()
-- uid: audio.AudioListener.start*
-  name: start
-  href: api/audio.AudioListener.html#audio_AudioListener_start_
-  isSpec: "True"
-  fullName: audio.AudioListener.start
-  nameWithType: AudioListener.start
-  package: audio
 - uid: audio.AudioListener.update(float)
   name: update(float dt)
   href: api/audio.AudioListener.html#audio_AudioListener_update_float_
@@ -791,6 +779,18 @@ references:
   isSpec: "True"
   fullName: audio.AudioMaster.get
   nameWithType: AudioMaster.get
+  package: audio
+- uid: audio.AudioMaster.update(float)
+  name: update(float dt)
+  href: api/audio.AudioMaster.html#audio_AudioMaster_update_float_
+  fullName: audio.AudioMaster.update(float dt)
+  nameWithType: AudioMaster.update(float dt)
+- uid: audio.AudioMaster.update*
+  name: update
+  href: api/audio.AudioMaster.html#audio_AudioMaster_update_
+  isSpec: "True"
+  fullName: audio.AudioMaster.update
+  nameWithType: AudioMaster.update
   package: audio
 - uid: audio.AudioSource
   name: AudioSource
