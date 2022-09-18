@@ -272,8 +272,8 @@
     name: "TextRenderingDemo"
   - uid: "scenes.TopDownDemo"
     name: "TopDownDemo"
-  - uid: "scenes.UIRenderingDemo"
-    name: "UIRenderingDemo"
+  - uid: "scenes.UIDemo"
+    name: "UIDemo"
 - uid: "physics.collision.shape"
   name: "physics.collision.shape"
   items:

@@ -1850,6 +1850,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/scenes.UIDemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/scenes.UIDemo.html",
+          "hash": "13aJBttG4r2KC20TGV+nUKhjBgWLZYWMvgZIeM6KVng="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/scenes.UIRenderingDemo.yml",
       "output": {
         ".html": {
@@ -1866,7 +1878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/scenes.html",
-          "hash": "P9L7aW6TB35ZXS2M4VCzZx8ryFPEvt5A5Ra8UnOzyu8="
+          "hash": "ip13A6MfRb0asfnDe+VvzLQ/YGYnqRClLWRcvz6mmBM="
         }
       },
       "is_incremental": false,
@@ -1938,7 +1950,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "0SqgnCrJ7wNXpIpSrQ4r4Cg40YZmB6UuNBbqIlafvuo="
+          "hash": "ctOIbl2KdsZCdHMkGgFhekB0sF6sa6F9uICkJ8bOxMo="
         }
       },
       "is_incremental": false,
@@ -2745,7 +2757,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 219,
+          "total_file_count": 220,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

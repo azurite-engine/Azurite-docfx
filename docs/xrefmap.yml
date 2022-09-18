@@ -12255,6 +12255,59 @@ references:
   fullName: scenes.TopDownDemo.update
   nameWithType: TopDownDemo.update
   package: scenes
+- uid: scenes.UIDemo
+  name: UIDemo
+  href: api/scenes.UIDemo.html
+  fullName: scenes.UIDemo
+  nameWithType: UIDemo
+- uid: scenes.UIDemo.awake()
+  name: awake()
+  href: api/scenes.UIDemo.html#scenes_UIDemo_awake__
+  fullName: scenes.UIDemo.awake()
+  nameWithType: UIDemo.awake()
+- uid: scenes.UIDemo.awake*
+  name: awake
+  href: api/scenes.UIDemo.html#scenes_UIDemo_awake_
+  isSpec: "True"
+  fullName: scenes.UIDemo.awake
+  nameWithType: UIDemo.awake
+  package: scenes
+- uid: scenes.UIDemo.main(java.lang.String[])
+  name: main(String[] args)
+  href: api/scenes.UIDemo.html#scenes_UIDemo_main_java_lang_String___
+  fullName: scenes.UIDemo.main(String[] args)
+  nameWithType: UIDemo.main(String[] args)
+- uid: scenes.UIDemo.main*
+  name: main
+  href: api/scenes.UIDemo.html#scenes_UIDemo_main_
+  isSpec: "True"
+  fullName: scenes.UIDemo.main
+  nameWithType: UIDemo.main
+  package: scenes
+- uid: scenes.UIDemo.UIDemo()
+  name: UIDemo()
+  href: api/scenes.UIDemo.html#scenes_UIDemo_UIDemo__
+  fullName: scenes.UIDemo.UIDemo()
+  nameWithType: UIDemo.UIDemo()
+- uid: scenes.UIDemo.UIDemo*
+  name: UIDemo
+  href: api/scenes.UIDemo.html#scenes_UIDemo_UIDemo_
+  isSpec: "True"
+  fullName: scenes.UIDemo.UIDemo
+  nameWithType: UIDemo.UIDemo
+  package: scenes
+- uid: scenes.UIDemo.update()
+  name: update()
+  href: api/scenes.UIDemo.html#scenes_UIDemo_update__
+  fullName: scenes.UIDemo.update()
+  nameWithType: UIDemo.update()
+- uid: scenes.UIDemo.update*
+  name: update
+  href: api/scenes.UIDemo.html#scenes_UIDemo_update_
+  isSpec: "True"
+  fullName: scenes.UIDemo.update
+  nameWithType: UIDemo.update
+  package: scenes
 - uid: scenes.UIRenderingDemo
   name: UIRenderingDemo
   href: api/scenes.UIRenderingDemo.html
