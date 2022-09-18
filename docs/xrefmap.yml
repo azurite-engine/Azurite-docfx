@@ -12072,6 +12072,71 @@ references:
   fullName: scenes.DemoTopDown.update
   nameWithType: DemoTopDown.update
   package: scenes
+- uid: scenes.PlatformerDemo
+  name: PlatformerDemo
+  href: api/scenes.PlatformerDemo.html
+  fullName: scenes.PlatformerDemo
+  nameWithType: PlatformerDemo
+- uid: scenes.PlatformerDemo.awake()
+  name: awake()
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_awake__
+  fullName: scenes.PlatformerDemo.awake()
+  nameWithType: PlatformerDemo.awake()
+- uid: scenes.PlatformerDemo.awake*
+  name: awake
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_awake_
+  isSpec: "True"
+  fullName: scenes.PlatformerDemo.awake
+  nameWithType: PlatformerDemo.awake
+  package: scenes
+- uid: scenes.PlatformerDemo.main(java.lang.String[])
+  name: main(String[] args)
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_main_java_lang_String___
+  fullName: scenes.PlatformerDemo.main(String[] args)
+  nameWithType: PlatformerDemo.main(String[] args)
+- uid: scenes.PlatformerDemo.main*
+  name: main
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_main_
+  isSpec: "True"
+  fullName: scenes.PlatformerDemo.main
+  nameWithType: PlatformerDemo.main
+  package: scenes
+- uid: scenes.PlatformerDemo.PlatformerDemo()
+  name: PlatformerDemo()
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_PlatformerDemo__
+  fullName: scenes.PlatformerDemo.PlatformerDemo()
+  nameWithType: PlatformerDemo.PlatformerDemo()
+- uid: scenes.PlatformerDemo.PlatformerDemo*
+  name: PlatformerDemo
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_PlatformerDemo_
+  isSpec: "True"
+  fullName: scenes.PlatformerDemo.PlatformerDemo
+  nameWithType: PlatformerDemo.PlatformerDemo
+  package: scenes
+- uid: scenes.PlatformerDemo.postProcess(graphics.Texture)
+  name: postProcess(Texture texture)
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_postProcess_graphics_Texture_
+  fullName: scenes.PlatformerDemo.postProcess(Texture texture)
+  nameWithType: PlatformerDemo.postProcess(Texture texture)
+- uid: scenes.PlatformerDemo.postProcess*
+  name: postProcess
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_postProcess_
+  isSpec: "True"
+  fullName: scenes.PlatformerDemo.postProcess
+  nameWithType: PlatformerDemo.postProcess
+  package: scenes
+- uid: scenes.PlatformerDemo.update()
+  name: update()
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_update__
+  fullName: scenes.PlatformerDemo.update()
+  nameWithType: PlatformerDemo.update()
+- uid: scenes.PlatformerDemo.update*
+  name: update
+  href: api/scenes.PlatformerDemo.html#scenes_PlatformerDemo_update_
+  isSpec: "True"
+  fullName: scenes.PlatformerDemo.update
+  nameWithType: PlatformerDemo.update
+  package: scenes
 - uid: scenes.TextRenderingDemo
   name: TextRenderingDemo
   href: api/scenes.TextRenderingDemo.html
@@ -12124,6 +12189,71 @@ references:
   isSpec: "True"
   fullName: scenes.TextRenderingDemo.update
   nameWithType: TextRenderingDemo.update
+  package: scenes
+- uid: scenes.TopDownDemo
+  name: TopDownDemo
+  href: api/scenes.TopDownDemo.html
+  fullName: scenes.TopDownDemo
+  nameWithType: TopDownDemo
+- uid: scenes.TopDownDemo.awake()
+  name: awake()
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_awake__
+  fullName: scenes.TopDownDemo.awake()
+  nameWithType: TopDownDemo.awake()
+- uid: scenes.TopDownDemo.awake*
+  name: awake
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_awake_
+  isSpec: "True"
+  fullName: scenes.TopDownDemo.awake
+  nameWithType: TopDownDemo.awake
+  package: scenes
+- uid: scenes.TopDownDemo.main(java.lang.String[])
+  name: main(String[] args)
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_main_java_lang_String___
+  fullName: scenes.TopDownDemo.main(String[] args)
+  nameWithType: TopDownDemo.main(String[] args)
+- uid: scenes.TopDownDemo.main*
+  name: main
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_main_
+  isSpec: "True"
+  fullName: scenes.TopDownDemo.main
+  nameWithType: TopDownDemo.main
+  package: scenes
+- uid: scenes.TopDownDemo.postProcess(graphics.Texture)
+  name: postProcess(Texture texture)
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_postProcess_graphics_Texture_
+  fullName: scenes.TopDownDemo.postProcess(Texture texture)
+  nameWithType: TopDownDemo.postProcess(Texture texture)
+- uid: scenes.TopDownDemo.postProcess*
+  name: postProcess
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_postProcess_
+  isSpec: "True"
+  fullName: scenes.TopDownDemo.postProcess
+  nameWithType: TopDownDemo.postProcess
+  package: scenes
+- uid: scenes.TopDownDemo.TopDownDemo()
+  name: TopDownDemo()
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_TopDownDemo__
+  fullName: scenes.TopDownDemo.TopDownDemo()
+  nameWithType: TopDownDemo.TopDownDemo()
+- uid: scenes.TopDownDemo.TopDownDemo*
+  name: TopDownDemo
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_TopDownDemo_
+  isSpec: "True"
+  fullName: scenes.TopDownDemo.TopDownDemo
+  nameWithType: TopDownDemo.TopDownDemo
+  package: scenes
+- uid: scenes.TopDownDemo.update()
+  name: update()
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_update__
+  fullName: scenes.TopDownDemo.update()
+  nameWithType: TopDownDemo.update()
+- uid: scenes.TopDownDemo.update*
+  name: update
+  href: api/scenes.TopDownDemo.html#scenes_TopDownDemo_update_
+  isSpec: "True"
+  fullName: scenes.TopDownDemo.update
+  nameWithType: TopDownDemo.update
   package: scenes
 - uid: scenes.UIRenderingDemo
   name: UIRenderingDemo

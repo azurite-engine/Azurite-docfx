@@ -1814,11 +1814,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/scenes.PlatformerDemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/scenes.PlatformerDemo.html",
+          "hash": "7HpJExkY39wTQ1eux/fqT7fpQi5zwoiG91Rha4Zt5j4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/scenes.TextRenderingDemo.yml",
       "output": {
         ".html": {
           "relative_path": "api/scenes.TextRenderingDemo.html",
           "hash": "QDN3VIRZ6g6XhstoqLW6Kb9folVCS75bmhoO7MlEWXU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/scenes.TopDownDemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/scenes.TopDownDemo.html",
+          "hash": "p0FZEvjKokyah6eMpdfqkdelrcJfKjQ/Vq/wEV4SjCs="
         }
       },
       "is_incremental": false,
@@ -1842,7 +1866,7 @@
       "output": {
         ".html": {
           "relative_path": "api/scenes.html",
-          "hash": "Vt+GikT/BQu9Mu62SDByr8wR/cKnDKolo9dHsT6AO7A="
+          "hash": "P9L7aW6TB35ZXS2M4VCzZx8ryFPEvt5A5Ra8UnOzyu8="
         }
       },
       "is_incremental": false,
@@ -1914,7 +1938,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "tWki/ZzrUsYk1N9osiSArYH6hBhM54z47o0U8/zxLkE="
+          "hash": "0SqgnCrJ7wNXpIpSrQ4r4Cg40YZmB6UuNBbqIlafvuo="
         }
       },
       "is_incremental": false,
@@ -2721,7 +2745,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 217,
+          "total_file_count": 219,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
