@@ -4,7 +4,6 @@ items:
   id: "tiles"
   children:
   - "tiles.Tilesystem"
-  - "tiles.TilesystemSideScroll"
   langs:
   - "java"
   name: "tiles"
@@ -18,7 +17,3 @@ references:
   name: "Tilesystem"
   nameWithType: "Tilesystem"
   fullName: "tiles.Tilesystem"
-- uid: "tiles.TilesystemSideScroll"
-  name: "TilesystemSideScroll"
-  nameWithType: "TilesystemSideScroll"
-  fullName: "tiles.TilesystemSideScroll"

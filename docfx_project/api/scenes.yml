@@ -4,7 +4,6 @@ items:
   id: "scenes"
   children:
   - "scenes.AudioDemo"
-  - "scenes.PlatformerDemo"
   - "scenes.TextRenderingDemo"
   - "scenes.TopDownDemo"
   - "scenes.UIDemo"
@@ -21,10 +20,6 @@ references:
   name: "AudioDemo"
   nameWithType: "AudioDemo"
   fullName: "scenes.AudioDemo"
-- uid: "scenes.PlatformerDemo"
-  name: "PlatformerDemo"
-  nameWithType: "PlatformerDemo"
-  fullName: "scenes.PlatformerDemo"
 - uid: "scenes.TextRenderingDemo"
   name: "TextRenderingDemo"
   nameWithType: "TextRenderingDemo"

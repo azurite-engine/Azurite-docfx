@@ -752,7 +752,7 @@
   "api/scenes.html": {
     "href": "api/scenes.html",
     "title": "Namespace scenes",
-    "keywords": "Namespace scenes Classes AudioDemo Minimal usage example of the AudioListener and AudioSource components. PlatformerDemo TextRenderingDemo TopDownDemo UIDemo"
+    "keywords": "Namespace scenes Classes AudioDemo Minimal usage example of the AudioListener and AudioSource components. TextRenderingDemo TopDownDemo UIDemo"
   },
   "api/scenes.PlatformerDemo.html": {
     "href": "api/scenes.PlatformerDemo.html",
@@ -782,7 +782,7 @@
   "api/tiles.html": {
     "href": "api/tiles.html",
     "title": "Namespace tiles",
-    "keywords": "Namespace tiles Classes Tilesystem The Tilesystem class loads a .tmx file (XML file format for the Tiled map editor) and generates a 2D array of GameObjects with SpriteRenderers corresponding to the texture determined by the .tmx file. Currently only Axis-aligned maps are supported (no isometric or hexagonal maps right now). TilesystemSideScroll An example class of a platformer stage and it's tilemap. Eventually I think this should be expanded to a more general API, maybe even with a Scene dedicated to an in-engine way of constructing them (Mario Maker flavoured Azurite?), but that's likely a future plan; I, the mortal JavaDocumentator, don't have insight into the minds of the owners of this game engine (go ask Asher, idk). lol see Tilesystem , this is now deprectated :D -Asher"
+    "keywords": "Namespace tiles Classes Tilesystem The Tilesystem class loads a .tmx file (XML file format for the Tiled map editor) and generates a 2D array of GameObjects with SpriteRenderers corresponding to the texture determined by the .tmx file. Currently only Axis-aligned maps are supported (no isometric or hexagonal maps right now)."
   },
   "api/tiles.Spritesheet.html": {
     "href": "api/tiles.Spritesheet.html",

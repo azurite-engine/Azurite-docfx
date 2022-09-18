@@ -266,8 +266,6 @@
   items:
   - uid: "scenes.AudioDemo"
     name: "AudioDemo"
-  - uid: "scenes.PlatformerDemo"
-    name: "PlatformerDemo"
   - uid: "scenes.TextRenderingDemo"
     name: "TextRenderingDemo"
   - uid: "scenes.TopDownDemo"
@@ -322,8 +320,6 @@
   items:
   - uid: "tiles.Tilesystem"
     name: "Tilesystem"
-  - uid: "tiles.TilesystemSideScroll"
-    name: "TilesystemSideScroll"
 - uid: "ui"
   name: "ui"
   items:
