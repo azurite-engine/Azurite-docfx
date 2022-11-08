@@ -12424,11 +12424,11 @@ references:
   href: api/tiles.Tilesystem.html
   fullName: tiles.Tilesystem
   nameWithType: Tilesystem
-- uid: tiles.Tilesystem.getAt(int,int,int,int[])
-  name: getAt(int x, int y, int dimensionWidth, int[] map)
-  href: api/tiles.Tilesystem.html#tiles_Tilesystem_getAt_int_int_int_int___
-  fullName: tiles.Tilesystem.getAt(int x, int y, int dimensionWidth, int[] map)
-  nameWithType: Tilesystem.getAt(int x, int y, int dimensionWidth, int[] map)
+- uid: tiles.Tilesystem.getAt(int,int,int,double[])
+  name: getAt(int x, int y, int dimensionWidth, double[] map)
+  href: api/tiles.Tilesystem.html#tiles_Tilesystem_getAt_int_int_int_double___
+  fullName: tiles.Tilesystem.getAt(int x, int y, int dimensionWidth, double[] map)
+  nameWithType: Tilesystem.getAt(int x, int y, int dimensionWidth, double[] map)
 - uid: tiles.Tilesystem.getAt*
   name: getAt
   href: api/tiles.Tilesystem.html#tiles_Tilesystem_getAt_
