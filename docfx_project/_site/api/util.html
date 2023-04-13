@@ -91,7 +91,7 @@
       <section><p>The Assets class contains methods to assist in loading common resources used by the engine from the filesystem as well as HashMaps to keep track of loaded resources. If the same path is loaded again via the Assets class, it will call the item up from the hashmap rather than reload it.</p>
 </section>
       <h4><a class="xref" href="util.Engine.html">Engine</a></h4>
-      <section><p>The Engine class initializes the Window and the game loop. It can also be used to access some globally used classes like the scene manager and Window.</p>
+      <section><p>The Engine class initializes the Window and the game loop for a game engine. It follows the Singleton design pattern, providing a global unique instance accessible through the <a class="xref" href="util.Engine.html#util_Engine_getInstance__">#getInstance()</a> method. The Engine class provides several static methods to initialize the engine and create a window, as well as methods to control the engine's state, such as checking if the engine is running, stopping the window, and interrupting the engine with an exit code. It also provides methods to access the window, delta time (time elapsed since the last frame), scene manager, and to enable logging to log files.</p>
 </section>
       <h4><a class="xref" href="util.Log.html">Log</a></h4>
       <section><p>Logging utility to print colored and labeled errors with class references. Always call the methods of this class directly and do not nest it inside other functions, because it will mess up the stacktrace and would therefore display a wrong source.

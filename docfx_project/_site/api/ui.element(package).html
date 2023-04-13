@@ -88,7 +88,29 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="ui.element.Button.html">Button</a></h4>
-      <section></section>
+      <section><p>The Button class represents a graphical user interface (GUI) button that can be rendered on a frame. It extends the RenderableElement class and implements the TextHolder interface, allowing it to display text on the button. Buttons can be created with different label text, background colors, label colors, and frames. Buttons can also be updated to change their appearance based on mouse interactions, such as hovering over the button. Usage example:</p>
+<pre><code class="lang-java">import ui.EventHandler.Event;
+ import ui.element.Button;
+ 
+ public class Main extends Scene {
+     // ...
+ 
+     Button btn;
+     public void awake() {
+         // ...
+         btn = new Button(&quot;Click Me!&quot;, Color.RED, Color.WHITE, new Frame(20, 20, 200, 100));  
+         btn.getEventHandler().registerListener(Event.MOUSE_CLICK, e -&gt; {
+             System.out.println(&quot;Button clicked!&quot;);
+         });
+     }
+
+     public void update() {
+         // ...
+     }
+ }
+</code></pre>
+<p>The above example demonstrates how to create a new Button object with label text &quot;Click Me!&quot;, a red background color, white label color, and a frame with coordinates (20, 20) and size (200, 100). It also registers a mouse click event listener on the button, which will print &quot;Button clicked!&quot; to the console when the button is clicked.</p>
+</section>
       <h4><a class="xref" href="ui.element.CheckBox.html">CheckBox</a></h4>
       <section></section>
       <h4><a class="xref" href="ui.element.CheckBoxGroup.html">CheckBoxGroup</a></h4>

@@ -83,7 +83,25 @@
   
   <h1 id="ecs_GameObject" data-uid="ecs.GameObject" class="text-break">Class GameObject
   </h1>
-  <div class="markdown level0 summary"><p>A GameObject is the root of the Entity Component system used to store all entities in Azurite games. Each GameObject can contain any of a number of available components including spriteRenderers and lights. By default, each GameObject contains a Transform, which holds the X and Y position, and width and height of the object in pixels.</p>
+  <div class="markdown level0 summary"><p>A GameObject is the root of the Entity Component system used to store all entities in Azurite games. Each GameObject can contain any of a number of available components including spriteRenderers and lights. By default, each GameObject contains a Transform, which holds the X and Y position.</p>
+<pre><code class="lang-java">import ecs.*;
+ 
+ public class Main extends Scene {
+     // ...
+
+     GameObject player;
+ 
+     public void awake() {
+         // ...
+         player = new GameObject(&quot;Player&quot;, new Vector2f(600, 600), 2);
+         player.addComponent(new PointLight(new Color(250, 255, 181), 30));
+         player.addComponent(new SpriteRenderer(Assets.getTexture(&quot;src/assets/images/player.png&quot;), new Vector2f(64, 64)));
+ 
+     }
+ 
+     // ...
+ }
+</code></pre>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -330,7 +348,8 @@
       <tr>
         <td><a class="xref" href="scene.Scene.html">Scene</a></td>
         <td><span class="parametername">scene</span></td>
-        <td><p>the scene to add the GameObject to. By default, GameObjects are added to the currentScene.</p>
+        <td><p>the scene to add the GameObject to. By default, GameObjects
+are added to the currentScene.</p>
 </td>
       </tr>
       <tr>

@@ -201,6 +201,63 @@
   
   
   <a id="util_MathUtils_constrain_" data-uid="util.MathUtils.constrain*"></a>
+  <h4 id="util_MathUtils_constrain_double_double_double_" data-uid="util.MathUtils.constrain(double,double,double)">constrain(double value, double min, double max)</h4>
+  <div class="markdown level1 summary"><p>Takes a double value clamps/constrains it between a minimum and maximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double constrain(double value, double min, double max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Input to be constrained</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>Minimum possible value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>Maximum possible value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><p>Constrained value as a double.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_MathUtils_constrain_" data-uid="util.MathUtils.constrain*"></a>
   <h4 id="util_MathUtils_constrain_float_float_float_" data-uid="util.MathUtils.constrain(float,float,float)">constrain(float value, float min, float max)</h4>
   <div class="markdown level1 summary"><p>Takes a float value clamps/constrains it between a minimum and maximum.</p>
 </div>
@@ -1305,6 +1362,75 @@ Based on noise generation and hashing techniques - it generates a random value u
       <tr>
         <td><span class="xref">float</span></td>
         <td><p>returns a float that is the lerp of the two values by the amount.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="util_MathUtils_map_" data-uid="util.MathUtils.map*"></a>
+  <h4 id="util_MathUtils_map_double_double_double_double_double_" data-uid="util.MathUtils.map(double,double,double,double,double)">map(double value, double start1, double stop1, double start2, double stop2)</h4>
+  <div class="markdown level1 summary"><p>Re-maps a number from one range to another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double map(double value, double start1, double stop1, double start2, double stop2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Number to me re-mapped</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">start1</span></td>
+        <td><p>Lowest number of first range</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">stop1</span></td>
+        <td><p>Highest number of first range</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">start2</span></td>
+        <td><p>Lowest number of second range</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">stop2</span></td>
+        <td><p>Highest number of second range</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><p>Returns the re-mapped value as a double.</p>
 </td>
       </tr>
     </tbody>

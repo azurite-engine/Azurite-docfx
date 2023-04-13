@@ -83,7 +83,7 @@
   
   <h1 id="util_Engine" data-uid="util.Engine" class="text-break">Class Engine
   </h1>
-  <div class="markdown level0 summary"><p>The Engine class initializes the Window and the game loop. It can also be used to access some globally used classes like the scene manager and Window.</p>
+  <div class="markdown level0 summary"><p>The Engine class initializes the Window and the game loop for a game engine. It follows the Singleton design pattern, providing a global unique instance accessible through the <a class="xref" href="util.Engine.html#util_Engine_getInstance__">#getInstance()</a> method. The Engine class provides several static methods to initialize the engine and create a window, as well as methods to control the engine's state, such as checking if the engine is running, stopping the window, and interrupting the engine with an exit code. It also provides methods to access the window, delta time (time elapsed since the last frame), scene manager, and to enable logging to log files.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -190,7 +190,8 @@
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">logLevel</span></td>
-        <td><p><a class="xref" href="util.Log.html#util_Log_FATAL_ONLY">Log#FATAL_ONLY</a>, <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a>, <a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a>, <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a></p>
+        <td><p><a class="xref" href="util.Log.html#util_Log_FATAL_ONLY">Log#FATAL_ONLY</a>, <a class="xref" href="util.Log.html#util_Log_WARNINGS">Log#WARNINGS</a>,
+<a class="xref" href="util.Log.html#util_Log_NO_DEBUG">Log#NO_DEBUG</a>, <a class="xref" href="util.Log.html#util_Log_ALL">Log#ALL</a></p>
 </td>
       </tr>
     </tbody>
@@ -354,7 +355,8 @@
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">minSceneLighting</span></td>
-        <td><p>float from 0-1 indicating the minimum scene light level</p>
+        <td><p>float from 0-1 indicating the minimum scene light
+level</p>
 </td>
       </tr>
     </tbody>
@@ -465,7 +467,8 @@
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">minSceneLighting</span></td>
-        <td><p>float from 0-1 indicating the minimum scene light level</p>
+        <td><p>float from 0-1 indicating the minimum scene light
+level</p>
 </td>
       </tr>
     </tbody>
@@ -545,7 +548,8 @@
     <tbody>
       <tr>
         <td><span class="xref">double</span></td>
-        <td><p>Returns the number of milliseconds since the engine started. (since the first call)</p>
+        <td><p>Returns the number of milliseconds since the engine started. (since
+the first call)</p>
 </td>
       </tr>
     </tbody>

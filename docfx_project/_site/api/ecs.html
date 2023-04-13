@@ -102,7 +102,25 @@
       <section><p>The <a class="xref" href="ecs.Dynamics.html">Dynamics</a> manage movement of a <a class="xref" href="ecs.GameObject.html">GameObject</a>.</p>
 </section>
       <h4><a class="xref" href="ecs.GameObject.html">GameObject</a></h4>
-      <section><p>A GameObject is the root of the Entity Component system used to store all entities in Azurite games. Each GameObject can contain any of a number of available components including spriteRenderers and lights. By default, each GameObject contains a Transform, which holds the X and Y position, and width and height of the object in pixels.</p>
+      <section><p>A GameObject is the root of the Entity Component system used to store all entities in Azurite games. Each GameObject can contain any of a number of available components including spriteRenderers and lights. By default, each GameObject contains a Transform, which holds the X and Y position.</p>
+<pre><code class="lang-java">import ecs.*;
+ 
+ public class Main extends Scene {
+     // ...
+
+     GameObject player;
+ 
+     public void awake() {
+         // ...
+         player = new GameObject(&quot;Player&quot;, new Vector2f(600, 600), 2);
+         player.addComponent(new PointLight(new Color(250, 255, 181), 30));
+         player.addComponent(new SpriteRenderer(Assets.getTexture(&quot;src/assets/images/player.png&quot;), new Vector2f(64, 64)));
+ 
+     }
+ 
+     // ...
+ }
+</code></pre>
 </section>
       <h4><a class="xref" href="ecs.PointLight.html">PointLight</a></h4>
       <section><p>A Point Light Component is essentially a location in the world that emits light in all directions. One can also specify both it's color and it's intensity.</p>

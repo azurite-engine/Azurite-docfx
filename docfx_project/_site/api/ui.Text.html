@@ -83,7 +83,26 @@
   
   <h1 id="ui_Text" data-uid="ui.Text" class="text-break">Class Text
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a renderable string containing a TTF font reference, color data, and font size. It is used to create text elements that can be displayed as part of a scene or UI in a game or application. The Text class allows you to specify the text string, font, color, and position of the text on the screen. It supports various font formats, such as TrueType fonts (TTF), and provides options for text alignment. The Text class also provides methods for changing the text string dynamically during runtime, allowing you to update the displayed text based on the game's logic or user input. Additionally, it supports effects such as rainbow text: text.rainbowify(); // Need I say more?</p>
+<pre><code class="lang-java">import ui.Text;
+ import ui.fonts.Font;
+ 
+ public class Main extends Scene {
+     // ...
+
+     Font font;
+     Text text;
+ 
+     public void awake() {
+         // ...
+         font = new Font(&quot;src/assets/fonts/OpenSans-Regular.ttf&quot;, 24, true);
+         text = new Text(&quot;Hello, World!&quot;, font, Color.BLACK, 100, 100);
+     }
+ 
+     // ...
+ }
+</code></pre>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -203,7 +222,8 @@
       <tr>
         <td><a class="xref" href="graphics.Color.html">Color</a></td>
         <td><span class="parametername">color</span></td>
-        <td><p>the <a class="xref" href="graphics.Color.html">graphics.Color</a> object that contains your prefered RGBA color.</p>
+        <td><p>the <a class="xref" href="graphics.Color.html">graphics.Color</a> object that contains your prefered
+RGBA color.</p>
 </td>
       </tr>
       <tr>
@@ -249,13 +269,15 @@
       <tr>
         <td><a class="xref" href="ui.fonts.Font.html">Font</a></td>
         <td><span class="parametername">font</span></td>
-        <td><p>the <a class="xref" href="ui.fonts.Font.html">ui.fonts.Font</a> object that contains your preferred .ttf font file.</p>
+        <td><p>the <a class="xref" href="ui.fonts.Font.html">ui.fonts.Font</a> object that contains your preferred
+.ttf font file.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="graphics.Color.html">Color</a></td>
         <td><span class="parametername">color</span></td>
-        <td><p>the <a class="xref" href="graphics.Color.html">graphics.Color</a> object that contains your prefered RGBA color.</p>
+        <td><p>the <a class="xref" href="graphics.Color.html">graphics.Color</a> object that contains your prefered
+RGBA color.</p>
 </td>
       </tr>
       <tr>
@@ -301,13 +323,15 @@
       <tr>
         <td><a class="xref" href="ui.fonts.Font.html">Font</a></td>
         <td><span class="parametername">font</span></td>
-        <td><p>the <a class="xref" href="ui.fonts.Font.html">ui.fonts.Font</a> object that contains your preferred .ttf font file.</p>
+        <td><p>the <a class="xref" href="ui.fonts.Font.html">ui.fonts.Font</a> object that contains your
+preferred .ttf font file.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="graphics.Color.html">Color</a></td>
         <td><span class="parametername">color</span></td>
-        <td><p>the <a class="xref" href="graphics.Color.html">graphics.Color</a> object that contains your prefered RGBA color.</p>
+        <td><p>the <a class="xref" href="graphics.Color.html">graphics.Color</a> object that contains your
+prefered RGBA color.</p>
 </td>
       </tr>
       <tr>
@@ -325,19 +349,24 @@
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">zIndex</span></td>
-        <td><p>the Z-Index of the Text Object (currently can only be set on creation, this will change in the future).</p>
+        <td><p>the Z-Index of the Text Object (currently can only be set
+on creation, this will change in the future).</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><span class="parametername">isSticky</span></td>
-        <td><p>boolean determining whether the text sticks in one position regardless of the camera position (isSticky = true) or if it will move in world space.</p>
+        <td><p>boolean determining whether the text sticks in one position
+regardless of the camera position (isSticky = true) or if
+it will move in world space.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><span class="parametername">isCentered</span></td>
-        <td><p>boolean determining whether the text is left aligned or center aligned. This can be changed after creation using .setCentered().</p>
+        <td><p>boolean determining whether the text is left aligned or
+center aligned. This can be changed after creation using
+.setCentered().</p>
 </td>
       </tr>
     </tbody>

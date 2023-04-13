@@ -12072,6 +12072,64 @@ references:
   fullName: scenes.DemoTopDown.update
   nameWithType: DemoTopDown.update
   package: scenes
+- uid: scenes.platformer
+  name: scenes.platformer
+  href: api/scenes.platformer.html
+  fullName: scenes.platformer
+  nameWithType: scenes.platformer
+- uid: scenes.platformer.Platformer
+  name: Platformer
+  href: api/scenes.platformer.Platformer.html
+  fullName: scenes.platformer.Platformer
+  nameWithType: Platformer
+- uid: scenes.platformer.Platformer.awake()
+  name: awake()
+  href: api/scenes.platformer.Platformer.html#scenes_platformer_Platformer_awake__
+  fullName: scenes.platformer.Platformer.awake()
+  nameWithType: Platformer.awake()
+- uid: scenes.platformer.Platformer.awake*
+  name: awake
+  href: api/scenes.platformer.Platformer.html#scenes_platformer_Platformer_awake_
+  isSpec: "True"
+  fullName: scenes.platformer.Platformer.awake
+  nameWithType: Platformer.awake
+  package: scenes.platformer
+- uid: scenes.platformer.Platformer.main(java.lang.String[])
+  name: main(String[] args)
+  href: api/scenes.platformer.Platformer.html#scenes_platformer_Platformer_main_java_lang_String___
+  fullName: scenes.platformer.Platformer.main(String[] args)
+  nameWithType: Platformer.main(String[] args)
+- uid: scenes.platformer.Platformer.main*
+  name: main
+  href: api/scenes.platformer.Platformer.html#scenes_platformer_Platformer_main_
+  isSpec: "True"
+  fullName: scenes.platformer.Platformer.main
+  nameWithType: Platformer.main
+  package: scenes.platformer
+- uid: scenes.platformer.Platformer.Platformer()
+  name: Platformer()
+  href: api/scenes.platformer.Platformer.html#scenes_platformer_Platformer_Platformer__
+  fullName: scenes.platformer.Platformer.Platformer()
+  nameWithType: Platformer.Platformer()
+- uid: scenes.platformer.Platformer.Platformer*
+  name: Platformer
+  href: api/scenes.platformer.Platformer.html#scenes_platformer_Platformer_Platformer_
+  isSpec: "True"
+  fullName: scenes.platformer.Platformer.Platformer
+  nameWithType: Platformer.Platformer
+  package: scenes.platformer
+- uid: scenes.platformer.Platformer.update()
+  name: update()
+  href: api/scenes.platformer.Platformer.html#scenes_platformer_Platformer_update__
+  fullName: scenes.platformer.Platformer.update()
+  nameWithType: Platformer.update()
+- uid: scenes.platformer.Platformer.update*
+  name: update
+  href: api/scenes.platformer.Platformer.html#scenes_platformer_Platformer_update_
+  isSpec: "True"
+  fullName: scenes.platformer.Platformer.update
+  nameWithType: Platformer.update
+  package: scenes.platformer
 - uid: scenes.PlatformerDemo
   name: PlatformerDemo
   href: api/scenes.PlatformerDemo.html
@@ -16631,6 +16689,11 @@ references:
   fullName: util.MathUtils.boundingSphere
   nameWithType: MathUtils.boundingSphere
   package: util
+- uid: util.MathUtils.constrain(double,double,double)
+  name: constrain(double value, double min, double max)
+  href: api/util.MathUtils.html#util_MathUtils_constrain_double_double_double_
+  fullName: util.MathUtils.constrain(double value, double min, double max)
+  nameWithType: MathUtils.constrain(double value, double min, double max)
 - uid: util.MathUtils.constrain(float,float,float)
   name: constrain(float value, float min, float max)
   href: api/util.MathUtils.html#util_MathUtils_constrain_float_float_float_
@@ -16815,6 +16878,11 @@ references:
   fullName: util.MathUtils.lerp
   nameWithType: MathUtils.lerp
   package: util
+- uid: util.MathUtils.map(double,double,double,double,double)
+  name: map(double value, double start1, double stop1, double start2, double stop2)
+  href: api/util.MathUtils.html#util_MathUtils_map_double_double_double_double_double_
+  fullName: util.MathUtils.map(double value, double start1, double stop1, double start2, double stop2)
+  nameWithType: MathUtils.map(double value, double start1, double stop1, double start2, double stop2)
 - uid: util.MathUtils.map(float,float,float,float,float)
   name: map(float value, float start1, float stop1, float start2, float stop2)
   href: api/util.MathUtils.html#util_MathUtils_map_float_float_float_float_float_

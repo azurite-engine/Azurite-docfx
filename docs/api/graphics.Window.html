@@ -83,7 +83,7 @@
   
   <h1 id="graphics_Window" data-uid="graphics.Window" class="text-break">Class Window
   </h1>
-  <div class="markdown level0 summary"><p>The Window class handles setup of GLFW</p>
+  <div class="markdown level0 summary"><p>The Window class handles the setup and management of the GLFW window for rendering graphics. It provides methods for window creation, configuration, resizing, and event handling.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -139,7 +139,8 @@
   
   <a id="graphics_Window_Window_" data-uid="graphics.Window.Window*"></a>
   <h4 id="graphics_Window_Window_int_int_java_lang_String_boolean_" data-uid="graphics.Window.Window(int,int,java.lang.String,boolean)">Window(int pwidth, int pheight, String ptitle, boolean recalculateProjectionOnResize)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a new Window object with the specified width, height, title, and recalculate projection on resize flag. The minimum scene lighting value is set to 1.0f by default.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -158,22 +159,26 @@
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">pwidth</span></td>
-        <td></td>
+        <td><p>The width of the window</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">pheight</span></td>
-        <td></td>
+        <td><p>The height of the window</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">ptitle</span></td>
-        <td></td>
+        <td><p>The title of the window</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><span class="parametername">recalculateProjectionOnResize</span></td>
-        <td></td>
+        <td><p>Whether to recalculate the projection matrix on window resize</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -181,7 +186,8 @@
   
   <a id="graphics_Window_Window_" data-uid="graphics.Window.Window*"></a>
   <h4 id="graphics_Window_Window_int_int_java_lang_String_boolean_float_boolean_" data-uid="graphics.Window.Window(int,int,java.lang.String,boolean,float,boolean)">Window(int pwidth, int pheight, String ptitle, boolean fullscreen, float minSceneLighting, boolean recalculateProjectionOnResize)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a Window object with specified width, height, title, fullscreen mode, minimum scene lighting, and option to recalculate projection on window resize.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -200,32 +206,40 @@
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">pwidth</span></td>
-        <td></td>
+        <td><p>The width of the window in pixels</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">pheight</span></td>
-        <td></td>
+        <td><p>The height of the window in pixels</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">ptitle</span></td>
-        <td></td>
+        <td><p>The title of the window</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><span class="parametername">fullscreen</span></td>
-        <td></td>
+        <td><p>Whether the window should be in
+fullscreen mode</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">minSceneLighting</span></td>
-        <td></td>
+        <td><p>The minimum lighting value for the scene</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><span class="parametername">recalculateProjectionOnResize</span></td>
-        <td></td>
+        <td><p>Whether to recalculate projection on
+window resize</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -233,7 +247,8 @@
   
   <a id="graphics_Window_Window_" data-uid="graphics.Window.Window*"></a>
   <h4 id="graphics_Window_Window_int_int_java_lang_String_float_boolean_" data-uid="graphics.Window.Window(int,int,java.lang.String,float,boolean)">Window(int pwidth, int pheight, String ptitle, float minSceneLighting, boolean recalculateProjectionOnResize)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a new Window object with the specified width, height, title, minimum scene lighting, and recalculate projection on resize flag.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -252,27 +267,33 @@
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">pwidth</span></td>
-        <td></td>
+        <td><p>The width of the window</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">pheight</span></td>
-        <td></td>
+        <td><p>The height of the window</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">ptitle</span></td>
-        <td></td>
+        <td><p>The title of the window</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">minSceneLighting</span></td>
-        <td></td>
+        <td><p>The minimum scene lighting value</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><span class="parametername">recalculateProjectionOnResize</span></td>
-        <td></td>
+        <td><p>Whether to recalculate the projection
+matrix on window resize</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -339,7 +360,8 @@
   
   <a id="graphics_Window_Window_" data-uid="graphics.Window.Window*"></a>
   <h4 id="graphics_Window_Window_java_lang_String_float_boolean_" data-uid="graphics.Window.Window(java.lang.String,float,boolean)">Window(String ptitle, float minSceneLighting, boolean recalculateProjectionOnResize)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor to create a Window object with specified title, minimum scene lighting, and option to recalculate projection on window resize. The window will be created with the default width and height of the primary monitor.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -358,17 +380,21 @@
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">ptitle</span></td>
-        <td></td>
+        <td><p>The title of the window</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">minSceneLighting</span></td>
-        <td></td>
+        <td><p>The minimum lighting value for the scene</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><span class="parametername">recalculateProjectionOnResize</span></td>
-        <td></td>
+        <td><p>Whether to recalculate projection on
+window resize</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -479,7 +505,8 @@
   
   <a id="graphics_Window_getHeight_" data-uid="graphics.Window.getHeight*"></a>
   <h4 id="graphics_Window_getHeight__" data-uid="graphics.Window.getHeight()">getHeight()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the current window height.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -529,7 +556,8 @@
   
   <a id="graphics_Window_getTitle_" data-uid="graphics.Window.getTitle*"></a>
   <h4 id="graphics_Window_getTitle__" data-uid="graphics.Window.getTitle()">getTitle()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gt the current window title.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -554,7 +582,8 @@
   
   <a id="graphics_Window_getWidth_" data-uid="graphics.Window.getWidth*"></a>
   <h4 id="graphics_Window_getWidth__" data-uid="graphics.Window.getWidth()">getWidth()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the current window width.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -579,7 +608,8 @@
   
   <a id="graphics_Window_glfwWindow_" data-uid="graphics.Window.glfwWindow*"></a>
   <h4 id="graphics_Window_glfwWindow__" data-uid="graphics.Window.glfwWindow()">glfwWindow()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the current glfw window (long).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -631,7 +661,8 @@
   
   <a id="graphics_Window_setTitle_" data-uid="graphics.Window.setTitle*"></a>
   <h4 id="graphics_Window_setTitle_java_lang_String_" data-uid="graphics.Window.setTitle(java.lang.String)">setTitle(String title)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set the current window title.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -658,7 +689,8 @@
   
   <a id="graphics_Window_showWindow_" data-uid="graphics.Window.showWindow*"></a>
   <h4 id="graphics_Window_showWindow__" data-uid="graphics.Window.showWindow()">showWindow()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Main game loop: rendering, frametime calculation, event polling and cleanup.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

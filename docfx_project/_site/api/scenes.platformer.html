@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace util
+    <title>Namespace scenes.platformer
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace util
+    <meta name="title" content="Namespace scenes.platformer
    ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,55 +78,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="util">
+            <article class="content wrap" id="_content" data-uid="scenes.platformer">
   
-  <h1 id="util" data-uid="util" class="text-break">Namespace util
+  <h1 id="scenes_platformer" data-uid="scenes.platformer" class="text-break">Namespace scenes.platformer
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="util.Assets.html">Assets</a></h4>
-      <section><p>The Assets class contains methods to assist in loading common resources used by the engine from the filesystem as well as HashMaps to keep track of loaded resources. If the same path is loaded again via the Assets class, it will call the item up from the hashmap rather than reload it.</p>
-</section>
-      <h4><a class="xref" href="util.Engine.html">Engine</a></h4>
-      <section><p>The Engine class initializes the Window and the game loop for a game engine. It follows the Singleton design pattern, providing a global unique instance accessible through the <a class="xref" href="util.Engine.html#util_Engine_getInstance__">#getInstance()</a> method. The Engine class provides several static methods to initialize the engine and create a window, as well as methods to control the engine's state, such as checking if the engine is running, stopping the window, and interrupting the engine with an exit code. It also provides methods to access the window, delta time (time elapsed since the last frame), scene manager, and to enable logging to log files.</p>
-</section>
-      <h4><a class="xref" href="util.Log.html">Log</a></h4>
-      <section><p>Logging utility to print colored and labeled errors with class references. Always call the methods of this class directly and do not nest it inside other functions, because it will mess up the stacktrace and would therefore display a wrong source.
-Logging modes:
-- FATAL -&gt; only fatal errors and major problems are reported; this is the minimal setting
-- WARNINGS -&gt; includes fatal errors and minor warnings; useful for detecting common issues
-- NO_DEBUG -&gt; displays all information except for hard debug logs; for integrity checks
-- ALL -&gt; shows all logs including hard debug for a detailed overview over vital systems</p>
-</section>
-      <h4><a class="xref" href="util.LoggingThread.html">LoggingThread</a></h4>
+      <h4><a class="xref" href="scenes.platformer.Platformer.html">Platformer</a></h4>
       <section></section>
-      <h4><a class="xref" href="util.MathUtils.html">MathUtils</a></h4>
-      <section><p>An util class containing a lot of useful methods to do maths and physics calculations.</p>
-</section>
-      <h4><a class="xref" href="util.Observable.html">Observable&lt;Type&gt;</a></h4>
-      <section><p>Standard observable model.</p>
-</section>
-      <h4><a class="xref" href="util.OrderPreservingList.html">OrderPreservingList&lt;T&gt;</a></h4>
-      <section><p>A LinkedList override to create an order-preserving list to improve speed in a special use case:
-You want to remove and add object from/to a list and keep the elements in the list sorted without having to re-sort each time.</p>
-</section>
-      <h4><a class="xref" href="util.Pair.html">Pair&lt;L,R&gt;</a></h4>
-      <section><p>A <a class="xref" href="util.Pair.html">Pair</a> is a tupel of two different values with potentially two different types.</p>
-</section>
-      <h4><a class="xref" href="util.Transform.html">Transform</a></h4>
-      <section><p>Represents the position in X and Y coordinates, rotation and the scale (width and height)</p>
-</section>
-      <h4><a class="xref" href="util.Triple.html">Triple&lt;L,M,R&gt;</a></h4>
-      <section><p>A <a class="xref" href="util.Triple.html">Triple</a> is a tupel of three different values with potentially three different types.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="util.Observer.html">Observer&lt;Type&gt;</a></h4>
-      <section><p>Standard observer model.</p>
-</section>
 </article>
           </div>
           

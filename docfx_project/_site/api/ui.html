@@ -105,7 +105,26 @@
       <section><p>UIComponentRenderer is the renderable part of a UI component it can contain a solid color, a semi-transparent color, or a texture. Sprites can be tinted by the color value.</p>
 </section>
       <h4><a class="xref" href="ui.Text.html">Text</a></h4>
-      <section></section>
+      <section><p>Represents a renderable string containing a TTF font reference, color data, and font size. It is used to create text elements that can be displayed as part of a scene or UI in a game or application. The Text class allows you to specify the text string, font, color, and position of the text on the screen. It supports various font formats, such as TrueType fonts (TTF), and provides options for text alignment. The Text class also provides methods for changing the text string dynamically during runtime, allowing you to update the displayed text based on the game's logic or user input. Additionally, it supports effects such as rainbow text: text.rainbowify(); // Need I say more?</p>
+<pre><code class="lang-java">import ui.Text;
+ import ui.fonts.Font;
+ 
+ public class Main extends Scene {
+     // ...
+
+     Font font;
+     Text text;
+ 
+     public void awake() {
+         // ...
+         font = new Font(&quot;src/assets/fonts/OpenSans-Regular.ttf&quot;, 24, true);
+         text = new Text(&quot;Hello, World!&quot;, font, Color.BLACK, 100, 100);
+     }
+ 
+     // ...
+ }
+</code></pre>
+</section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="ui.Alignment.html">Alignment</a></h4>

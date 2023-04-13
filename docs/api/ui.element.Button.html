@@ -83,7 +83,29 @@
   
   <h1 id="ui_element_Button" data-uid="ui.element.Button" class="text-break">Class Button
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The Button class represents a graphical user interface (GUI) button that can be rendered on a frame. It extends the RenderableElement class and implements the TextHolder interface, allowing it to display text on the button. Buttons can be created with different label text, background colors, label colors, and frames. Buttons can also be updated to change their appearance based on mouse interactions, such as hovering over the button. Usage example:</p>
+<pre><code class="lang-java">import ui.EventHandler.Event;
+ import ui.element.Button;
+ 
+ public class Main extends Scene {
+     // ...
+ 
+     Button btn;
+     public void awake() {
+         // ...
+         btn = new Button(&quot;Click Me!&quot;, Color.RED, Color.WHITE, new Frame(20, 20, 200, 100));  
+         btn.getEventHandler().registerListener(Event.MOUSE_CLICK, e -&gt; {
+             System.out.println(&quot;Button clicked!&quot;);
+         });
+     }
+
+     public void update() {
+         // ...
+     }
+ }
+</code></pre>
+<p>The above example demonstrates how to create a new Button object with label text &quot;Click Me!&quot;, a red background color, white label color, and a frame with coordinates (20, 20) and size (200, 100). It also registers a mouse click event listener on the button, which will print &quot;Button clicked!&quot; to the console when the button is clicked.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -276,7 +298,8 @@
   
   <a id="ui_element_Button_Button_" data-uid="ui.element.Button.Button*"></a>
   <h4 id="ui_element_Button_Button_java_lang_String_graphics_Color_graphics_Color_ui_Frame_" data-uid="ui.element.Button.Button(java.lang.String,graphics.Color,graphics.Color,ui.Frame)">Button(String label, Color backgroundColor, Color labelColor, Frame frame)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a Button object with the specified label text, background color, label color, and frame.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -295,22 +318,26 @@
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The text to be displayed on the button</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="graphics.Color.html">Color</a></td>
         <td><span class="parametername">backgroundColor</span></td>
-        <td></td>
+        <td><p>The background color of the button</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="graphics.Color.html">Color</a></td>
         <td><span class="parametername">labelColor</span></td>
-        <td></td>
+        <td><p>The color of the label text on the button</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="ui.Frame.html">Frame</a></td>
         <td><span class="parametername">frame</span></td>
-        <td></td>
+        <td><p>The frame in which the button will be rendered</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -318,7 +345,8 @@
   
   <a id="ui_element_Button_Button_" data-uid="ui.element.Button.Button*"></a>
   <h4 id="ui_element_Button_Button_java_lang_String_graphics_Sprite_graphics_Color_ui_Frame_" data-uid="ui.element.Button.Button(java.lang.String,graphics.Sprite,graphics.Color,ui.Frame)">Button(String label, Sprite texture, Color labelColor, Frame frame)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a Button object with the specified label text, sprite texture, label color, and frame.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -337,22 +365,27 @@
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The text to be displayed on the button</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="graphics.Sprite.html">Sprite</a></td>
         <td><span class="parametername">texture</span></td>
-        <td></td>
+        <td><p>The sprite texture to be used as the background of the
+button</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="graphics.Color.html">Color</a></td>
         <td><span class="parametername">labelColor</span></td>
-        <td></td>
+        <td><p>The color of the label text on the button</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="ui.Frame.html">Frame</a></td>
         <td><span class="parametername">frame</span></td>
-        <td></td>
+        <td><p>The frame on which the button will be rendered</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -360,7 +393,8 @@
   
   <a id="ui_element_Button_Button_" data-uid="ui.element.Button.Button*"></a>
   <h4 id="ui_element_Button_Button_java_lang_String_java_lang_String_graphics_Color_ui_Frame_" data-uid="ui.element.Button.Button(java.lang.String,java.lang.String,graphics.Color,ui.Frame)">Button(String label, String path, Color labelColor, Frame frame)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a Button object with the specified label text, image path, label color, and frame.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -379,22 +413,27 @@
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The text to be displayed on the button</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The path to the image to be used as the background of the
+button</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="graphics.Color.html">Color</a></td>
         <td><span class="parametername">labelColor</span></td>
-        <td></td>
+        <td><p>The color of the label text on the button</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="ui.Frame.html">Frame</a></td>
         <td><span class="parametername">frame</span></td>
-        <td></td>
+        <td><p>The frame in which the button will be rendered</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -404,7 +443,8 @@
   
   <a id="ui_element_Button_getText_" data-uid="ui.element.Button.getText*"></a>
   <h4 id="ui_element_Button_getText__" data-uid="ui.element.Button.getText()">getText()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the text currently displayed on the button.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -421,7 +461,8 @@
     <tbody>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
-        <td></td>
+        <td><p>The text currently displayed on the button</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -429,7 +470,8 @@
   
   <a id="ui_element_Button_setText_" data-uid="ui.element.Button.setText*"></a>
   <h4 id="ui_element_Button_setText_java_lang_String_" data-uid="ui.element.Button.setText(java.lang.String)">setText(String text)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the text to be displayed on the button.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -448,7 +490,8 @@
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">text</span></td>
-        <td></td>
+        <td><p>The text to be displayed on the button</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -456,7 +499,8 @@
   
   <a id="ui_element_Button_update_" data-uid="ui.element.Button.update*"></a>
   <h4 id="ui_element_Button_update__" data-uid="ui.element.Button.update()">update()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the appearance of the button based on mouse interactions, such as hovering over the button. The label position is also updated to be centered on the button. This is called by the engine and should not be called by the user.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
