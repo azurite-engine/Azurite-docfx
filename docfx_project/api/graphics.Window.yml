@@ -29,7 +29,7 @@ items:
   fullName: "graphics.Window"
   type: "Class"
   package: "graphics"
-  summary: "The Window class handles setup of GLFW"
+  summary: "The Window class handles the setup and management of the GLFW window for rendering graphics. It provides methods for window creation, configuration, resizing, and event handling."
   syntax:
     content: "public class Window"
   inheritance:
@@ -57,17 +57,22 @@ items:
   overload: "graphics.Window.Window*"
   type: "Constructor"
   package: "graphics"
+  summary: "Constructs a new Window object with the specified width, height, title, and recalculate projection on resize flag. The minimum scene lighting value is set to 1.0f by default."
   syntax:
     content: "public Window(int pwidth, int pheight, String ptitle, boolean recalculateProjectionOnResize)"
     parameters:
     - id: "pwidth"
       type: "int"
+      description: "The width of the window"
     - id: "pheight"
       type: "int"
+      description: "The height of the window"
     - id: "ptitle"
       type: "java.lang.String"
+      description: "The title of the window"
     - id: "recalculateProjectionOnResize"
       type: "boolean"
+      description: "Whether to recalculate the projection matrix on window resize"
 - uid: "graphics.Window.Window(int,int,java.lang.String,boolean,float,boolean)"
   id: "Window(int,int,java.lang.String,boolean,float,boolean)"
   parent: "graphics.Window"
@@ -79,21 +84,28 @@ items:
   overload: "graphics.Window.Window*"
   type: "Constructor"
   package: "graphics"
+  summary: "Creates a Window object with specified width, height, title, fullscreen mode, minimum scene lighting, and option to recalculate projection on window resize."
   syntax:
     content: "public Window(int pwidth, int pheight, String ptitle, boolean fullscreen, float minSceneLighting, boolean recalculateProjectionOnResize)"
     parameters:
     - id: "pwidth"
       type: "int"
+      description: "The width of the window in pixels"
     - id: "pheight"
       type: "int"
+      description: "The height of the window in pixels"
     - id: "ptitle"
       type: "java.lang.String"
+      description: "The title of the window"
     - id: "fullscreen"
       type: "boolean"
+      description: "Whether the window should be in\n                                      fullscreen mode"
     - id: "minSceneLighting"
       type: "float"
+      description: "The minimum lighting value for the scene"
     - id: "recalculateProjectionOnResize"
       type: "boolean"
+      description: "Whether to recalculate projection on\n                                      window resize"
 - uid: "graphics.Window.Window(int,int,java.lang.String,float,boolean)"
   id: "Window(int,int,java.lang.String,float,boolean)"
   parent: "graphics.Window"
@@ -105,19 +117,25 @@ items:
   overload: "graphics.Window.Window*"
   type: "Constructor"
   package: "graphics"
+  summary: "Constructs a new Window object with the specified width, height, title, minimum scene lighting, and recalculate projection on resize flag."
   syntax:
     content: "public Window(int pwidth, int pheight, String ptitle, float minSceneLighting, boolean recalculateProjectionOnResize)"
     parameters:
     - id: "pwidth"
       type: "int"
+      description: "The width of the window"
     - id: "pheight"
       type: "int"
+      description: "The height of the window"
     - id: "ptitle"
       type: "java.lang.String"
+      description: "The title of the window"
     - id: "minSceneLighting"
       type: "float"
+      description: "The minimum scene lighting value"
     - id: "recalculateProjectionOnResize"
       type: "boolean"
+      description: "Whether to recalculate the projection\n                                      matrix on window resize"
 - uid: "graphics.Window.Window(java.lang.String)"
   id: "Window(java.lang.String)"
   parent: "graphics.Window"
@@ -163,15 +181,19 @@ items:
   overload: "graphics.Window.Window*"
   type: "Constructor"
   package: "graphics"
+  summary: "Constructor to create a Window object with specified title, minimum scene lighting, and option to recalculate projection on window resize. The window will be created with the default width and height of the primary monitor."
   syntax:
     content: "public Window(String ptitle, float minSceneLighting, boolean recalculateProjectionOnResize)"
     parameters:
     - id: "ptitle"
       type: "java.lang.String"
+      description: "The title of the window"
     - id: "minSceneLighting"
       type: "float"
+      description: "The minimum lighting value for the scene"
     - id: "recalculateProjectionOnResize"
       type: "boolean"
+      description: "Whether to recalculate projection on\n                                      window resize"
 - uid: "graphics.Window.currentScene()"
   id: "currentScene()"
   parent: "graphics.Window"
@@ -228,6 +250,7 @@ items:
   overload: "graphics.Window.getHeight*"
   type: "Method"
   package: "graphics"
+  summary: "Get the current window height."
   syntax:
     content: "public static int getHeight()"
     return:
@@ -258,6 +281,7 @@ items:
   overload: "graphics.Window.getTitle*"
   type: "Method"
   package: "graphics"
+  summary: "Gt the current window title."
   syntax:
     content: "public String getTitle()"
     return:
@@ -273,6 +297,7 @@ items:
   overload: "graphics.Window.getWidth*"
   type: "Method"
   package: "graphics"
+  summary: "Get the current window width."
   syntax:
     content: "public static int getWidth()"
     return:
@@ -288,6 +313,7 @@ items:
   overload: "graphics.Window.glfwWindow*"
   type: "Method"
   package: "graphics"
+  summary: "Get the current glfw window (long)."
   syntax:
     content: "public static long glfwWindow()"
     return:
@@ -333,6 +359,7 @@ items:
   overload: "graphics.Window.setTitle*"
   type: "Method"
   package: "graphics"
+  summary: "Set the current window title."
   syntax:
     content: "public void setTitle(String title)"
     parameters:
@@ -349,6 +376,7 @@ items:
   overload: "graphics.Window.showWindow*"
   type: "Method"
   package: "graphics"
+  summary: "Main game loop: rendering, frametime calculation, event polling and cleanup."
   syntax:
     content: "public void showWindow()"
 references:

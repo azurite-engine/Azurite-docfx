@@ -1,0 +1,19 @@
+### YamlMime:ManagedReference
+items:
+- uid: "scenes.platformer"
+  id: "platformer"
+  children:
+  - "scenes.platformer.Platformer"
+  langs:
+  - "java"
+  name: "scenes.platformer"
+  nameWithType: "scenes.platformer"
+  fullName: "scenes.platformer"
+  type: "Namespace"
+  syntax:
+    content: "package scenes.platformer"
+references:
+- uid: "scenes.platformer.Platformer"
+  name: "Platformer"
+  nameWithType: "Platformer"
+  fullName: "scenes.platformer.Platformer"

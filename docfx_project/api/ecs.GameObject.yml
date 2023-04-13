@@ -33,7 +33,7 @@ items:
   fullName: "ecs.GameObject"
   type: "Class"
   package: "ecs"
-  summary: "A GameObject is the root of the Entity Component system used to store all entities in Azurite games. Each GameObject can contain any of a number of available components including spriteRenderers and lights. By default, each GameObject contains a Transform, which holds the X and Y position, and width and height of the object in pixels."
+  summary: "A GameObject is the root of the Entity Component system used to store all entities in Azurite games. Each GameObject can contain any of a number of available components including spriteRenderers and lights. By default, each GameObject contains a Transform, which holds the X and Y position.\n\n```java\nimport ecs.*;\n \n public class Main extends Scene {\n     // ...\n\n     GameObject player;\n \n     public void awake() {\n         // ...\n         player = new GameObject(\"Player\", new Vector2f(600, 600), 2);\n         player.addComponent(new PointLight(new Color(250, 255, 181), 30));\n         player.addComponent(new SpriteRenderer(Assets.getTexture(\"src/assets/images/player.png\"), new Vector2f(64, 64)));\n \n     }\n \n     // ...\n }\n```"
   syntax:
     content: "public class GameObject"
   inheritance:
@@ -250,7 +250,7 @@ items:
     parameters:
     - id: "scene"
       type: "scene.Scene"
-      description: "the scene to add the GameObject to. By default, GameObjects are added to the currentScene."
+      description: "the scene to add the GameObject to. By default, GameObjects\n                 are added to the currentScene."
     - id: "name"
       type: "java.lang.String"
       description: "name of the GameObject"

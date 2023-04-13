@@ -207,6 +207,11 @@
     name: "Pathfinding"
   - uid: "ai.path.ResultPath"
     name: "ResultPath"
+- uid: "scenes.platformer"
+  name: "scenes.platformer"
+  items:
+  - uid: "scenes.platformer.Platformer"
+    name: "Platformer"
 - uid: "graphics.postprocess"
   name: "graphics.postprocess"
   items:

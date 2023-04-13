@@ -176,7 +176,7 @@ items:
   overload: "input.Keyboard.setupCallbacks*"
   type: "Method"
   package: "input"
-  summary: "Subscribes to key event"
+  summary: "Subscribes to key events and sets up GLFW key callback."
   syntax:
     content: "public static void setupCallbacks()"
 references:

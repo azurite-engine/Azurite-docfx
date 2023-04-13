@@ -58,13 +58,16 @@ items:
   overload: "util.Assets.getAudioBuffer*"
   type: "Method"
   package: "util"
+  summary: "Loads an audio file from the filesystem and returns an AudioBuffer."
   syntax:
     content: "public static AudioBuffer getAudioBuffer(String path)"
     parameters:
     - id: "path"
       type: "java.lang.String"
+      description: "to audio file"
     return:
       type: "audio.AudioBuffer"
+      description: "returns type AudioBuffer"
 - uid: "util.Assets.getDataFile(java.lang.String)"
   id: "getDataFile(java.lang.String)"
   parent: "util.Assets"
